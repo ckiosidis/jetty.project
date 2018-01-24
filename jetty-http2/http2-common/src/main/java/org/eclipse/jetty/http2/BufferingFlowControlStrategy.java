@@ -24,10 +24,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.eclipse.jetty.http2.frames.Frame;
 import org.eclipse.jetty.http2.frames.WindowUpdateFrame;
-import org.eclipse.jetty.util.Atomics;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.Atomics;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
 
 /**
  * <p>A flow control strategy that accumulates updates and emits window control

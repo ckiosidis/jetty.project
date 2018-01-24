@@ -26,8 +26,8 @@ import javax.security.auth.callback.NameCallback;
 import javax.security.auth.callback.PasswordCallback;
 import javax.security.auth.callback.UnsupportedCallbackException;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.util.security.Password;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.util.security.Password;
 
 /** 
  * DefaultUsernameCredentialCallbackHandler

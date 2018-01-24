@@ -20,10 +20,10 @@ package org.eclipse.jetty.client;
 
 import org.eclipse.jetty.client.api.Connection;
 import org.eclipse.jetty.client.api.Destination;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.LeakDetector;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.LeakDetector;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class LeakTrackingConnectionPool extends DuplexConnectionPool
 {

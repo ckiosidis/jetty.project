@@ -24,8 +24,9 @@ import java.util.Set;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
 
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

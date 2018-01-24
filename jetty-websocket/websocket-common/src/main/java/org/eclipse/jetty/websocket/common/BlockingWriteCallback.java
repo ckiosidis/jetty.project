@@ -20,9 +20,8 @@ package org.eclipse.jetty.websocket.common;
 
 import java.io.IOException;
 
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.SharedBlockingCallback;
-import org.eclipse.jetty.util.thread.Invocable.InvocationType;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.SharedBlockingCallback;
 import org.eclipse.jetty.websocket.api.WriteCallback;
 
 /**

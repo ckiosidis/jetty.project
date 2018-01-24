@@ -41,7 +41,7 @@
 <!--
                 <Require-Capability>osgi.extender; filter:="(osgi.extender=osgi.serviceloader.registrar)"</Require-Capability>
 -->
-                <Provide-Capability>osgi.serviceloader; osgi.serviceloader=org.eclipse.jetty.http.HttpFieldPreEncoder</Provide-Capability>
+                <Provide-Capability>osgi.serviceloader; osgi.serviceloader=org.eclipse.betty.http.HttpFieldPreEncoder</Provide-Capability>
               </instructions>
             </configuration>
       </plugin>

@@ -18,11 +18,11 @@
 
 package org.eclipse.jetty.websocket.server.examples.echo;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.handler.ResourceHandler;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.ResourceHandler;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.server.WebSocketHandler;
 import org.eclipse.jetty.websocket.servlet.WebSocketServletFactory;
 

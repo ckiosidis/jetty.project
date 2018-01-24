@@ -23,7 +23,7 @@ import java.net.URI;
 import java.util.Locale;
 
 import org.eclipse.jetty.client.HttpClient;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
 
 /**

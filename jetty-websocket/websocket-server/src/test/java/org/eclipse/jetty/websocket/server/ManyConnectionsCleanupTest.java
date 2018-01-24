@@ -29,10 +29,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.eclipse.jetty.toolchain.test.EventQueue;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.log.StdErrLog;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.StdErrLog;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.StatusCode;
 import org.eclipse.jetty.websocket.api.WebSocketAdapter;

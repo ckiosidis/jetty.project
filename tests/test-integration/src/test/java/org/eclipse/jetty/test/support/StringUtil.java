@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 
 public class StringUtil
 {

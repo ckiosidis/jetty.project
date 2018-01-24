@@ -25,15 +25,15 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpHeader;
+import org.eclipse.betty.http.HttpHeader;
 import org.eclipse.jetty.security.ServerAuthException;
 import org.eclipse.jetty.security.UserAuthentication;
-import org.eclipse.jetty.server.Authentication;
-import org.eclipse.jetty.server.Authentication.User;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.betty.server.Authentication;
+import org.eclipse.betty.server.Authentication.User;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Constraint;
 
 public class SpnegoAuthenticator extends LoginAuthenticator
 {

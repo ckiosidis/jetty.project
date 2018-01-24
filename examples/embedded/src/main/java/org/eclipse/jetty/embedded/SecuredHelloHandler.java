@@ -25,8 +25,8 @@ import org.eclipse.jetty.security.ConstraintSecurityHandler;
 import org.eclipse.jetty.security.HashLoginService;
 import org.eclipse.jetty.security.LoginService;
 import org.eclipse.jetty.security.authentication.BasicAuthenticator;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.security.Constraint;
 
 public class SecuredHelloHandler
 {

@@ -21,10 +21,10 @@ package org.eclipse.jetty.websocket.server;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executor;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.thread.Scheduler;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.api.extensions.IncomingFrames;
 import org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection;

@@ -25,7 +25,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import org.eclipse.jetty.util.thread.ExecutionStrategy.Producer;
+import org.eclipse.betty.util.thread.ExecutionStrategy.Producer;
+import org.eclipse.betty.util.thread.strategy.ExecuteProduceConsume;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

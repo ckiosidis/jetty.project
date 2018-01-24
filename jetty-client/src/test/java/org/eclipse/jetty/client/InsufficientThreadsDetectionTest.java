@@ -19,7 +19,7 @@
 package org.eclipse.jetty.client;
 
 import org.eclipse.jetty.client.http.HttpClientTransportOverHTTP;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.Assert;
 import org.junit.Test;
 

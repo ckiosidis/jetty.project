@@ -26,6 +26,7 @@ import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 
+import org.eclipse.betty.util.log.JavaUtilLog;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;

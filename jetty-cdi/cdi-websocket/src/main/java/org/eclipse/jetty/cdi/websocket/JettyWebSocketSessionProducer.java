@@ -22,8 +22,8 @@ import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 
 import org.eclipse.jetty.cdi.websocket.annotation.WebSocketScope;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.api.Session;
 
 /**

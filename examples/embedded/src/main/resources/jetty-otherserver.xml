@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure id="OtherServer" class="org.eclipse.jetty.server.Server">
+<Configure id="OtherServer" class="org.eclipse.betty.server.Server">
     <Set name="handler">
-      <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+      <New id="Handlers" class="org.eclipse.betty.server.handler.HandlerCollection">
         <Set name="handlers">
-         <Array type="org.eclipse.jetty.server.Handler">
+         <Array type="org.eclipse.betty.server.Handler">
            <Item>
-             <New id="OtherContexts" class="org.eclipse.jetty.server.handler.ContextHandlerCollection"/>
+             <New id="OtherContexts" class="org.eclipse.betty.server.handler.ContextHandlerCollection"/>
            </Item>
            <Item>
-             <New class="org.eclipse.jetty.server.handler.DefaultHandler"/>
+             <New class="org.eclipse.betty.server.handler.DefaultHandler"/>
            </Item>
          </Array>
         </Set>
@@ -19,7 +19,7 @@
 
   <Call name="addConnector">
     <Arg>
-      <New class="org.eclipse.jetty.server.ServerConnector">
+      <New class="org.eclipse.betty.server.ServerConnector">
         <Arg name="server"><Ref refid="OtherServer" /></Arg>
         <Set name="port">8888</Set>
       </New>

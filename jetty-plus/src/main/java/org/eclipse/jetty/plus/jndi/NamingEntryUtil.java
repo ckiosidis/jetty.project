@@ -32,7 +32,7 @@ import javax.naming.NamingEnumeration;
 import javax.naming.NamingException;
 
 import org.eclipse.jetty.jndi.NamingUtil;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Logger;
 
 
 public class NamingEntryUtil

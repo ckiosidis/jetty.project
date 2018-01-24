@@ -20,17 +20,17 @@ package org.eclipse.jetty.http2.hpack;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.http.BadMessageException;
-import org.eclipse.jetty.http.DateGenerator;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
-import org.eclipse.jetty.http.MetaData.Response;
-import org.eclipse.jetty.http.PreEncodedHttpField;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.BadMessageException;
+import org.eclipse.betty.http.DateGenerator;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.http.MetaData.Response;
+import org.eclipse.betty.http.PreEncodedHttpField;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

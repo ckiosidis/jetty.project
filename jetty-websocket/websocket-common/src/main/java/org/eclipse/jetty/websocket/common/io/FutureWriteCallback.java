@@ -20,9 +20,9 @@ package org.eclipse.jetty.websocket.common.io;
 
 import java.util.concurrent.Future;
 
-import org.eclipse.jetty.util.FutureCallback;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.FutureCallback;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.api.WriteCallback;
 
 /**

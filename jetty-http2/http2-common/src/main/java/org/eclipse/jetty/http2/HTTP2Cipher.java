@@ -20,8 +20,8 @@ package org.eclipse.jetty.http2;
 
 import java.util.Comparator;
 
-import org.eclipse.jetty.util.ArrayTrie;
-import org.eclipse.jetty.util.Trie;
+import org.eclipse.betty.util.ArrayTrie;
+import org.eclipse.betty.util.Trie;
 
 public class HTTP2Cipher
 {

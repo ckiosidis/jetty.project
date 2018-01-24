@@ -31,12 +31,16 @@ import java.net.URLClassLoader;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.DefaultSessionCacheFactory;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.junit.Test;
 
 /**

@@ -23,10 +23,10 @@ import java.lang.reflect.Method;
 import javax.websocket.ContainerProvider;
 import javax.websocket.WebSocketContainer;
 
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.thread.ShutdownThread;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.thread.ShutdownThread;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.common.scopes.SimpleContainerScope;
 
@@ -114,7 +114,7 @@ public class JettyClientContainerProvider extends ContainerProvider
         try
         {
             // Equiv of: ContextHandler.Context context = ContextHandler.getCurrentContext()
-            Class<?> clazzContextHandler = Class.forName("org.eclipse.jetty.server.handler.ContextHandler");
+            Class<?> clazzContextHandler = Class.forName("org.eclipse.betty.server.handler.ContextHandler");
             Method methodGetContext = clazzContextHandler.getMethod("getCurrentContext");
             Object objContext = methodGetContext.invoke(null);
             if (objContext == null)

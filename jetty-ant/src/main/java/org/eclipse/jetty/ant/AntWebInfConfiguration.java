@@ -27,8 +27,8 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.tools.ant.AntClassLoader;
-import org.eclipse.jetty.util.PatternMatcher;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.PatternMatcher;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppClassLoader;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.eclipse.jetty.webapp.WebInfConfiguration;

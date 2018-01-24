@@ -18,8 +18,8 @@
 
 package org.eclipse.jetty.security;
 
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.security.Credential;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

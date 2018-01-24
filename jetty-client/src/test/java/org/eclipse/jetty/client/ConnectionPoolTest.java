@@ -35,13 +35,13 @@ import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.http.HttpClientTransportOverHTTP;
 import org.eclipse.jetty.client.util.BytesContentProvider;
 import org.eclipse.jetty.client.util.FutureResponseListener;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpMethod;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.util.IO;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -100,7 +100,7 @@ public class ConnectionPoolTest
         start(new EmptyServerHandler()
         {
             @Override
-            protected void service(String target, org.eclipse.jetty.server.Request jettyRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            protected void service(String target, org.eclipse.betty.server.Request jettyRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 switch (HttpMethod.fromString(request.getMethod()))
                 {

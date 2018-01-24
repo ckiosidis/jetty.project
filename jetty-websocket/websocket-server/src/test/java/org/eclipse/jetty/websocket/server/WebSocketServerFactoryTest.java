@@ -23,14 +23,14 @@ import static org.junit.Assert.assertThat;
 
 import java.util.concurrent.Executor;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.log.StdErrLog;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.log.StdErrLog;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.websocket.api.WebSocketBehavior;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.junit.Test;

@@ -23,8 +23,10 @@ package org.eclipse.jetty.util.security;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.eclipse.jetty.util.security.Credential.Crypt;
-import org.eclipse.jetty.util.security.Credential.MD5;
+import org.eclipse.betty.util.security.Credential;
+import org.eclipse.betty.util.security.Credential.Crypt;
+import org.eclipse.betty.util.security.Credential.MD5;
+import org.eclipse.betty.util.security.Password;
 import org.junit.Test;
 
 
@@ -39,7 +41,7 @@ public class CredentialTest
     @Test
     public void testCrypt() throws Exception
     {
-        Crypt c1 = (Crypt)Credential.getCredential(Crypt.crypt("fred", "abc123"));     
+        Crypt c1 = (Crypt) Credential.getCredential(Crypt.crypt("fred", "abc123"));
         Crypt c2 = (Crypt)Credential.getCredential(Crypt.crypt("fred", "abc123"));
         
         Crypt c3 = (Crypt)Credential.getCredential(Crypt.crypt("fred", "xyz123"));

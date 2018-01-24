@@ -24,12 +24,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.pathmap.MappedResource;
-import org.eclipse.jetty.http.pathmap.PathSpec;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
+import org.eclipse.betty.http.pathmap.MappedResource;
+import org.eclipse.betty.http.pathmap.PathSpec;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.HandlerWrapper;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.servlet.WebSocketCreator;
 

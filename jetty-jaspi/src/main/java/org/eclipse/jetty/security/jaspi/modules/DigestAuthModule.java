@@ -33,14 +33,14 @@ import javax.security.auth.message.MessagePolicy;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.util.B64Code;
-import org.eclipse.jetty.util.QuotedStringTokenizer;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Constraint;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.util.B64Code;
+import org.eclipse.betty.util.QuotedStringTokenizer;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Constraint;
+import org.eclipse.betty.util.security.Credential;
 
 @Deprecated
 public class DigestAuthModule extends BaseAuthModule

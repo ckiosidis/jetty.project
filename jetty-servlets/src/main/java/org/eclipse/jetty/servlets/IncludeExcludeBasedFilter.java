@@ -25,14 +25,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.MimeTypes;
-import org.eclipse.jetty.http.pathmap.PathSpecSet;
-import org.eclipse.jetty.util.IncludeExclude;
-import org.eclipse.jetty.util.IncludeExcludeSet;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.MimeTypes;
+import org.eclipse.betty.http.pathmap.PathSpecSet;
+import org.eclipse.betty.util.IncludeExclude;
+import org.eclipse.betty.util.IncludeExcludeSet;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Include Exclude Based Filter

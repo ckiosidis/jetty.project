@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 import org.eclipse.jetty.osgi.boot.OSGiServerConstants;
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.StringUtil;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Filter;
 import org.osgi.framework.InvalidSyntaxException;

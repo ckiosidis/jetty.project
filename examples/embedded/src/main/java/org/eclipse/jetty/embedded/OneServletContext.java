@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.embedded;
 
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 

@@ -23,9 +23,9 @@ import java.util.List;
 
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpVersion;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpVersion;
 
 public class HttpResponse implements Response
 {

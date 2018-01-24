@@ -6,17 +6,17 @@
 <!-- This configuration needs to be used together with 1 or more   -->
 <!-- of jetty-https.xml and/or jetty-http2.xml                     -->
 <!-- ============================================================= -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
   <!-- =========================================================== -->
   <!-- Add a SSL Connector with no protocol factories              -->
   <!-- =========================================================== -->
   <Call  name="addConnector">
     <Arg>
-      <New id="sslConnector" class="org.eclipse.jetty.server.ServerConnector">
+      <New id="sslConnector" class="org.eclipse.betty.server.ServerConnector">
         <Arg name="server"><Ref refid="Server" /></Arg>
           <Arg name="factories">
-            <Array type="org.eclipse.jetty.server.ConnectionFactory">
+            <Array type="org.eclipse.betty.server.ConnectionFactory">
             </Array>
           </Arg>
           <Set name="host"><Property name="jetty.ssl.host" /></Set>
@@ -30,7 +30,7 @@
   <!-- ============================================================= -->
   <!-- Create a TLS (SSL) Context Factory  for later reuse           -->
   <!-- ============================================================= -->
-  <New id="sslContextFactory" class="org.eclipse.jetty.util.ssl.SslContextFactory">
+  <New id="sslContextFactory" class="org.eclipse.betty.util.ssl.SslContextFactory">
     <Set name="Provider"><SystemProperty name="jetty.sslContext.provider"/></Set>
     <Set name="KeyStorePath"><Property name="jetty.base" default="." />/<Property name="jetty.sslContext.keyStorePath" default="etc/keystore"/></Set>
     <Set name="KeyStorePassword"><Property name="jetty.sslContext.keyStorePassword" default="OBF:1vny1zlo1x8e1vnw1vn61x8g1zlu1vn4"/></Set>
@@ -58,10 +58,10 @@
   <!-- Add a SecureRequestCustomizer to extract certificate and    -->
   <!-- session information                                         -->
   <!-- =========================================================== -->
-  <New id="sslHttpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+  <New id="sslHttpConfig" class="org.eclipse.betty.server.HttpConfiguration">
     <Arg><Ref refid="httpConfig"/></Arg>
     <Call name="addCustomizer">
-      <Arg><New class="org.eclipse.jetty.server.SecureRequestCustomizer"/></Arg>
+      <Arg><New class="org.eclipse.betty.server.SecureRequestCustomizer"/></Arg>
     </Call>
   </New>
 

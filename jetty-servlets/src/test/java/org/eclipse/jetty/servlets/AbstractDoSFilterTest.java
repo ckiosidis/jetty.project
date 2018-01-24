@@ -18,7 +18,6 @@
 
 package org.eclipse.jetty.servlets;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -35,14 +34,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpURI;
-import org.eclipse.jetty.server.session.DefaultSessionCache;
-import org.eclipse.jetty.server.session.FileSessionDataStore;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.server.session.DefaultSessionCache;
+import org.eclipse.betty.server.session.FileSessionDataStore;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletTester;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

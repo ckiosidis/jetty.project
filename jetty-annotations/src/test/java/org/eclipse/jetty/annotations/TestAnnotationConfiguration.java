@@ -35,7 +35,7 @@ import java.util.Set;
 import javax.servlet.ServletContainerInitializer;
 
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.webapp.FragmentDescriptor;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.junit.Test;

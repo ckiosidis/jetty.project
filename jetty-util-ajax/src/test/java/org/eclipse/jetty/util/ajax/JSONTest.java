@@ -30,7 +30,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
-import org.eclipse.jetty.util.DateCache;
+import org.eclipse.betty.util.DateCache;
 import org.eclipse.jetty.util.ajax.JSON.Output;
 import org.junit.BeforeClass;
 import org.junit.Test;

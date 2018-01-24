@@ -29,11 +29,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.ProxyConnectionFactory;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.AbstractHandler;
 
 public class UnixSocketServer
 {

@@ -32,15 +32,15 @@ import org.eclipse.jetty.http2.frames.SettingsFrame;
 import org.eclipse.jetty.http2.frames.WindowUpdateFrame;
 import org.eclipse.jetty.http2.generator.Generator;
 import org.eclipse.jetty.http2.parser.Parser;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.thread.ReservedThreadExecutor;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.thread.ReservedThreadExecutor;
+import org.eclipse.betty.util.thread.Scheduler;
 
 public class HTTP2ClientConnectionFactory implements ClientConnectionFactory
 {

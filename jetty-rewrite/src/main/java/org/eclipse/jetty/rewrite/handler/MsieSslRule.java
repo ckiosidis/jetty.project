@@ -23,10 +23,10 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpHeaderValue;
-import org.eclipse.jetty.util.ArrayTernaryTrie;
-import org.eclipse.jetty.util.Trie;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpHeaderValue;
+import org.eclipse.betty.util.ArrayTernaryTrie;
+import org.eclipse.betty.util.Trie;
 
 /**
  * MSIE (Microsoft Internet Explorer) SSL Rule.

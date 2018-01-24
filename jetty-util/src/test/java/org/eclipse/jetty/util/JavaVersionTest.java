@@ -22,6 +22,7 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 import static org.junit.Assert.assertThat;
 
+import org.eclipse.betty.util.JavaVersion;
 import org.junit.Test;
 
 /**

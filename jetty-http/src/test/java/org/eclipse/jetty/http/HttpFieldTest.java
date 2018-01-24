@@ -26,7 +26,11 @@ import static org.junit.Assert.assertTrue;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.PreEncodedHttpField;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Test;
 
 public class HttpFieldTest
@@ -175,7 +179,7 @@ public class HttpFieldTest
         PreEncodedHttpField field = new PreEncodedHttpField(HttpHeader.ACCEPT,"something");
         ByteBuffer buf = BufferUtil.allocate(256);
         BufferUtil.clearToFill(buf);
-        field.putTo(buf,HttpVersion.HTTP_1_0);
+        field.putTo(buf, HttpVersion.HTTP_1_0);
         BufferUtil.flipToFlush(buf,0);
         String s=BufferUtil.toString(buf);
         

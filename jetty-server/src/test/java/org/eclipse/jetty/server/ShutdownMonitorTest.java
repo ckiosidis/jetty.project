@@ -26,8 +26,10 @@ import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
 
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ShutdownMonitor;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.thread.ShutdownThread;
+import org.eclipse.betty.util.thread.ShutdownThread;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;

@@ -38,13 +38,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.CompressedContentFormat;
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.CompressedContentFormat;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
 import org.eclipse.jetty.http.HttpTester;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.toolchain.test.IO;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.StringUtil;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;

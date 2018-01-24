@@ -29,7 +29,7 @@ import javax.naming.NameParser;
 import javax.naming.NamingException;
 
 import org.eclipse.jetty.jndi.local.localContextRoot;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Logger;
 
 
 /*------------------------------------------------*/

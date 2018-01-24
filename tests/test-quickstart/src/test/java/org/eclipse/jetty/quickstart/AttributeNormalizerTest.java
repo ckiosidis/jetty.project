@@ -33,7 +33,7 @@ import java.util.Map;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.OS;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

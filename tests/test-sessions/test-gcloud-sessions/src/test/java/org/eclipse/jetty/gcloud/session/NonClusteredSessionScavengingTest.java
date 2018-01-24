@@ -26,9 +26,8 @@ import static org.junit.Assert.fail;
 import java.util.Set;
 
 import org.eclipse.jetty.server.session.AbstractNonClusteredSessionScavengingTest;
-import org.eclipse.jetty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.junit.After;
-import org.junit.Test;
 
 /**
  * NonClusteredSessionScavengingTest

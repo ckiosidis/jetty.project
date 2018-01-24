@@ -25,6 +25,9 @@ import static org.junit.Assert.assertThat;
 
 import java.util.Map;
 
+import org.eclipse.betty.http.pathmap.PathSpec;
+import org.eclipse.betty.http.pathmap.PathSpecGroup;
+import org.eclipse.betty.http.pathmap.UriTemplatePathSpec;
 import org.junit.Test;
 
 /**
@@ -62,7 +65,7 @@ public class UriTemplatePathSpecTest
         assertEquals("Spec.pathSpec","/",spec.getDeclaration());
         assertEquals("Spec.pattern","^/$",spec.getPattern().pattern());
         assertEquals("Spec.pathDepth",1,spec.getPathDepth());
-        assertEquals("Spec.group",PathSpecGroup.EXACT,spec.getGroup());
+        assertEquals("Spec.group", PathSpecGroup.EXACT,spec.getGroup());
 
         assertEquals("Spec.variableCount",0,spec.getVariableCount());
         assertEquals("Spec.variable.length",0,spec.getVariables().length);

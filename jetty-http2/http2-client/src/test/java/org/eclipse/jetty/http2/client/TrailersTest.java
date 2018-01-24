@@ -29,19 +29,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
 import org.eclipse.jetty.http2.api.Session;
 import org.eclipse.jetty.http2.api.Stream;
 import org.eclipse.jetty.http2.api.server.ServerSessionListener;
 import org.eclipse.jetty.http2.frames.DataFrame;
 import org.eclipse.jetty.http2.frames.HeadersFrame;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.FuturePromise;
-import org.eclipse.jetty.util.Promise;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.FuturePromise;
+import org.eclipse.betty.util.Promise;
 import org.junit.Assert;
 import org.junit.Test;
 

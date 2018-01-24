@@ -24,17 +24,17 @@ import static org.junit.Assert.assertTrue;
 
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpURI;
-import org.eclipse.jetty.http.MetaData;
-import org.eclipse.jetty.server.Authentication;
-import org.eclipse.jetty.server.HttpChannel;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpOutput;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Response;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.server.Authentication;
+import org.eclipse.betty.server.HttpChannel;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpOutput;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Response;
+import org.eclipse.betty.server.Server;
 import org.junit.Before;
 import org.junit.Test;
 

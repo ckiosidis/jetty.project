@@ -22,19 +22,19 @@ import java.net.URI;
 
 import javax.servlet.http.HttpServlet;
 
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.SecureRequestCustomizer;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.SslConnectionFactory;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.SecureRequestCustomizer;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.SslConnectionFactory;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.websocket.servlet.WebSocketServletFactory;
 
 public class SimpleServletServer

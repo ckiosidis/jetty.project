@@ -22,7 +22,7 @@ import java.nio.ByteBuffer;
 import java.util.EnumMap;
 
 import org.eclipse.jetty.fcgi.FCGI;
-import org.eclipse.jetty.http.HttpField;
+import org.eclipse.betty.http.HttpField;
 
 public class ClientParser extends Parser
 {

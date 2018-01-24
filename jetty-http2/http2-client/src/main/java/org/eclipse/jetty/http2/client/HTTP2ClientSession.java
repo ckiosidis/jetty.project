@@ -20,7 +20,7 @@ package org.eclipse.jetty.http2.client;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.eclipse.jetty.http.MetaData;
+import org.eclipse.betty.http.MetaData;
 import org.eclipse.jetty.http2.ErrorCode;
 import org.eclipse.jetty.http2.FlowControlStrategy;
 import org.eclipse.jetty.http2.HTTP2Session;
@@ -30,11 +30,11 @@ import org.eclipse.jetty.http2.api.Stream;
 import org.eclipse.jetty.http2.frames.HeadersFrame;
 import org.eclipse.jetty.http2.frames.PushPromiseFrame;
 import org.eclipse.jetty.http2.generator.Generator;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.thread.Scheduler;
 
 public class HTTP2ClientSession extends HTTP2Session
 {

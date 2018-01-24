@@ -23,8 +23,8 @@ import static org.junit.Assert.assertEquals;
 import java.io.IOException;
 import java.util.Enumeration;
 
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
 import org.junit.Before;
 import org.junit.Test;
 

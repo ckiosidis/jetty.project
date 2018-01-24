@@ -21,6 +21,7 @@ package org.eclipse.jetty.io;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
+import org.eclipse.betty.io.SocketChannelEndPoint;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 

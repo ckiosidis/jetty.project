@@ -37,14 +37,19 @@ import javax.servlet.WriteListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.HttpOutput.Interceptor;
-import org.eclipse.jetty.server.LocalConnector.LocalEndPoint;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.HotSwapHandler;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.HttpOutput;
+import org.eclipse.betty.server.HttpOutput.Interceptor;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.LocalConnector.LocalEndPoint;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.HotSwapHandler;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.resource.Resource;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
@@ -689,7 +694,7 @@ public class HttpOutputTest
         return BufferUtil.toUTF8String(BufferUtil.toBuffer(resource, false));
     }
     
-    interface ChainedInterceptor extends HttpOutput.Interceptor 
+    interface ChainedInterceptor extends HttpOutput.Interceptor
     {
         default void init(Request baseRequest) {};
         void setNext(Interceptor interceptor);

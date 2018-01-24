@@ -28,10 +28,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.server.LocalConnector.LocalEndPoint;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.LocalConnector.LocalEndPoint;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

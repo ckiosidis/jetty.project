@@ -30,7 +30,12 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import org.eclipse.jetty.util.Utf8Appendable.NotUtf8Exception;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.Utf8Appendable;
+import org.eclipse.betty.util.Utf8Appendable.NotUtf8Exception;
+import org.eclipse.betty.util.Utf8StringBuffer;
+import org.eclipse.betty.util.Utf8StringBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

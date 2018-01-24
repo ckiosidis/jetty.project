@@ -24,14 +24,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.eclipse.jetty.client.api.Connection;
 import org.eclipse.jetty.client.api.Destination;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.component.Dumpable;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.Dumpable;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 @ManagedObject
 public abstract class AbstractConnectionPool implements ConnectionPool, Dumpable

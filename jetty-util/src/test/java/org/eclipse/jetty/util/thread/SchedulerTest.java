@@ -26,10 +26,13 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.eclipse.betty.util.thread.ScheduledExecutorScheduler;
+import org.eclipse.betty.util.thread.Scheduler;
+import org.eclipse.betty.util.thread.TimerScheduler;
 import org.eclipse.jetty.toolchain.perf.PlatformMonitor;
 import org.eclipse.jetty.toolchain.test.annotation.Slow;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.statistic.SampleStatistic;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.statistic.SampleStatistic;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

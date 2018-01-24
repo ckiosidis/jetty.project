@@ -5,7 +5,7 @@
 <!-- Mixin the Jamon Handler                                         -->
 <!-- =============================================================== -->
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
   <Call name="insertHandler">
     <Arg>

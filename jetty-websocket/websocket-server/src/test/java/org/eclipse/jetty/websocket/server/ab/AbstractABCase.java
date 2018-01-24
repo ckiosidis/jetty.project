@@ -22,12 +22,12 @@ import java.net.URI;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.log.StdErrLog;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.StdErrLog;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.common.Generator;
 import org.eclipse.jetty.websocket.common.OpCode;

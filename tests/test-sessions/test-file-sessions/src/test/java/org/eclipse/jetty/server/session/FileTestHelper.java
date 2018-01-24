@@ -27,7 +27,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.server.session.FileSessionDataStoreFactory;
+import org.eclipse.betty.util.IO;
 
 /**
  * FileTestHelper

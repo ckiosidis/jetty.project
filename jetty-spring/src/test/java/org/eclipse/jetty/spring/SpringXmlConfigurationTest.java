@@ -28,7 +28,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.xml.XmlConfiguration;
 import org.junit.Before;
 import org.junit.Test;

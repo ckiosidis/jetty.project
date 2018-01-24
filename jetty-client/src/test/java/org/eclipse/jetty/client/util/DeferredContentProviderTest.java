@@ -28,7 +28,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.util.Callback;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

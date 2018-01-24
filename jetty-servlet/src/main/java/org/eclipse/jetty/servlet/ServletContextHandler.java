@@ -56,22 +56,22 @@ import org.eclipse.jetty.security.ConstraintAware;
 import org.eclipse.jetty.security.ConstraintMapping;
 import org.eclipse.jetty.security.ConstraintSecurityHandler;
 import org.eclipse.jetty.security.SecurityHandler;
-import org.eclipse.jetty.server.Dispatcher;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.HandlerContainer;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ErrorHandler;
-import org.eclipse.jetty.server.handler.HandlerCollection;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.server.handler.gzip.GzipHandler;
-import org.eclipse.jetty.server.session.SessionHandler;
-import org.eclipse.jetty.util.DecoratedObjectFactory;
-import org.eclipse.jetty.util.DeprecationWarning;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.Dispatcher;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.HandlerContainer;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ErrorHandler;
+import org.eclipse.betty.server.handler.HandlerCollection;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
+import org.eclipse.betty.server.session.SessionHandler;
+import org.eclipse.betty.util.DecoratedObjectFactory;
+import org.eclipse.betty.util.DeprecationWarning;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /** 
  * Servlet Context.
@@ -181,7 +181,7 @@ public class ServletContextHandler extends ContextHandler
     
     /* ------------------------------------------------------------ */
     /** Add EventListener
-     * Adds an EventListener to the list. @see org.eclipse.jetty.server.handler.ContextHandler#addEventListener().
+     * Adds an EventListener to the list. @see ContextHandler#addEventListener().
      * Also adds any listeners that are session related to the SessionHandler.
      * @param listener the listener to add
      */
@@ -289,7 +289,7 @@ public class ServletContextHandler extends ContextHandler
     
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.server.handler.ContextHandler#doStop()
+     * @see ContextHandler#doStop()
      */
     @Override
     protected void doStop() throws Exception
@@ -345,7 +345,7 @@ public class ServletContextHandler extends ContextHandler
     /**
      * Finish constructing handlers and link them together.
      *
-     * @see org.eclipse.jetty.server.handler.ContextHandler#startContext()
+     * @see ContextHandler#startContext()
      */
     @Override
     protected void startContext() throws Exception
@@ -737,13 +737,13 @@ public class ServletContextHandler extends ContextHandler
     /* ------------------------------------------------------------ */
     /**
      * @return The decorator list used to resource inject new Filters, Servlets and EventListeners
-     * @deprecated use the {@link DecoratedObjectFactory} from getAttribute("org.eclipse.jetty.util.DecoratedObjectFactory") or {@link #getObjectFactory()} instead
+     * @deprecated use the {@link DecoratedObjectFactory} from getAttribute("DecoratedObjectFactory") or {@link #getObjectFactory()} instead
      */
     @Deprecated
     public List<Decorator> getDecorators()
     {
         List<Decorator> ret = new ArrayList<ServletContextHandler.Decorator>();
-        for (org.eclipse.jetty.util.Decorator decorator : _objFactory)
+        for (org.eclipse.betty.util.Decorator decorator : _objFactory)
         {
             ret.add(new LegacyDecorator(decorator));
         }
@@ -753,7 +753,7 @@ public class ServletContextHandler extends ContextHandler
     /* ------------------------------------------------------------ */
     /**
      * @param decorators The list of {@link Decorator}s
-     * @deprecated use the {@link DecoratedObjectFactory} from getAttribute("org.eclipse.jetty.util.DecoratedObjectFactory") or {@link #getObjectFactory()} instead
+     * @deprecated use the {@link DecoratedObjectFactory} from getAttribute("DecoratedObjectFactory") or {@link #getObjectFactory()} instead
      */
     @Deprecated
     public void setDecorators(List<Decorator> decorators)
@@ -764,7 +764,7 @@ public class ServletContextHandler extends ContextHandler
     /* ------------------------------------------------------------ */
     /**
      * @param decorator The decorator to add
-     * @deprecated use the {@link DecoratedObjectFactory} from getAttribute("org.eclipse.jetty.util.DecoratedObjectFactory") or {@link #getObjectFactory()} instead
+     * @deprecated use the {@link DecoratedObjectFactory} from getAttribute("DecoratedObjectFactory") or {@link #getObjectFactory()} instead
      */
     @Deprecated
     public void addDecorator(Decorator decorator)
@@ -1537,10 +1537,10 @@ public class ServletContextHandler extends ContextHandler
      * Legacy Interface to decorate loaded classes.
      * <p>
      * Left for backwards compatibility with Weld / CDI
-     * @deprecated use new {@link org.eclipse.jetty.util.Decorator} 
+     * @deprecated use new {@link org.eclipse.betty.util.Decorator}
      */
     @Deprecated
-    public interface Decorator extends org.eclipse.jetty.util.Decorator
+    public interface Decorator extends org.eclipse.betty.util.Decorator
     {
     }
     
@@ -1549,9 +1549,9 @@ public class ServletContextHandler extends ContextHandler
      */
     private static class LegacyDecorator implements Decorator
     {
-        private org.eclipse.jetty.util.Decorator decorator;
+        private org.eclipse.betty.util.Decorator decorator;
         
-        public LegacyDecorator(org.eclipse.jetty.util.Decorator decorator)
+        public LegacyDecorator(org.eclipse.betty.util.Decorator decorator)
         {
             this.decorator = decorator;
         }

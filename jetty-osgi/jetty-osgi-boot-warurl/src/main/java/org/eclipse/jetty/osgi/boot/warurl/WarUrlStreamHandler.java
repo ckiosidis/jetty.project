@@ -27,8 +27,8 @@ import java.util.jar.Manifest;
 
 import org.eclipse.jetty.osgi.boot.warurl.internal.WarBundleManifestGenerator;
 import org.eclipse.jetty.osgi.boot.warurl.internal.WarURLConnection;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.resource.Resource;
 import org.osgi.service.url.AbstractURLStreamHandlerService;
 
 /**

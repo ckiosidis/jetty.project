@@ -19,10 +19,8 @@
 package org.eclipse.jetty.util;
 
 import static org.hamcrest.Matchers.lessThan;
-import static org.junit.Assert.*;
 
-import java.util.Arrays;
-
+import org.eclipse.betty.util.TopologicalSort;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

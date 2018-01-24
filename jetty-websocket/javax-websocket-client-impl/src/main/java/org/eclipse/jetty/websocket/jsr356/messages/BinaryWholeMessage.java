@@ -24,7 +24,7 @@ import javax.websocket.Decoder.Binary;
 import javax.websocket.MessageHandler;
 import javax.websocket.MessageHandler.Whole;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.eclipse.jetty.websocket.api.WebSocketException;
 import org.eclipse.jetty.websocket.common.events.EventDriver;
 import org.eclipse.jetty.websocket.common.message.SimpleBinaryMessage;

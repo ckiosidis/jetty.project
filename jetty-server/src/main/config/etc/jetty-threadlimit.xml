@@ -5,10 +5,10 @@
 <!-- Mixin the Thread Limit Handler to the entire server             -->
 <!-- =============================================================== -->
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
   <Call name="insertHandler">
     <Arg>
-      <New id="ThreadLimitHandler" class="org.eclipse.jetty.server.handler.ThreadLimitHandler">
+      <New id="ThreadLimitHandler" class="org.eclipse.betty.server.handler.ThreadLimitHandler">
         <Arg name="forwardedHeader"><Property name="jetty.threadlimit.forwardedHeader"/></Arg> 
         <Set name="enabled"><Property name="jetty.threadlimit.enabled" default="true"/></Set> 
         <Set name="threadLimit"><Property name="jetty.threadlimit.threadLimit" default="10"/></Set> 

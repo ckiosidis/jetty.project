@@ -23,8 +23,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.annotation.Name;
 
 
 /* ------------------------------------------------------------------------------- */

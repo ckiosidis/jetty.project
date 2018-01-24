@@ -4,14 +4,14 @@
 <!-- =============================================================== -->
 <!-- Configure the Jetty Request Log                                 -->
 <!-- =============================================================== -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
   <!-- =========================================================== -->
   <!-- Configure Request Log for Server                            -->
   <!-- (Use RequestLogHandler for a context specific RequestLog    -->
   <!-- =========================================================== -->
   <Set name="RequestLog">
-    <New id="RequestLog" class="org.eclipse.jetty.server.AsyncNCSARequestLog">
+    <New id="RequestLog" class="org.eclipse.betty.server.AsyncNCSARequestLog">
       <Set name="filename"><Property name="jetty.base" default="." />/<Property>
           <Name>jetty.requestlog.filePath</Name>
           <Deprecated>requestlog.filename</Deprecated>

@@ -28,15 +28,15 @@ import java.util.Queue;
 
 import org.eclipse.jetty.http2.frames.Frame;
 import org.eclipse.jetty.http2.frames.WindowUpdateFrame;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EofException;
-import org.eclipse.jetty.io.WriteFlusher;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.IteratingCallback;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.component.Dumpable;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EofException;
+import org.eclipse.betty.io.WriteFlusher;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.IteratingCallback;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.Dumpable;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class HTTP2Flusher extends IteratingCallback implements Dumpable
 {

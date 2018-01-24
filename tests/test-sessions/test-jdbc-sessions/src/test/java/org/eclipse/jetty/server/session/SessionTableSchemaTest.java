@@ -27,7 +27,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.session.DatabaseAdaptor;
+import org.eclipse.betty.server.session.JDBCSessionDataStore;
+import org.eclipse.betty.server.session.SessionContext;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -53,7 +56,7 @@ public class SessionTableSchemaTest
         {
 
             /** 
-             * @see org.eclipse.jetty.server.session.DatabaseAdaptor#isEmptyStringNull()
+             * @see DatabaseAdaptor#isEmptyStringNull()
              */
             @Override
             public boolean isEmptyStringNull()

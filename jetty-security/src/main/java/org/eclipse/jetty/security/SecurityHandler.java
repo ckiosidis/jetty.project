@@ -31,16 +31,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.security.authentication.DeferredAuthentication;
-import org.eclipse.jetty.server.Authentication;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Response;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ContextHandler.Context;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.Authentication;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Response;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandler.Context;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Abstract SecurityHandler.
@@ -425,7 +425,7 @@ public abstract class SecurityHandler extends HandlerWrapper implements Authenti
 
     /* ------------------------------------------------------------ */
     /*
-     * @see org.eclipse.jetty.server.Handler#handle(java.lang.String,
+     * @see Handler#handle(java.lang.String,
      *      javax.servlet.http.HttpServletRequest,
      *      javax.servlet.http.HttpServletResponse, int)
      */

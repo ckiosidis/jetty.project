@@ -32,13 +32,13 @@ import java.util.stream.Collectors;
 
 import org.eclipse.jetty.client.api.Connection;
 import org.eclipse.jetty.client.api.Destination;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.thread.Sweeper;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.thread.Sweeper;
 
 @ManagedObject
 public class DuplexConnectionPool extends AbstractConnectionPool implements Sweeper.Sweepable

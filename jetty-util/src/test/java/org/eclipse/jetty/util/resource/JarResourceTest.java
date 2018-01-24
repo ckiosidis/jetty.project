@@ -30,8 +30,11 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.zip.ZipFile;
 
+import org.eclipse.betty.util.resource.JarFileResource;
+import org.eclipse.betty.util.resource.JarResource;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.junit.Test;
 
 public class JarResourceTest

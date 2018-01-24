@@ -20,7 +20,7 @@
 package org.eclipse.jetty.nosql.mongodb;
 
 import org.eclipse.jetty.server.session.AbstractModifyMaxInactiveIntervalTest;
-import org.eclipse.jetty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 

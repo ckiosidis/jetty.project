@@ -25,6 +25,9 @@ import static org.junit.Assert.assertThat;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.eclipse.betty.util.component.Container;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.LifeCycle;
 import org.hamcrest.Matcher;
 import org.junit.Ignore;
 import org.junit.Test;

@@ -24,10 +24,10 @@ import java.sql.Statement;
 
 import javax.sql.DataSource;
 
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.component.Destroyable;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.Destroyable;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Close a DataSource.

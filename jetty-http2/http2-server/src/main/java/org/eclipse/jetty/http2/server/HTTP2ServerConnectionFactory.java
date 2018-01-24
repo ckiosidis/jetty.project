@@ -34,15 +34,15 @@ import org.eclipse.jetty.http2.frames.HeadersFrame;
 import org.eclipse.jetty.http2.frames.PushPromiseFrame;
 import org.eclipse.jetty.http2.frames.ResetFrame;
 import org.eclipse.jetty.http2.frames.SettingsFrame;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.EofException;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.NegotiatingServerConnection.CipherDiscriminator;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.annotation.Name;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.EofException;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.NegotiatingServerConnection.CipherDiscriminator;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.annotation.Name;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class HTTP2ServerConnectionFactory extends AbstractHTTP2ServerConnectionFactory implements CipherDiscriminator
 {

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure id="sslConnector" class="org.eclipse.jetty.server.ServerConnector">
+<Configure id="sslConnector" class="org.eclipse.betty.server.ServerConnector">
   <Call name="addFirstConnectionFactory">
     <Arg>
-      <New class="org.eclipse.jetty.server.ProxyConnectionFactory"/>
+      <New class="org.eclipse.betty.server.ProxyConnectionFactory"/>
     </Arg>
   </Call>
 </Configure>

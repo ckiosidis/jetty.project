@@ -36,10 +36,10 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.util.StringUtils;
-import org.eclipse.jetty.util.PathWatcher;
-import org.eclipse.jetty.util.PathWatcher.PathWatchEvent;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.resource.ResourceCollection;
+import org.eclipse.betty.util.PathWatcher;
+import org.eclipse.betty.util.PathWatcher.PathWatchEvent;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.resource.ResourceCollection;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 

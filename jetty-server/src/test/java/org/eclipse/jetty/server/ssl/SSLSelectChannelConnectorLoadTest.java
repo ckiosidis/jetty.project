@@ -44,11 +44,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

@@ -21,7 +21,8 @@ package org.eclipse.jetty.io;
 
 import java.util.concurrent.TimeoutException;
 
-import org.eclipse.jetty.util.thread.TimerScheduler;
+import org.eclipse.betty.io.IdleTimeout;
+import org.eclipse.betty.util.thread.TimerScheduler;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

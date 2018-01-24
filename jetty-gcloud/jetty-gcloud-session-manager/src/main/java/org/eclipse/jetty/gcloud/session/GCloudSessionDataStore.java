@@ -26,17 +26,19 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.eclipse.jetty.server.session.AbstractSessionDataStore;
-import org.eclipse.jetty.server.session.SessionContext;
-import org.eclipse.jetty.server.session.SessionData;
-import org.eclipse.jetty.server.session.UnreadableSessionDataException;
-import org.eclipse.jetty.server.session.UnwriteableSessionDataException;
-import org.eclipse.jetty.util.ClassLoadingObjectInputStream;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.session.AbstractSessionDataStore;
+import org.eclipse.betty.server.session.SessionContext;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.session.SessionDataStore;
+import org.eclipse.betty.server.session.UnreadableSessionDataException;
+import org.eclipse.betty.server.session.UnwriteableSessionDataException;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.ClassLoadingObjectInputStream;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 import com.google.cloud.datastore.Blob;
 import com.google.cloud.datastore.BlobValue;
@@ -438,7 +440,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doStart()
+     * @see AbstractSessionDataStore#doStart()
      */
     @Override
     protected void doStart() throws Exception
@@ -467,7 +469,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStop()
+     * @see AbstractLifeCycle#doStop()
      */
     @Override
     protected void doStop() throws Exception
@@ -503,7 +505,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
     
     
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#load(java.lang.String)
+     * @see SessionDataStore#load(java.lang.String)
      */
     @Override
     public SessionData load(String id) throws Exception
@@ -524,7 +526,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#delete(java.lang.String)
+     * @see SessionDataStore#delete(java.lang.String)
      */
     @Override
     public boolean delete(String id) throws Exception
@@ -535,7 +537,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#getExpired(Set)
+     * @see SessionDataStore#getExpired(Set)
      */
     @Override
     public Set<String> doGetExpired(Set<String> candidates)
@@ -696,7 +698,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
 
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#exists(java.lang.String)
+     * @see SessionDataStore#exists(java.lang.String)
      */
     @Override
     public boolean exists(String id) throws Exception
@@ -769,7 +771,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doStore(java.lang.String, org.eclipse.jetty.server.session.SessionData, long)
+     * @see AbstractSessionDataStore#doStore(java.lang.String, SessionData, long)
      */
     @Override
     public void doStore(String id, SessionData data, long lastSaveTime) throws Exception
@@ -980,7 +982,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#isPassivating()
+     * @see SessionDataStore#isPassivating()
      */
     @ManagedAttribute(value="does gcloud serialize session data", readonly=true)
     @Override
@@ -991,7 +993,7 @@ public class GCloudSessionDataStore extends AbstractSessionDataStore
 
 
     /** 
-     * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#toString()
+     * @see AbstractSessionDataStore#toString()
      */
     @Override
     public String toString()

@@ -44,7 +44,7 @@ import org.eclipse.jetty.jndi.BindingEnumeration;
 import org.eclipse.jetty.jndi.NameEnumeration;
 import org.eclipse.jetty.jndi.NamingContext;
 import org.eclipse.jetty.jndi.NamingUtil;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  *

@@ -44,8 +44,8 @@ import javax.naming.Reference;
 import javax.naming.Referenceable;
 import javax.naming.spi.NamingManager;
 
-import org.eclipse.jetty.util.component.Dumpable;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.component.Dumpable;
+import org.eclipse.betty.util.log.Logger;
 
 /** 
  * NamingContext

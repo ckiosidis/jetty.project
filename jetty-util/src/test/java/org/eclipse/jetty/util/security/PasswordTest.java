@@ -20,6 +20,7 @@ package org.eclipse.jetty.util.security;
 
 import static org.junit.Assert.assertEquals;
 
+import org.eclipse.betty.util.security.Password;
 import org.junit.Test;
 
 public class PasswordTest
@@ -30,7 +31,7 @@ public class PasswordTest
         // check any changes do not break already encoded strings
         String password = "secret password !# ";
         String obfuscate = "OBF:1iaa1g3l1fb51i351sw01ym91hdc1yt41v1p1ym71v2p1yti1hhq1ym51svy1hyl1f7h1fzx1i5o";
-        assertEquals(password,Password.deobfuscate(obfuscate));
+        assertEquals(password, Password.deobfuscate(obfuscate));
     }
 
     @Test

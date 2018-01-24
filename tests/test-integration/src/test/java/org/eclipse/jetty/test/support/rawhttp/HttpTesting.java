@@ -34,9 +34,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.StringUtil;
 
 /**
  * Testing utility for performing RAW HTTP request/response.

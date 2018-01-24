@@ -19,7 +19,7 @@
 package org.eclipse.jetty.server.session.remote;
 
 import org.eclipse.jetty.server.session.AbstractClusteredLastAccessTimeTest;
-import org.eclipse.jetty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.session.infinispan.InfinispanSessionDataStoreFactory;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

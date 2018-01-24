@@ -37,8 +37,8 @@ import org.eclipse.jetty.client.Synchronizable;
 import org.eclipse.jetty.client.api.ContentProvider;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
 
 /**
  * A {@link ContentProvider} that allows to add content after {@link Request#send(Response.CompleteListener)}

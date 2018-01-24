@@ -18,13 +18,12 @@
 
 package org.eclipse.jetty.webapp;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.xml.XmlConfiguration;
 
 

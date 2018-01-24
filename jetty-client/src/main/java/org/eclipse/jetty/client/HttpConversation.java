@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
 import org.eclipse.jetty.client.api.Response;
-import org.eclipse.jetty.util.AttributesMap;
+import org.eclipse.betty.util.AttributesMap;
 
 public class HttpConversation extends AttributesMap
 {

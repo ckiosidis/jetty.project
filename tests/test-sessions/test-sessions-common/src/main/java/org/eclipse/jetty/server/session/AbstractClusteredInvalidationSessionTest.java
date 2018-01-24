@@ -30,10 +30,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.DefaultSessionCacheFactory;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.Test;
 
 /**
@@ -58,7 +62,7 @@ public abstract class AbstractClusteredInvalidationSessionTest extends AbstractT
         int scavengeInterval = 1;
         DefaultSessionCacheFactory cacheFactory = new DefaultSessionCacheFactory();
         cacheFactory.setEvictionPolicy(SessionCache.EVICT_ON_SESSION_EXIT);
-        SessionDataStoreFactory storeFactory = createSessionDataStoreFactory();   
+        SessionDataStoreFactory storeFactory = createSessionDataStoreFactory();
         ((AbstractSessionDataStoreFactory)storeFactory).setGracePeriodSec(scavengeInterval);
         
         TestServer server1 = new TestServer(0, maxInactiveInterval, scavengeInterval, cacheFactory, storeFactory);

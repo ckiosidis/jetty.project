@@ -29,13 +29,13 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.util.Arrays;
 
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

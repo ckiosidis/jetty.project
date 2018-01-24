@@ -21,6 +21,7 @@ package org.eclipse.jetty.util.thread;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.betty.util.thread.Locker;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

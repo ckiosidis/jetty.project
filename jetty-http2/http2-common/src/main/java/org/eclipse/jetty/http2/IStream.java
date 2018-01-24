@@ -22,7 +22,7 @@ import java.io.Closeable;
 
 import org.eclipse.jetty.http2.api.Stream;
 import org.eclipse.jetty.http2.frames.Frame;
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.util.Callback;
 
 /**
  * <p>The SPI interface for implementing a HTTP/2 stream.</p>

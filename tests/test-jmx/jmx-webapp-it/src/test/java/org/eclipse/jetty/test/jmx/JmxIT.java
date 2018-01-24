@@ -32,12 +32,12 @@ import javax.management.remote.JMXConnector;
 import javax.management.remote.JMXConnectorFactory;
 import javax.management.remote.JMXServiceURL;
 
-import org.eclipse.jetty.jmx.ConnectorServer;
-import org.eclipse.jetty.jmx.MBeanContainer;
-import org.eclipse.jetty.server.NetworkConnector;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.jmx.ConnectorServer;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.server.NetworkConnector;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.eclipse.jetty.webapp.Configuration;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.junit.After;

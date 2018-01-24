@@ -27,12 +27,16 @@ import java.io.FileWriter;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.DefaultSessionCacheFactory;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
-import org.eclipse.jetty.http.HttpMethod;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.Test;
 
 /**

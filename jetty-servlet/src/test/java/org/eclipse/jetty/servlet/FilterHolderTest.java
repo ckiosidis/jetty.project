@@ -31,7 +31,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.junit.Test;
 
 /**

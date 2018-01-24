@@ -28,8 +28,7 @@ import org.eclipse.jetty.client.AsyncContentProvider;
 import org.eclipse.jetty.client.api.ContentProvider;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.thread.Invocable.InvocationType;
+import org.eclipse.betty.util.Callback;
 
 /**
  * A {@link ContentProvider} that provides content asynchronously through an {@link OutputStream}

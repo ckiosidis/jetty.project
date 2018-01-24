@@ -28,23 +28,25 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.betty.server.ConnectionFactory;
+import org.eclipse.betty.server.Request;
 import org.eclipse.jetty.client.api.Connection;
 import org.eclipse.jetty.client.api.ContentResponse;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.io.AbstractConnection;
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.AbstractConnectionFactory;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.io.AbstractConnection;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.AbstractConnectionFactory;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -89,7 +91,7 @@ public class HttpClientCustomProxyTest
         prepare(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 baseRequest.setHandled(true);
                 if (serverHost.equals(request.getServerName()))
@@ -135,7 +137,7 @@ public class HttpClientCustomProxyTest
         }
 
         @Override
-        public org.eclipse.jetty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
+        public org.eclipse.betty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
         {
             HttpDestination destination = (HttpDestination)context.get(HttpClientTransport.HTTP_DESTINATION_CONTEXT_KEY);
             Executor executor = destination.getHttpClient().getExecutor();
@@ -200,16 +202,16 @@ public class HttpClientCustomProxyTest
 
     private class CAFEBABEServerConnectionFactory extends AbstractConnectionFactory
     {
-        private final org.eclipse.jetty.server.ConnectionFactory connectionFactory;
+        private final ConnectionFactory connectionFactory;
 
-        private CAFEBABEServerConnectionFactory(org.eclipse.jetty.server.ConnectionFactory connectionFactory)
+        private CAFEBABEServerConnectionFactory(ConnectionFactory connectionFactory)
         {
             super("cafebabe");
             this.connectionFactory = connectionFactory;
         }
 
         @Override
-        public org.eclipse.jetty.io.Connection newConnection(Connector connector, EndPoint endPoint)
+        public org.eclipse.betty.io.Connection newConnection(Connector connector, EndPoint endPoint)
         {
             return new CAFEBABEServerConnection(connector, endPoint, connectionFactory);
         }
@@ -217,9 +219,9 @@ public class HttpClientCustomProxyTest
 
     private class CAFEBABEServerConnection extends AbstractConnection implements Callback
     {
-        private final org.eclipse.jetty.server.ConnectionFactory connectionFactory;
+        private final ConnectionFactory connectionFactory;
 
-        public CAFEBABEServerConnection(Connector connector, EndPoint endPoint, org.eclipse.jetty.server.ConnectionFactory connectionFactory)
+        public CAFEBABEServerConnection(Connector connector, EndPoint endPoint, ConnectionFactory connectionFactory)
         {
             super(endPoint, connector.getExecutor());
             this.connectionFactory = connectionFactory;

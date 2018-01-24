@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.util.annotation.Name;
 import org.junit.Ignore;
 
 @Ignore

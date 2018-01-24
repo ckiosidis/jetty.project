@@ -23,6 +23,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.net.InetAddress;
 
+import org.eclipse.betty.util.IncludeExcludeSet;
+import org.eclipse.betty.util.InetAddressSet;
 import org.junit.Test;
 
 public class IncludeExcludeSetTest
@@ -30,7 +32,7 @@ public class IncludeExcludeSetTest
     @Test
     public void testWithInetAddressSet() throws Exception
     {
-        IncludeExcludeSet<String,InetAddress> set = new IncludeExcludeSet<>(InetAddressSet.class);   
+        IncludeExcludeSet<String,InetAddress> set = new IncludeExcludeSet<>(InetAddressSet.class);
         assertTrue(set.test(InetAddress.getByName("192.168.0.1")));
      
         set.include("10.10.0.0/16");

@@ -21,17 +21,17 @@ package org.eclipse.jetty.http2.client;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
 import org.eclipse.jetty.http2.api.Session;
 import org.eclipse.jetty.http2.api.Stream;
 import org.eclipse.jetty.http2.api.server.ServerSessionListener;
 import org.eclipse.jetty.http2.frames.HeadersFrame;
 import org.eclipse.jetty.http2.frames.PriorityFrame;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.FuturePromise;
-import org.eclipse.jetty.util.Promise;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.FuturePromise;
+import org.eclipse.betty.util.Promise;
 import org.junit.Assert;
 import org.junit.Test;
 

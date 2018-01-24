@@ -28,12 +28,12 @@ import org.eclipse.jetty.deploy.DeploymentManager;
 import org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper;
 import org.eclipse.jetty.osgi.boot.utils.BundleFileLocatorHelperFactory;
 import org.eclipse.jetty.osgi.boot.utils.OSGiClassLoader;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.JarResource;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.JarResource;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.xml.XmlConfiguration;
 import org.osgi.framework.Bundle;
 

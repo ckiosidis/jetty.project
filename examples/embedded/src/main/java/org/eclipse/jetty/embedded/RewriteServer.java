@@ -21,9 +21,9 @@ package org.eclipse.jetty.embedded;
 import org.eclipse.jetty.rewrite.RewriteCustomizer;
 import org.eclipse.jetty.rewrite.handler.CompactPathRule;
 import org.eclipse.jetty.rewrite.handler.RewriteRegexRule;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
 public class RewriteServer

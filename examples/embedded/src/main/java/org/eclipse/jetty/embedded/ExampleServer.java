@@ -18,12 +18,12 @@
 
 package org.eclipse.jetty.embedded;
 
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.handler.DefaultHandler;
-import org.eclipse.jetty.server.handler.HandlerCollection;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.DefaultHandler;
+import org.eclipse.betty.server.handler.HandlerCollection;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
 public class ExampleServer

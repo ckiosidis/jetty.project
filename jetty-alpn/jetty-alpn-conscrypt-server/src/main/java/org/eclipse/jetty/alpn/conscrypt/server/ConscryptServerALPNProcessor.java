@@ -27,12 +27,12 @@ import javax.net.ssl.SSLEngine;
 
 import org.conscrypt.OpenSSLProvider;
 import org.eclipse.jetty.alpn.server.ALPNServerConnection;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.ssl.ALPNProcessor;
-import org.eclipse.jetty.io.ssl.SslConnection.DecryptedEndPoint;
-import org.eclipse.jetty.io.ssl.SslHandshakeListener;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.ssl.ALPNProcessor;
+import org.eclipse.betty.io.ssl.SslConnection.DecryptedEndPoint;
+import org.eclipse.betty.io.ssl.SslHandshakeListener;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class ConscryptServerALPNProcessor implements ALPNProcessor.Server
 {

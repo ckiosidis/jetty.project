@@ -25,6 +25,7 @@ import static org.junit.Assert.assertThat;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import org.eclipse.betty.util.TypeUtil;
 import org.eclipse.jetty.toolchain.test.JDK;
 import org.junit.Assert;
 import org.junit.Assume;
@@ -35,7 +36,7 @@ public class TypeUtilTest
     @Test
     public void convertHexDigitTest()
     {   
-        Assert.assertEquals((byte)0,TypeUtil.convertHexDigit((byte)'0'));
+        Assert.assertEquals((byte)0, TypeUtil.convertHexDigit((byte)'0'));
         Assert.assertEquals((byte)9,TypeUtil.convertHexDigit((byte)'9'));
         Assert.assertEquals((byte)10,TypeUtil.convertHexDigit((byte)'a'));
         Assert.assertEquals((byte)10,TypeUtil.convertHexDigit((byte)'A'));

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
 
   <!-- ===================================================================== -->
   <!-- Configure a SessionIdManager                                          -->
   <!-- ===================================================================== -->
   <Set name="sessionIdManager">
-    <New id="idMgr" class="org.eclipse.jetty.server.session.DefaultSessionIdManager">
+    <New id="idMgr" class="org.eclipse.betty.server.session.DefaultSessionIdManager">
       <Arg>
         <Ref refid="Server"/>
       </Arg>
@@ -29,7 +29,7 @@
       <!-- Configure a session housekeeper to help with scavenging               -->
       <!-- ===================================================================== -->
       <Set name="sessionHouseKeeper"> 
-       <New class="org.eclipse.jetty.server.session.HouseKeeper">
+       <New class="org.eclipse.betty.server.session.HouseKeeper">
            <Set name="intervalSec"><Property name="jetty.sessionScavengeInterval.seconds" default="600"/></Set>
        </New>
       </Set>

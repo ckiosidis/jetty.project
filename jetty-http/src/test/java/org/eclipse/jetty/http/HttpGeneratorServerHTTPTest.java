@@ -31,7 +31,13 @@ import java.util.Collection;
 import java.util.EnumSet;
 import java.util.List;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpGenerator;
+import org.eclipse.betty.http.HttpParser;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

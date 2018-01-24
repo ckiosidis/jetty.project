@@ -28,9 +28,13 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.concurrent.CountDownLatch;
 
+import org.eclipse.betty.server.AbstractConnector;
+import org.eclipse.betty.server.LowResourceMonitor;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
-import org.eclipse.jetty.util.thread.TimerScheduler;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.TimerScheduler;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

@@ -30,8 +30,8 @@ import java.io.StringWriter;
 import java.net.HttpURLConnection;
 import java.net.URI;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.IO;
 import org.eclipse.jetty.toolchain.test.JAR;

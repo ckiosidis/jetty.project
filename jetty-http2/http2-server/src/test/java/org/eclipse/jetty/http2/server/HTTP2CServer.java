@@ -19,22 +19,19 @@
 package org.eclipse.jetty.http2.server;
 
 import java.io.IOException;
-import java.net.Socket;
 import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.SocketCustomizationListener;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 
 public class HTTP2CServer extends Server
 {

@@ -32,10 +32,10 @@ import javax.servlet.http.HttpSessionEvent;
 import org.eclipse.jetty.security.AbstractUserAuthentication;
 import org.eclipse.jetty.security.LoginService;
 import org.eclipse.jetty.security.SecurityHandler;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.server.session.Session;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.server.session.Session;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class SessionAuthentication extends AbstractUserAuthentication implements Serializable, HttpSessionActivationListener, HttpSessionBindingListener
 {

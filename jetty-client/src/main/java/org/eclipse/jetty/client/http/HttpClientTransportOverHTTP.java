@@ -26,9 +26,9 @@ import org.eclipse.jetty.client.DuplexConnectionPool;
 import org.eclipse.jetty.client.HttpDestination;
 import org.eclipse.jetty.client.Origin;
 import org.eclipse.jetty.client.api.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.annotation.ManagedObject;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.annotation.ManagedObject;
 
 @ManagedObject("The HTTP/1.1 client transport")
 public class HttpClientTransportOverHTTP extends AbstractConnectorHttpClientTransport
@@ -51,7 +51,7 @@ public class HttpClientTransportOverHTTP extends AbstractConnectorHttpClientTran
     }
 
     @Override
-    public org.eclipse.jetty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
+    public org.eclipse.betty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
     {
         HttpDestination destination = (HttpDestination)context.get(HTTP_DESTINATION_CONTEXT_KEY);
         @SuppressWarnings("unchecked")

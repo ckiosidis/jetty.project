@@ -34,8 +34,8 @@ import java.util.jar.JarOutputStream;
 import java.util.jar.Manifest;
 import java.util.zip.ZipEntry;
 
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * Facade for a URLConnection that will read a jar and substitute its

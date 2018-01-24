@@ -21,9 +21,10 @@ package org.eclipse.jetty.io;
 import java.nio.ByteBuffer;
 import java.util.concurrent.ConcurrentMap;
 
-import org.eclipse.jetty.io.ByteBufferPool.Bucket;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.io.ByteBufferPool.Bucket;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.StringUtil;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.containsString;

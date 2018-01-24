@@ -20,8 +20,8 @@ package org.eclipse.jetty.deploy;
 
 import java.io.IOException;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.component.LifeCycle;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.component.LifeCycle;
 
 /**
  * Object responsible for providing {@link App}s to the {@link DeploymentManager}

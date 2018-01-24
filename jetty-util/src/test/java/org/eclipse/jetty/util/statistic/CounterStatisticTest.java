@@ -26,6 +26,7 @@ import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
+import org.eclipse.betty.util.statistic.CounterStatistic;
 import org.junit.Test;
 
 

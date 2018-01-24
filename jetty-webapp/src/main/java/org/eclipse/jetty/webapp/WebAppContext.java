@@ -48,34 +48,34 @@ import org.eclipse.jetty.security.ConstraintAware;
 import org.eclipse.jetty.security.ConstraintMapping;
 import org.eclipse.jetty.security.ConstraintSecurityHandler;
 import org.eclipse.jetty.security.SecurityHandler;
-import org.eclipse.jetty.server.ClassLoaderDump;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HandlerContainer;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ErrorHandler;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.server.ClassLoaderDump;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HandlerContainer;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ErrorHandler;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.eclipse.jetty.servlet.ErrorPageErrorHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHandler;
-import org.eclipse.jetty.util.AttributesMap;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.MultiException;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.DumpableCollection;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.resource.ResourceCollection;
+import org.eclipse.betty.util.AttributesMap;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.MultiException;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.DumpableCollection;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.resource.ResourceCollection;
 
 /** 
  * Web Application Context Handler.
  * <p>
  * The WebAppContext handler is an extension of ContextHandler that
  * coordinates the construction and configuration of nested handlers:
- * {@link org.eclipse.jetty.security.ConstraintSecurityHandler}, {@link org.eclipse.jetty.server.session.SessionHandler}
+ * {@link org.eclipse.jetty.security.ConstraintSecurityHandler}, {@link SessionHandler}
  * and {@link org.eclipse.jetty.servlet.ServletHandler}.
  * The handlers are configured by pluggable configuration classes, with
  * the default being  {@link org.eclipse.jetty.webapp.WebXmlConfiguration} and
@@ -138,7 +138,7 @@ public class WebAppContext extends ServletContextHandler implements WebAppClassL
     // TODO should be white list rather than black list
     public final static String[] __dftServerClasses =
     {
-        "-org.eclipse.jetty.server.session.SessionData", //don't hide SessionData for de/serialization purposes
+        "-SessionData", //don't hide SessionData for de/serialization purposes
         "-org.eclipse.jetty.jmx.",          // don't hide jmx classes
         "-org.eclipse.jetty.util.annotation.", // don't hide jmx annotation
         "-org.eclipse.jetty.continuation.", // don't hide continuation classes

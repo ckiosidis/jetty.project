@@ -23,15 +23,15 @@ import java.nio.ByteBuffer;
 import org.eclipse.jetty.fcgi.generator.Flusher;
 import org.eclipse.jetty.fcgi.generator.Generator;
 import org.eclipse.jetty.fcgi.generator.ServerGenerator;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpHeaderValue;
-import org.eclipse.jetty.http.MetaData;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.server.HttpTransport;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpHeaderValue;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.server.HttpTransport;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class HttpTransportOverFCGI implements HttpTransport
 {
@@ -93,7 +93,7 @@ public class HttpTransportOverFCGI implements HttpTransport
     }
 
     @Override
-    public void push(org.eclipse.jetty.http.MetaData.Request request)
+    public void push(MetaData.Request request)
     {
         // LOG.debug("ignore push in {}",this);
     }

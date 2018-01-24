@@ -21,12 +21,12 @@ package org.eclipse.jetty.websocket.common.test;
 import java.nio.ByteBuffer;
 import java.util.List;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.LeakTrackingByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.LeakTrackingByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.api.extensions.Frame;
 import org.eclipse.jetty.websocket.common.Generator;

@@ -25,20 +25,17 @@ import java.net.SocketException;
 import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Map;
 
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.HttpDestination;
 import org.eclipse.jetty.client.http.HttpClientTransportOverHTTP;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.ManagedSelector;
-import org.eclipse.jetty.io.SelectorManager;
-import org.eclipse.jetty.io.ssl.SslClientConnectionFactory;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.ManagedSelector;
+import org.eclipse.betty.io.SelectorManager;
 import org.eclipse.jetty.unixsocket.UnixSocketEndPoint;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 import jnr.enxio.channels.NativeSelectorProvider;
 import jnr.unixsocket.UnixSocketAddress;

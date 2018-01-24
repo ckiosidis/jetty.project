@@ -18,7 +18,8 @@
 
 package org.eclipse.jetty.server.session;
 
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.After;
 import org.junit.Test;
 

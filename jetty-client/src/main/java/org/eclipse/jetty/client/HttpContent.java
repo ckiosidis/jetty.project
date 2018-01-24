@@ -24,10 +24,10 @@ import java.util.Collections;
 import java.util.Iterator;
 
 import org.eclipse.jetty.client.api.ContentProvider;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * {@link HttpContent} is a stateful, linear representation of the request content provided

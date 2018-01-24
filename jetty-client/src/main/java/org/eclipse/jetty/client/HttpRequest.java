@@ -50,13 +50,13 @@ import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
 import org.eclipse.jetty.client.util.FutureResponseListener;
 import org.eclipse.jetty.client.util.PathContentProvider;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpMethod;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.Fields;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.Fields;
 
 public class HttpRequest implements Request
 {

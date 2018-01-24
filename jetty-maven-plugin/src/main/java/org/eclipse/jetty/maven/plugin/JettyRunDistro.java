@@ -53,11 +53,11 @@ import org.apache.maven.project.ProjectBuildingRequest;
 import org.apache.maven.shared.artifact.DefaultArtifactCoordinate;
 import org.apache.maven.shared.artifact.resolve.ArtifactResolver;
 import org.apache.maven.shared.artifact.resolve.ArtifactResolverException;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.resource.JarResource;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.resource.JarResource;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * 

@@ -27,7 +27,12 @@ import java.util.ListIterator;
 import java.util.Locale;
 import java.util.NoSuchElementException;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpGenerator;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpHeaderValue;
+import org.eclipse.betty.util.BufferUtil;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
@@ -177,7 +182,7 @@ public class HttpFieldsTest
         BufferUtil.flipToFlush(buffer,0);
         String out = BufferUtil.toString(buffer).toLowerCase(Locale.ENGLISH);
 
-        Assert.assertThat(out,Matchers.containsString((HttpHeader.CONNECTION+": "+HttpHeaderValue.KEEP_ALIVE).toLowerCase(Locale.ENGLISH)));
+        Assert.assertThat(out,Matchers.containsString((HttpHeader.CONNECTION+": "+ HttpHeaderValue.KEEP_ALIVE).toLowerCase(Locale.ENGLISH)));
         Assert.assertThat(out,Matchers.containsString((HttpHeader.TRANSFER_ENCODING+": "+HttpHeaderValue.CHUNKED).toLowerCase(Locale.ENGLISH)));
         Assert.assertThat(out,Matchers.containsString((HttpHeader.CONTENT_ENCODING+": "+HttpHeaderValue.GZIP).toLowerCase(Locale.ENGLISH)));
     }

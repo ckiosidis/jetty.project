@@ -27,11 +27,11 @@ import org.eclipse.jetty.deploy.App;
 import org.eclipse.jetty.deploy.AppProvider;
 import org.eclipse.jetty.deploy.DeploymentManager;
 import org.eclipse.jetty.deploy.graph.Node;
-import org.eclipse.jetty.jmx.ObjectMBean;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.annotation.ManagedOperation;
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.jmx.ObjectMBean;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.annotation.ManagedOperation;
+import org.eclipse.betty.util.annotation.Name;
 
 @SuppressWarnings("unused")
 @ManagedObject("MBean Wrapper for DeploymentManager")

@@ -27,14 +27,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.eclipse.jetty.client.api.Connection;
-import org.eclipse.jetty.io.AbstractConnection;
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.AbstractConnection;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class Socks4Proxy extends ProxyConfiguration.Proxy
 {
@@ -64,7 +64,7 @@ public class Socks4Proxy extends ProxyConfiguration.Proxy
         }
 
         @Override
-        public org.eclipse.jetty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
+        public org.eclipse.betty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
         {
             HttpDestination destination = (HttpDestination)context.get(HttpClientTransport.HTTP_DESTINATION_CONTEXT_KEY);
             Executor executor = destination.getHttpClient().getExecutor();
@@ -197,7 +197,7 @@ public class Socks4Proxy extends ProxyConfiguration.Proxy
                 ClientConnectionFactory connectionFactory = this.connectionFactory;
                 if (destination.isSecure())
                     connectionFactory = client.newSslClientConnectionFactory(connectionFactory);
-                org.eclipse.jetty.io.Connection newConnection = connectionFactory.newConnection(getEndPoint(), context);
+                org.eclipse.betty.io.Connection newConnection = connectionFactory.newConnection(getEndPoint(), context);
                 getEndPoint().upgrade(newConnection);
                 if (LOG.isDebugEnabled())
                     LOG.debug("SOCKS4 tunnel established: {} over {}", this, newConnection);

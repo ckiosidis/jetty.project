@@ -22,7 +22,7 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.eclipse.jetty.websocket.api.MessageTooLargeException;
 
 public class ByteAccumulator

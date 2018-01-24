@@ -19,15 +19,12 @@
 
 package org.eclipse.jetty.security;
 
-import java.security.Principal;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.security.Credential;
 
 /**
  * TestLoginService

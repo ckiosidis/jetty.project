@@ -22,8 +22,8 @@ import java.net.InetSocketAddress;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.jetty.server.session.SessionDataMap;
-import org.eclipse.jetty.server.session.SessionDataMapFactory;
+import org.eclipse.betty.server.session.SessionDataMap;
+import org.eclipse.betty.server.session.SessionDataMapFactory;
 
 /**
  * MemcachedSessionDataMapFactory
@@ -83,7 +83,7 @@ public class MemcachedSessionDataMapFactory implements SessionDataMapFactory
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataMapFactory#getSessionDataMap()
+     * @see SessionDataMapFactory#getSessionDataMap()
      */
     @Override
     public SessionDataMap getSessionDataMap()

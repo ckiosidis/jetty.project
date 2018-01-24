@@ -25,18 +25,18 @@ import java.util.Queue;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.eclipse.jetty.http2.parser.Parser;
-import org.eclipse.jetty.io.AbstractConnection;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.WriteFlusher;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.thread.ExecutionStrategy;
-import org.eclipse.jetty.util.thread.ReservedThreadExecutor;
-import org.eclipse.jetty.util.thread.strategy.EatWhatYouKill;
+import org.eclipse.betty.io.AbstractConnection;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.WriteFlusher;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.thread.ExecutionStrategy;
+import org.eclipse.betty.util.thread.ReservedThreadExecutor;
+import org.eclipse.betty.util.thread.strategy.EatWhatYouKill;
 
 public class HTTP2Connection extends AbstractConnection implements WriteFlusher.Listener
 {

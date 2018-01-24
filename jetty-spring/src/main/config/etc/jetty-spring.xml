@@ -9,11 +9,11 @@
 
 <beans>
 
-  <bean id="contexts" class="org.eclipse.jetty.server.handler.ContextHandlerCollection"/>
+  <bean id="contexts" class="org.eclipse.betty.server.handler.ContextHandlerCollection"/>
 
-  <bean id="server" name="Main" class="org.eclipse.jetty.server.Server" init-method="start" destroy-method="stop">
+  <bean id="server" name="Main" class="org.eclipse.betty.server.Server" init-method="start" destroy-method="stop">
     <constructor-arg>
-      <bean id="threadPool" class="org.eclipse.jetty.util.thread.QueuedThreadPool">
+      <bean id="threadPool" class="org.eclipse.betty.util.thread.QueuedThreadPool">
         <property name="minThreads" value="10"/>
         <property name="maxThreads" value="50"/>
       </bean>
@@ -21,7 +21,7 @@
 
     <property name="connectors">
       <list>
-        <bean id="connector" class="org.eclipse.jetty.server.ServerConnector">
+        <bean id="connector" class="org.eclipse.betty.server.ServerConnector">
           <constructor-arg ref="server"/>
           <property name="port" value="8080"/>
         </bean>
@@ -29,11 +29,11 @@
     </property>
 
     <property name="handler">
-      <bean id="handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+      <bean id="handlers" class="org.eclipse.betty.server.handler.HandlerCollection">
         <property name="handlers">
           <list>
             <ref bean="contexts"/>
-            <bean id="defaultHandler" class="org.eclipse.jetty.server.handler.DefaultHandler"/>
+            <bean id="defaultHandler" class="org.eclipse.betty.server.handler.DefaultHandler"/>
           </list>
         </property>
       </bean>

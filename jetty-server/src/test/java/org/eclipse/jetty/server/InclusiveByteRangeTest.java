@@ -25,6 +25,7 @@ import static org.junit.Assert.assertNull;
 import java.util.List;
 import java.util.Vector;
 
+import org.eclipse.betty.server.InclusiveByteRange;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;

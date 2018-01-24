@@ -20,6 +20,8 @@ package org.eclipse.jetty.util.log.jmx;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+
+import org.eclipse.betty.util.log.jmx.LogMBean;
 import org.junit.Before;
 import org.junit.Test;
 import com.acme.Managed;

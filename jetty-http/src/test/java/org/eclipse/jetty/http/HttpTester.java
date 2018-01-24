@@ -26,11 +26,21 @@ import java.nio.channels.ReadableByteChannel;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpGenerator;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.http.HttpParser;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.http.MimeTypes;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 
 /**
@@ -350,7 +360,7 @@ public class HttpTester
             byte[] bytes=_content.toByteArray();
 
             String content_type=get(HttpHeader.CONTENT_TYPE);
-            String encoding=MimeTypes.getCharsetFromContentType(content_type);
+            String encoding= MimeTypes.getCharsetFromContentType(content_type);
             Charset charset=encoding==null?StandardCharsets.UTF_8:Charset.forName(encoding);
 
             return new String(bytes,charset);

@@ -31,8 +31,8 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.eclipse.jetty.server.NetworkConnector;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.NetworkConnector;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.junit.After;

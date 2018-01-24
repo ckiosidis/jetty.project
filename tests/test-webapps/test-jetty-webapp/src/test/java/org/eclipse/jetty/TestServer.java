@@ -26,30 +26,30 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.jmx.MBeanContainer;
+import org.eclipse.betty.jmx.MBeanContainer;
 import org.eclipse.jetty.security.HashLoginService;
-import org.eclipse.jetty.server.ForwardedRequestCustomizer;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.NCSARequestLog;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.SecureRequestCustomizer;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
-import org.eclipse.jetty.server.handler.DefaultHandler;
-import org.eclipse.jetty.server.handler.HandlerCollection;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.server.handler.RequestLogHandler;
-import org.eclipse.jetty.server.handler.ResourceHandler;
-import org.eclipse.jetty.server.session.FileSessionDataStore;
-import org.eclipse.jetty.server.session.DefaultSessionCache;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.log.StdErrLog;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.server.ForwardedRequestCustomizer;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.NCSARequestLog;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.SecureRequestCustomizer;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.handler.DefaultHandler;
+import org.eclipse.betty.server.handler.HandlerCollection;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.handler.RequestLogHandler;
+import org.eclipse.betty.server.handler.ResourceHandler;
+import org.eclipse.betty.server.session.FileSessionDataStore;
+import org.eclipse.betty.server.session.DefaultSessionCache;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.log.StdErrLog;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.junit.Ignore;
 
@@ -154,7 +154,7 @@ public class TestServer
     {
         /* ------------------------------------------------------------ */
         /**
-         * @see org.eclipse.jetty.server.handler.HandlerWrapper#handle(java.lang.String, org.eclipse.jetty.server.Request, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+         * @see HandlerWrapper#handle(java.lang.String, Request, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
          */
         @Override
         public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException

@@ -22,7 +22,7 @@ import java.nio.ByteBuffer;
 
 import javax.websocket.PongMessage;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 public class JsrPongMessage implements PongMessage
 {

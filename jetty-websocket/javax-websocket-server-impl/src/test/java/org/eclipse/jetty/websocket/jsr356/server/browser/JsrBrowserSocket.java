@@ -33,9 +33,9 @@ import javax.websocket.RemoteEndpoint.Async;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 @ServerEndpoint(value = "/", subprotocols = { "tool" }, configurator = JsrBrowserConfigurator.class)
 public class JsrBrowserSocket

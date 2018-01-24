@@ -19,23 +19,19 @@
 
 package org.eclipse.jetty.maven.plugin;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.resource.ResourceCollection;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.resource.ResourceCollection;
 import org.eclipse.jetty.xml.XmlConfiguration;
 
 /**

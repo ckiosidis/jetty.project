@@ -19,7 +19,11 @@
 
 package org.eclipse.jetty.server.session;
 
-import java.util.Collections;
+import org.eclipse.betty.server.session.AbstractSessionDataStore;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.session.SessionDataMap;
+import org.eclipse.betty.server.session.SessionDataStore;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -37,7 +41,7 @@ public class TestSessionDataStore extends AbstractSessionDataStore
 
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#isPassivating()
+     * @see SessionDataStore#isPassivating()
      */
     @Override
     public boolean isPassivating()
@@ -46,7 +50,7 @@ public class TestSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#exists(java.lang.String)
+     * @see SessionDataStore#exists(java.lang.String)
      */
     @Override
     public boolean exists(String id) throws Exception
@@ -55,7 +59,7 @@ public class TestSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataMap#load(java.lang.String)
+     * @see SessionDataMap#load(java.lang.String)
      */
     @Override
     public SessionData load(String id) throws Exception
@@ -69,7 +73,7 @@ public class TestSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataMap#delete(java.lang.String)
+     * @see SessionDataMap#delete(java.lang.String)
      */
     @Override
     public boolean delete(String id) throws Exception
@@ -78,7 +82,7 @@ public class TestSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doStore(java.lang.String, org.eclipse.jetty.server.session.SessionData, long)
+     * @see AbstractSessionDataStore#doStore(java.lang.String, SessionData, long)
      */
     @Override
     public void doStore(String id, SessionData data, long lastSaveTime) throws Exception
@@ -87,7 +91,7 @@ public class TestSessionDataStore extends AbstractSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doGetExpired(java.util.Set)
+     * @see AbstractSessionDataStore#doGetExpired(java.util.Set)
      */
     @Override
     public Set<String> doGetExpired(Set<String> candidates)

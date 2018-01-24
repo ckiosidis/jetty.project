@@ -18,8 +18,8 @@
 
 package org.eclipse.jetty.embedded;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.xml.XmlConfiguration;
 
 /**

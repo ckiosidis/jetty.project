@@ -21,7 +21,7 @@ package org.eclipse.jetty.websocket.common.message;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.Utf8StringBuilder;
+import org.eclipse.betty.util.Utf8StringBuilder;
 import org.eclipse.jetty.websocket.common.events.EventDriver;
 
 public class SimpleTextMessage implements MessageAppender

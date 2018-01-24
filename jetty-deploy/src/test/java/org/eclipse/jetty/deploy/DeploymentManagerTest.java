@@ -22,7 +22,7 @@ import java.util.Collection;
 import java.util.Set;
 
 import org.eclipse.jetty.deploy.test.XmlConfiguredJetty;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
 import org.eclipse.jetty.toolchain.test.TestingDir;
 import org.junit.Assert;
 import org.junit.Rule;

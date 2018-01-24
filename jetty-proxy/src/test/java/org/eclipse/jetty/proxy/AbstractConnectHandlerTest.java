@@ -19,12 +19,10 @@
 package org.eclipse.jetty.proxy;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.Socket;
 
-import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.toolchain.test.TestTracker;
 import org.junit.After;
 import org.junit.Rule;

@@ -34,11 +34,12 @@ import java.util.zip.InflaterInputStream;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
 import org.eclipse.jetty.http.HttpTester;
 import org.eclipse.jetty.servlet.ServletTester;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.IO;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

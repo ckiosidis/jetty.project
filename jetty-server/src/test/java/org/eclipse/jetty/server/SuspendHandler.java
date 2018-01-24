@@ -29,7 +29,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.HandlerWrapper;
 
 class SuspendHandler extends HandlerWrapper implements AsyncListener
 {

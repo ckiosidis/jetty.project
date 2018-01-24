@@ -4,7 +4,7 @@
 <!-- =============================================================== -->
 <!-- Configure the demos                                             -->
 <!-- =============================================================== -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
   <!-- ============================================================= -->
   <!-- Add rewrite rules                                             -->

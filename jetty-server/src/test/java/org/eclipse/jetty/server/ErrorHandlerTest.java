@@ -28,7 +28,10 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.handler.ErrorHandler;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.ErrorHandler;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.junit.After;
 import org.junit.Before;
@@ -51,7 +54,7 @@ public class ErrorHandlerTest
         {
             @Override
             protected void generateAcceptableResponse(
-                Request baseRequest, 
+                Request baseRequest,
                 HttpServletRequest request, 
                 HttpServletResponse response, 
                 int code, 

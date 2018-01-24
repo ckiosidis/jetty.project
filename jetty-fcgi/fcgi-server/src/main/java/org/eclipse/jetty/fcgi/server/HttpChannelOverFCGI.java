@@ -23,20 +23,20 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicReference;
 
 import org.eclipse.jetty.fcgi.FCGI;
-import org.eclipse.jetty.http.HostPortHttpField;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpScheme;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpChannel;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpTransport;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HostPortHttpField;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpScheme;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpChannel;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpTransport;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class HttpChannelOverFCGI extends HttpChannel
 {

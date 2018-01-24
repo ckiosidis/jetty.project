@@ -28,7 +28,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
 import org.eclipse.jetty.toolchain.test.PathAssert;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 
 @SuppressWarnings("serial")
 public class TestDirContentServlet extends HttpServlet

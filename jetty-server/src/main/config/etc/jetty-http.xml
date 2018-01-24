@@ -6,7 +6,7 @@
 <!-- by adding a HTTP connector.                                   -->
 <!-- This configuration must be used in conjunction with jetty.xml -->
 <!-- ============================================================= -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
   <!-- =========================================================== -->
   <!-- Add a HTTP Connector.                                       -->
@@ -20,16 +20,16 @@
   <!-- =========================================================== -->
   <Call name="addConnector">
     <Arg>
-      <New id="httpConnector" class="org.eclipse.jetty.server.ServerConnector">
+      <New id="httpConnector" class="org.eclipse.betty.server.ServerConnector">
         <Arg name="server"><Ref refid="Server" /></Arg>
         <Arg name="acceptors" type="int"><Property name="jetty.http.acceptors" deprecated="http.acceptors" default="-1"/></Arg>
         <Arg name="selectors" type="int"><Property name="jetty.http.selectors" deprecated="http.selectors" default="-1"/></Arg>
         <Arg name="factories">
-          <Array type="org.eclipse.jetty.server.ConnectionFactory">
+          <Array type="org.eclipse.betty.server.ConnectionFactory">
             <Item>
-              <New class="org.eclipse.jetty.server.HttpConnectionFactory">
+              <New class="org.eclipse.betty.server.HttpConnectionFactory">
                 <Arg name="config"><Ref refid="httpConfig" /></Arg>
-                <Arg name="compliance"><Call class="org.eclipse.jetty.http.HttpCompliance" name="valueOf"><Arg><Property name="jetty.http.compliance" default="RFC7230_LEGACY"/></Arg></Call></Arg>
+                <Arg name="compliance"><Call class="org.eclipse.betty.http.HttpCompliance" name="valueOf"><Arg><Property name="jetty.http.compliance" default="RFC7230_LEGACY"/></Arg></Call></Arg>
               </New>
             </Item>
           </Array>

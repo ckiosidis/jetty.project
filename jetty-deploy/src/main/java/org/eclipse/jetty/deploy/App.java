@@ -18,8 +18,8 @@
 
 package org.eclipse.jetty.deploy;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.AttributesMap;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.AttributesMap;
 
 /**
  * The information about an App that is managed by the {@link DeploymentManager}

@@ -77,9 +77,9 @@ detected.
 
   <!-- Add context specific logger
   <Set name="handler">
-    <New id="RequestLog" class="org.eclipse.jetty.server.handler.RequestLogHandler">
+    <New id="RequestLog" class="RequestLogHandler">
       <Set name="requestLog">
-	<New id="RequestLogImpl" class="org.eclipse.jetty.server.NCSARequestLog">
+	<New id="RequestLogImpl" class="NCSARequestLog">
 	  <Set name="filename"><Property name="jetty.logs" default="./logs"/>/test-yyyy_mm_dd.request.log</Set>
 	  <Set name="filenameDateFormat">yyyy_MM_dd</Set>
 	  <Set name="append">true</Set>

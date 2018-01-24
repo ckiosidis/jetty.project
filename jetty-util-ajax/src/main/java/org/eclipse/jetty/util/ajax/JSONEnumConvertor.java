@@ -21,10 +21,10 @@ package org.eclipse.jetty.util.ajax;
 import java.lang.reflect.Method;
 import java.util.Map;
 
-import org.eclipse.jetty.util.Loader;
+import org.eclipse.betty.util.Loader;
 import org.eclipse.jetty.util.ajax.JSON.Output;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /* ------------------------------------------------------------ */
 /**

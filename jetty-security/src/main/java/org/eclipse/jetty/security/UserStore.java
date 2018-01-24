@@ -18,9 +18,9 @@
 
 package org.eclipse.jetty.security;
 
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.security.Credential;
 
 import javax.security.auth.Subject;
 import java.security.Principal;

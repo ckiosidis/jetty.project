@@ -37,25 +37,25 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.server.ConnectionFactory;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnection;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.DecoratedObjectFactory;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
-import org.eclipse.jetty.util.thread.ScheduledExecutorScheduler;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.server.ConnectionFactory;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnection;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.DecoratedObjectFactory;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.thread.ScheduledExecutorScheduler;
+import org.eclipse.betty.util.thread.Scheduler;
 import org.eclipse.jetty.websocket.api.InvalidWebSocketException;
 import org.eclipse.jetty.websocket.api.WebSocketException;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
@@ -223,7 +223,7 @@ public class WebSocketServerFactory extends ContainerLifeCycle implements WebSoc
             websocketPojo = getObjectFactory().decorate(websocketPojo);
             
             // Get the original HTTPConnection
-            HttpConnection connection = (HttpConnection) request.getAttribute("org.eclipse.jetty.server.HttpConnection");
+            HttpConnection connection = (HttpConnection) request.getAttribute("HttpConnection");
             
             // Send the upgrade
             EventDriver driver = eventDriverFactory.wrap(websocketPojo);

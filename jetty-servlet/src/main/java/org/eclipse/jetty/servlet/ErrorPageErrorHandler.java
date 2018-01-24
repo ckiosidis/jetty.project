@@ -27,11 +27,11 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
-import org.eclipse.jetty.server.Dispatcher;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ErrorHandler;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.Dispatcher;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ErrorHandler;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * An ErrorHandler that maps exceptions and status codes to URIs for dispatch using

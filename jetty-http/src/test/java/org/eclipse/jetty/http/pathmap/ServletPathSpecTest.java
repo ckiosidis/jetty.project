@@ -23,6 +23,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 
+import org.eclipse.betty.http.pathmap.ServletPathSpec;
 import org.junit.Test;
 
 public class ServletPathSpecTest

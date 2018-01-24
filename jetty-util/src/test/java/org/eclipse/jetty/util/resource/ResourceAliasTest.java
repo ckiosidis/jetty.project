@@ -21,6 +21,7 @@ package org.eclipse.jetty.util.resource;
 import java.io.File;
 import java.net.MalformedURLException;
 
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.junit.Assert;
@@ -61,7 +62,7 @@ public class ResourceAliasTest
         
         Assert.assertTrue(file0.exists()); // This is an alias!
 
-        Resource dir = Resource.newResource(__dir); 
+        Resource dir = Resource.newResource(__dir);
         
         // Test not alias paths
         Resource resource = Resource.newResource(file);

@@ -10,14 +10,14 @@
 <!-- =============================================================== -->
 
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
     <!-- =========================================================== -->
     <!-- Server Thread Pool                                          -->
     <!-- =========================================================== -->
     <Set name="ThreadPool">
       <!-- Default queued blocking threadpool -->
-      <New class="org.eclipse.jetty.util.thread.QueuedThreadPool">
+      <New class="org.eclipse.betty.util.thread.QueuedThreadPool">
         <Set name="minThreads">10</Set>
         <Set name="maxThreads">50</Set>
         <Set name="lowThreads">5</Set>
@@ -38,7 +38,7 @@
     -->
     <Call name="addConnector">
       <Arg>
-          <New class="org.eclipse.jetty.server.ServerConnector">
+          <New class="org.eclipse.betty.server.ServerConnector">
             <Set name="host"><SystemProperty name="jetty.http.host" /></Set>
             <Set name="port"><SystemProperty name="jetty.http.port" default="8080"/></Set>
             <Set name="idleTimeout">30000</Set>
@@ -161,17 +161,17 @@
         </Set>
 
         <Set name="handler">
-          <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+          <New id="Handlers" class="org.eclipse.betty.server.handler.HandlerCollection">
             <Set name="handlers">
-             <Array type="org.eclipse.jetty.server.Handler">
+             <Array type="org.eclipse.betty.server.Handler">
                <Item>
-                 <New id="Contexts" class="org.eclipse.jetty.server.handler.ContextHandlerCollection"/>
+                 <New id="Contexts" class="org.eclipse.betty.server.handler.ContextHandlerCollection"/>
                </Item>
                <Item>
-                 <New id="DefaultHandler" class="org.eclipse.jetty.server.handler.DefaultHandler"/>
+                 <New id="DefaultHandler" class="org.eclipse.betty.server.handler.DefaultHandler"/>
                </Item>
                <Item>
-                 <New id="RequestLog" class="org.eclipse.jetty.server.handler.RequestLogHandler"/>
+                 <New id="RequestLog" class="org.eclipse.betty.server.handler.RequestLogHandler"/>
                </Item>
              </Array>
             </Set>
@@ -254,7 +254,7 @@
     <!-- =========================================================== -->
     <Ref refid="RequestLog">
       <Set name="requestLog">
-        <New id="RequestLogImpl" class="org.eclipse.jetty.server.NCSARequestLog">
+        <New id="RequestLogImpl" class="org.eclipse.betty.server.NCSARequestLog">
           <Set name="filename"><SystemProperty name="jetty.requestlog.dir" default="./logs"/>/yyyy_mm_dd.request.log</Set>
           <Set name="filenameDateFormat">yyyy_MM_dd</Set>
           <Set name="retainDays">90</Set>

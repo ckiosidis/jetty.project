@@ -28,7 +28,7 @@ import org.eclipse.jetty.http2.ErrorCode;
 import org.eclipse.jetty.http2.api.Session;
 import org.eclipse.jetty.http2.api.Stream;
 import org.eclipse.jetty.http2.frames.ResetFrame;
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.util.Callback;
 
 public class HttpChannelOverHTTP2 extends HttpChannel
 {

@@ -5,10 +5,10 @@
 <!-- The IP Access Handler                                           -->
 <!-- =============================================================== -->
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
   <Call name="insertHandler">
     <Arg>
-      <New id="IPAccessHandler" class="org.eclipse.jetty.server.handler.IPAccessHandler">
+      <New id="IPAccessHandler" class="org.eclipse.betty.server.handler.IPAccessHandler">
 	<Set name="white">
 	  <Array type="String">
 	    <Item>127.0.0.1</Item>

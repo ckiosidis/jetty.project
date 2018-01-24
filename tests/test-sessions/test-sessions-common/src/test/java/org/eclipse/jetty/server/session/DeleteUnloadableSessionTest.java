@@ -32,13 +32,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStore;
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.DefaultSessionCacheFactory;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.session.SessionDataMap;
+import org.eclipse.betty.server.session.SessionDataStore;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionHandler;
+import org.eclipse.betty.server.session.UnreadableSessionDataException;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.junit.Test;
 
 
@@ -64,7 +74,7 @@ public class DeleteUnloadableSessionTest
         String unloadableId = null;
         
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataStore#isPassivating()
+         * @see SessionDataStore#isPassivating()
          */
         @Override
         public boolean isPassivating()
@@ -73,7 +83,7 @@ public class DeleteUnloadableSessionTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataStore#exists(java.lang.String)
+         * @see SessionDataStore#exists(java.lang.String)
          */
         @Override
         public boolean exists(String id) throws Exception
@@ -82,7 +92,7 @@ public class DeleteUnloadableSessionTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataMap#load(java.lang.String)
+         * @see SessionDataMap#load(java.lang.String)
          */
         @Override
         public SessionData load(String id) throws Exception
@@ -92,7 +102,7 @@ public class DeleteUnloadableSessionTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataMap#delete(java.lang.String)
+         * @see SessionDataMap#delete(java.lang.String)
          */
         @Override
         public boolean delete(String id) throws Exception
@@ -106,7 +116,7 @@ public class DeleteUnloadableSessionTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doStore(java.lang.String, org.eclipse.jetty.server.session.SessionData, long)
+         * @see AbstractSessionDataStore#doStore(java.lang.String, SessionData, long)
          */
         @Override
         public void doStore(String id, SessionData data, long lastSaveTime) throws Exception
@@ -115,7 +125,7 @@ public class DeleteUnloadableSessionTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doGetExpired(java.util.Set)
+         * @see AbstractSessionDataStore#doGetExpired(java.util.Set)
          */
         @Override
         public Set<String> doGetExpired(Set<String> candidates)
@@ -129,7 +139,7 @@ public class DeleteUnloadableSessionTest
     {
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataStoreFactory#getSessionDataStore(org.eclipse.jetty.server.session.SessionHandler)
+         * @see SessionDataStoreFactory#getSessionDataStore(SessionHandler)
          */
         @Override
         public SessionDataStore getSessionDataStore(SessionHandler handler) throws Exception

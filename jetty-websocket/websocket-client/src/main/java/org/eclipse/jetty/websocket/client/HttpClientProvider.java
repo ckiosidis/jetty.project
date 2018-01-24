@@ -21,7 +21,7 @@ package org.eclipse.jetty.websocket.client;
 import java.lang.reflect.Method;
 
 import org.eclipse.jetty.client.HttpClient;
-import org.eclipse.jetty.util.log.Log;
+import org.eclipse.betty.util.log.Log;
 import org.eclipse.jetty.websocket.common.scopes.WebSocketContainerScope;
 
 public final class HttpClientProvider

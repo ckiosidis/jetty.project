@@ -21,13 +21,13 @@ package org.eclipse.jetty.http.spi;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
-import org.eclipse.jetty.server.handler.DefaultHandler;
-import org.eclipse.jetty.server.handler.HandlerCollection;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
-import org.eclipse.jetty.util.thread.ThreadPool;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.handler.DefaultHandler;
+import org.eclipse.betty.server.handler.HandlerCollection;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.ThreadPool;
 
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpsServer;

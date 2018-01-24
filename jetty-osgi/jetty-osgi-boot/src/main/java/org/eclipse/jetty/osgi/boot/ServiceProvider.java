@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.osgi.boot;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
 import org.osgi.framework.ServiceReference;
 
 /**

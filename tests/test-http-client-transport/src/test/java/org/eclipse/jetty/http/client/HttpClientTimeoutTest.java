@@ -45,16 +45,16 @@ import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
 import org.eclipse.jetty.client.util.BufferingResponseListener;
 import org.eclipse.jetty.client.util.InputStreamContentProvider;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.ssl.SslClientConnectionFactory;
-import org.eclipse.jetty.io.ssl.SslConnection;
-import org.eclipse.jetty.server.NetworkConnector;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.FuturePromise;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.ssl.SslClientConnectionFactory;
+import org.eclipse.betty.io.ssl.SslConnection;
+import org.eclipse.betty.server.NetworkConnector;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.FuturePromise;
+import org.eclipse.betty.util.IO;
 import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.Test;
@@ -418,7 +418,7 @@ public class HttpClientTimeoutTest extends AbstractTest
         start(new EmptyServerHandler()
         {
             @Override
-            protected void service(String target, org.eclipse.jetty.server.Request jettyRequest, HttpServletRequest request, HttpServletResponse response) throws IOException
+            protected void service(String target, org.eclipse.betty.server.Request jettyRequest, HttpServletRequest request, HttpServletResponse response) throws IOException
             {
                 if (request.getRequestURI().startsWith("/one"))
                 {
@@ -487,7 +487,7 @@ public class HttpClientTimeoutTest extends AbstractTest
         }
 
         @Override
-        public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+        public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
         {
             baseRequest.setHandled(true);
             try

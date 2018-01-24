@@ -20,6 +20,7 @@ package org.eclipse.jetty.server.handler.gzip;
 
 import javax.servlet.Servlet;
 
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
 import org.eclipse.jetty.toolchain.test.TestingDir;
 import org.junit.Rule;
 import org.junit.Test;

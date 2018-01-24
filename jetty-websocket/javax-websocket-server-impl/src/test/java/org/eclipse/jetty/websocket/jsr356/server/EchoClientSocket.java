@@ -33,7 +33,7 @@ import javax.websocket.OnOpen;
 import javax.websocket.RemoteEndpoint.Basic;
 import javax.websocket.Session;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 @ClientEndpoint
 public class EchoClientSocket extends TrackingSocket

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
-  <New id="unixSocketHttpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
+  <New id="unixSocketHttpConfig" class="org.eclipse.betty.server.HttpConfiguration">
     <Arg><Ref refid="httpConfig"/></Arg>
   </New>
 
@@ -12,7 +12,7 @@
         <Arg name="server"><Ref refid="Server" /></Arg>
         <Arg name="selectors" type="int"><Property name="jetty.unixsocket.selectors" default="-1"/></Arg>
         <Arg name="factories">
-          <Array type="org.eclipse.jetty.server.ConnectionFactory">
+          <Array type="org.eclipse.betty.server.ConnectionFactory">
           </Array>
         </Arg>
         <Set name="unixSocket"><Property name="jetty.unixsocket" default="/tmp/jetty.sock" /></Set>

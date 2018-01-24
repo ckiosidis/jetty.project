@@ -22,7 +22,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 
-import org.eclipse.jetty.util.Loader;
+import org.eclipse.betty.util.Loader;
 
 public class JSONCollectionConvertor implements JSON.Convertor
 {

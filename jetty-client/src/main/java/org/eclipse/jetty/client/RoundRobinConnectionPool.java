@@ -24,9 +24,9 @@ import java.util.List;
 
 import org.eclipse.jetty.client.api.Connection;
 import org.eclipse.jetty.client.api.Destination;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
 
 @ManagedObject
 public class RoundRobinConnectionPool extends AbstractConnectionPool

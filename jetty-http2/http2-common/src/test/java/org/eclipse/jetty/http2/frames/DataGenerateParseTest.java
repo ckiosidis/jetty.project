@@ -26,9 +26,9 @@ import java.util.Random;
 import org.eclipse.jetty.http2.generator.DataGenerator;
 import org.eclipse.jetty.http2.generator.HeaderGenerator;
 import org.eclipse.jetty.http2.parser.Parser;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

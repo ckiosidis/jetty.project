@@ -30,8 +30,8 @@ import javax.servlet.ServletContext;
 
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.toolchain.test.EventQueue;
-import org.eclipse.jetty.util.DecoratedObjectFactory;
-import org.eclipse.jetty.util.Decorator;
+import org.eclipse.betty.util.DecoratedObjectFactory;
+import org.eclipse.betty.util.Decorator;
 import org.eclipse.jetty.websocket.api.WebSocketAdapter;
 import org.eclipse.jetty.websocket.common.WebSocketFrame;
 import org.eclipse.jetty.websocket.common.frames.TextFrame;
@@ -111,7 +111,7 @@ public class DecoratorsTest
         }
     }
     
-    private static class DummyUtilDecorator implements org.eclipse.jetty.util.Decorator
+    private static class DummyUtilDecorator implements Decorator
     {
         @Override
         public <T> T decorate(T o)

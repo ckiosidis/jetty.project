@@ -26,7 +26,7 @@ import java.util.EnumSet;
 
 import javax.servlet.DispatcherType;
 
-import org.eclipse.jetty.http.pathmap.MappedResource;
+import org.eclipse.betty.http.pathmap.MappedResource;
 import org.junit.Before;
 import org.junit.Test;
 

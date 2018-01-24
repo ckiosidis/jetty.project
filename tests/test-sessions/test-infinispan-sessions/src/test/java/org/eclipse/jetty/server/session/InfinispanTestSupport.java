@@ -21,7 +21,7 @@ package org.eclipse.jetty.server.session;
 
 import java.io.File;
 
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.infinispan.Cache;
 import org.infinispan.configuration.cache.Configuration;
 import org.infinispan.configuration.cache.ConfigurationBuilder;

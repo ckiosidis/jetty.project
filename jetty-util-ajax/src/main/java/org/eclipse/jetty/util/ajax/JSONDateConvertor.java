@@ -25,10 +25,10 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
-import org.eclipse.jetty.util.DateCache;
+import org.eclipse.betty.util.DateCache;
 import org.eclipse.jetty.util.ajax.JSON.Output;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /* ------------------------------------------------------------ */
 /**

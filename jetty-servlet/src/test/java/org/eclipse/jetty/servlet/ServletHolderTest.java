@@ -20,9 +20,9 @@ package org.eclipse.jetty.servlet;
 
 import javax.servlet.UnavailableException;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.MultiException;
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.MultiException;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.junit.Assert;
 import org.junit.Test;
 

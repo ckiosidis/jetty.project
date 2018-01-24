@@ -18,11 +18,9 @@
 
 package org.eclipse.jetty.servlets;
 
-import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -47,13 +45,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.Part;
 
-import org.eclipse.jetty.http.MimeTypes;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.LazyList;
-import org.eclipse.jetty.util.MultiMap;
-import org.eclipse.jetty.util.MultiPartInputStreamParser;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.MimeTypes;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.LazyList;
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.MultiPartInputStreamParser;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 
 /**
@@ -76,7 +74,7 @@ import org.eclipse.jetty.util.log.Logger;
  * <dt>maxFormKeys</dt>
  * <dd>(number)
  * Sets the maximum number of keys that may be present in a
- * form (default set by system property <code>org.eclipse.jetty.server.Request.maxFormKeys</code> or 1000) to protect
+ * form (default set by system property <code>Request.maxFormKeys</code> or 1000) to protect
  * against DOS attacks by bad hash keys.
  * </dd>
  * <dt>deleteFiles</dt>
@@ -107,7 +105,7 @@ public class MultiPartFilter implements Filter
     private boolean _writeFilesWithFilenames = false;
     private long _maxFileSize = -1L;
     private long _maxRequestSize = -1L;
-    private int _maxFormKeys = Integer.getInteger("org.eclipse.jetty.server.Request.maxFormKeys", 1000);
+    private int _maxFormKeys = Integer.getInteger("Request.maxFormKeys", 1000);
 
     /* ------------------------------------------------------------------------------- */
     /**

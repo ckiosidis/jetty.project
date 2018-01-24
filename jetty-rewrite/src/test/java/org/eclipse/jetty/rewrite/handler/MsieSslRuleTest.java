@@ -20,9 +20,9 @@ package org.eclipse.jetty.rewrite.handler;
 
 import static org.junit.Assert.assertEquals;
 
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpHeaderValue;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpHeaderValue;
 import org.junit.Before;
 import org.junit.Test;
 

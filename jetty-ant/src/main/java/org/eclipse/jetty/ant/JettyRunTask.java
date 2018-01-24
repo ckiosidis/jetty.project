@@ -33,7 +33,7 @@ import org.eclipse.jetty.ant.types.LoginServices;
 import org.eclipse.jetty.ant.types.SystemProperties;
 import org.eclipse.jetty.ant.utils.TaskLog;
 import org.eclipse.jetty.security.LoginService;
-import org.eclipse.jetty.server.RequestLog;
+import org.eclipse.betty.server.RequestLog;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 /**

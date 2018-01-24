@@ -23,6 +23,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.betty.util.DateCache;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.annotation.Slow;
 import org.hamcrest.Matchers;
@@ -42,7 +43,7 @@ public class DateCacheTest
     @Slow
     public void testDateCache() throws Exception
     {
-        //@WAS: Test t = new Test("org.eclipse.jetty.util.DateCache");
+        //@WAS: Test t = new Test("DateCache");
         //                            012345678901234567890123456789
         DateCache dc = new DateCache("EEE, dd MMM yyyy HH:mm:ss zzz ZZZ",Locale.US,TimeZone.getTimeZone("GMT"));
 

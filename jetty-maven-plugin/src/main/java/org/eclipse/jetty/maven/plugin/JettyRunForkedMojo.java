@@ -38,9 +38,9 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.descriptor.PluginDescriptor;
 import org.eclipse.jetty.annotations.AnnotationConfiguration;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 
 
 /**

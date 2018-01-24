@@ -31,10 +31,10 @@ import java.util.regex.Pattern;
 
 import javax.servlet.ServletContainerInitializer;
 
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 public class ContainerInitializer

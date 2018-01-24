@@ -21,7 +21,7 @@ package org.eclipse.jetty.client;
 import java.net.InetSocketAddress;
 import java.util.Map;
 
-import org.eclipse.jetty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.ClientConnectionFactory;
 
 /**
  * {@link HttpClientTransport} represents what transport implementations should provide

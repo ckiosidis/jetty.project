@@ -21,9 +21,9 @@ package org.eclipse.jetty.fcgi.parser;
 import java.nio.ByteBuffer;
 
 import org.eclipse.jetty.fcgi.FCGI;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * <p>The FastCGI protocol exchanges <em>frames</em>.</p>

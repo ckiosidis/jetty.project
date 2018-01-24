@@ -23,12 +23,12 @@ import java.util.EnumSet;
 
 import javax.servlet.DispatcherType;
 
-import org.eclipse.jetty.http.PathMap;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.component.Dumpable;
+import org.eclipse.betty.http.PathMap;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.Dumpable;
 
 @ManagedObject("Filter Mappings")
 public class FilterMapping implements Dumpable

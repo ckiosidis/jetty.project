@@ -20,7 +20,7 @@ package org.eclipse.jetty.rewrite.handler;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.eclipse.jetty.util.URIUtil;
+import org.eclipse.betty.util.URIUtil;
 
 /**
  * Utility for managing redirect based rules

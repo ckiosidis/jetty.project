@@ -27,9 +27,10 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.annotation.Slow;
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

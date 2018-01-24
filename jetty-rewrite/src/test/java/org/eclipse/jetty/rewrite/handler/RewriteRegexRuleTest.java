@@ -23,9 +23,9 @@ import static org.junit.Assert.assertEquals;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.util.MultiMap;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.UrlEncoded;
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.UrlEncoded;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -28,7 +28,7 @@ import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 
 /**
  * Output the Graph in GraphViz Dot format.

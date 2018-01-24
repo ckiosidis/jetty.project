@@ -24,8 +24,8 @@ import java.util.regex.Matcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.util.annotation.Name;
 
 /**
  * Issues a (3xx) Redirect response whenever the rule finds a match via regular expression.

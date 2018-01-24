@@ -24,15 +24,16 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.ConnectionFactory;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.ConnectionFactory;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.component.Graceful;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.thread.Scheduler;
 
 
 
@@ -133,7 +134,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.util.component.Graceful#shutdown()
+     * @see Graceful#shutdown()
      */
     @Override
     public Future<Void> shutdown()
@@ -143,7 +144,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getServer()
+     * @see Connector#getServer()
      */
     @Override
     public Server getServer()
@@ -152,7 +153,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getExecutor()
+     * @see Connector#getExecutor()
      */
     @Override
     public Executor getExecutor()
@@ -162,7 +163,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getScheduler()
+     * @see Connector#getScheduler()
      */
     @Override
     public Scheduler getScheduler()
@@ -172,7 +173,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getByteBufferPool()
+     * @see Connector#getByteBufferPool()
      */
     @Override
     public ByteBufferPool getByteBufferPool()
@@ -182,7 +183,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getConnectionFactory(java.lang.String)
+     * @see Connector#getConnectionFactory(java.lang.String)
      */
     @Override
     public ConnectionFactory getConnectionFactory(String nextProtocol)
@@ -192,7 +193,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getConnectionFactory(java.lang.Class)
+     * @see Connector#getConnectionFactory(java.lang.Class)
      */
     @Override
     public <T> T getConnectionFactory(Class<T> factoryType)
@@ -202,7 +203,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getDefaultConnectionFactory()
+     * @see Connector#getDefaultConnectionFactory()
      */
     @Override
     public ConnectionFactory getDefaultConnectionFactory()
@@ -212,7 +213,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getConnectionFactories()
+     * @see Connector#getConnectionFactories()
      */
     @Override
     public Collection<ConnectionFactory> getConnectionFactories()
@@ -222,7 +223,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getProtocols()
+     * @see Connector#getProtocols()
      */
     @Override
     public List<String> getProtocols()
@@ -232,7 +233,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getIdleTimeout()
+     * @see Connector#getIdleTimeout()
      */
     @Override
     @ManagedAttribute("maximum time a connection can be idle before being closed (in ms)")
@@ -243,7 +244,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getTransport()
+     * @see Connector#getTransport()
      */
     @Override
     public Object getTransport()
@@ -253,7 +254,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getConnectedEndPoints()
+     * @see Connector#getConnectedEndPoints()
      */
     @Override
     public Collection<EndPoint> getConnectedEndPoints()
@@ -263,7 +264,7 @@ public class MavenServerConnector extends ContainerLifeCycle implements Connecto
     }
 
     /** 
-     * @see org.eclipse.jetty.server.Connector#getName()
+     * @see Connector#getName()
      */
     @Override
     public String getName()

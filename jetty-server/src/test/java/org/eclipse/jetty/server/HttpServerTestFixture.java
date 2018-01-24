@@ -33,12 +33,18 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.server.handler.HotSwapHandler;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.HotSwapHandler;
 import org.eclipse.jetty.toolchain.test.PropertyFlag;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.After;
 import org.junit.Before;
 

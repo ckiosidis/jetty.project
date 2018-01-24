@@ -25,15 +25,15 @@ import java.util.concurrent.ConcurrentMap;
 import org.eclipse.jetty.fcgi.FCGI;
 import org.eclipse.jetty.fcgi.generator.Flusher;
 import org.eclipse.jetty.fcgi.parser.ServerParser;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.io.AbstractConnection;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpInput;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.io.AbstractConnection;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpInput;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class ServerFCGIConnection extends AbstractConnection
 {

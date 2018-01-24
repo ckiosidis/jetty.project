@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.annotations;
 
-import org.eclipse.jetty.util.Decorator;
+import org.eclipse.betty.util.Decorator;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 /**

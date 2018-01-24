@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * AbsoluteOrdering

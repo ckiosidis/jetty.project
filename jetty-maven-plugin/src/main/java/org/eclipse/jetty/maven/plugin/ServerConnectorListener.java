@@ -22,11 +22,11 @@ package org.eclipse.jetty.maven.plugin;
 import java.io.File;
 import java.io.FileWriter;
 import java.nio.file.Files;
-import java.nio.file.Path;
 
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.util.component.AbstractLifeCycle.AbstractLifeCycleListener;
-import org.eclipse.jetty.util.component.LifeCycle;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.component.AbstractLifeCycle.AbstractLifeCycleListener;
+import org.eclipse.betty.util.component.LifeCycle;
 
 /**
  * ServerConnectorListener
@@ -43,7 +43,7 @@ public class ServerConnectorListener extends AbstractLifeCycleListener
     
 
     /** 
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle.AbstractLifeCycleListener#lifeCycleStarted(org.eclipse.jetty.util.component.LifeCycle)
+     * @see AbstractLifeCycle.AbstractLifeCycleListener#lifeCycleStarted(LifeCycle)
      */
     @Override
     public void lifeCycleStarted(LifeCycle event)

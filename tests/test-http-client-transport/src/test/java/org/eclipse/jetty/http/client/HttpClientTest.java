@@ -37,21 +37,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.betty.io.Connection;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.util.BytesContentProvider;
 import org.eclipse.jetty.client.util.FutureResponseListener;
 import org.eclipse.jetty.client.util.InputStreamResponseListener;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpMethod;
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.http.HttpStatus;
 import org.eclipse.jetty.http2.FlowControlStrategy;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Assume;
@@ -417,16 +418,16 @@ public class HttpClientTest extends AbstractTest
 
         CountDownLatch openLatch = new CountDownLatch(1);
         CountDownLatch closeLatch = new CountDownLatch(1);
-        client.addBean(new org.eclipse.jetty.io.Connection.Listener()
+        client.addBean(new Connection.Listener()
         {
             @Override
-            public void onOpened(org.eclipse.jetty.io.Connection connection)
+            public void onOpened(Connection connection)
             {
                 openLatch.countDown();
             }
 
             @Override
-            public void onClosed(org.eclipse.jetty.io.Connection connection)
+            public void onClosed(Connection connection)
             {
                 closeLatch.countDown();
             }

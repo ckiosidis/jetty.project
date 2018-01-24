@@ -30,12 +30,12 @@ import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.http.HttpClientTransportOverHTTP;
 import org.eclipse.jetty.client.util.FutureResponseListener;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpHeaderValue;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpHeaderValue;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -81,7 +81,7 @@ public class ValidatingConnectionPoolTest extends AbstractHttpClientServerTest
         start(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 baseRequest.setHandled(true);
                 if (target.endsWith("/redirect"))
@@ -114,7 +114,7 @@ public class ValidatingConnectionPoolTest extends AbstractHttpClientServerTest
         testServerClosesConnectionAfterResponseWithQueuedRequestWithMaxConnections(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 baseRequest.setHandled(true);
                 response.setStatus(HttpStatus.OK_200);
@@ -130,7 +130,7 @@ public class ValidatingConnectionPoolTest extends AbstractHttpClientServerTest
         testServerClosesConnectionAfterResponseWithQueuedRequestWithMaxConnections(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 baseRequest.setHandled(true);
                 response.setStatus(HttpStatus.OK_200);

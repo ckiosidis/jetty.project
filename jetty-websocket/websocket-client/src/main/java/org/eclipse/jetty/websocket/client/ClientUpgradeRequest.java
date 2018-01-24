@@ -31,12 +31,12 @@ import java.util.TreeSet;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.eclipse.jetty.client.HttpClient;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.util.B64Code;
-import org.eclipse.jetty.util.MultiMap;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.UrlEncoded;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.util.B64Code;
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.UrlEncoded;
 import org.eclipse.jetty.websocket.api.extensions.ExtensionConfig;
 import org.eclipse.jetty.websocket.common.UpgradeRequestAdapter;
 

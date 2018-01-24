@@ -32,16 +32,17 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.PathWatcher;
-import org.eclipse.jetty.util.PathWatcher.PathWatchEvent;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.JarFileResource;
-import org.eclipse.jetty.util.resource.PathResource;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.PathWatcher;
+import org.eclipse.betty.util.PathWatcher.PathWatchEvent;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.JarFileResource;
+import org.eclipse.betty.util.resource.PathResource;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.security.Credential;
 
 /**
  * PropertyUserStore
@@ -319,7 +320,7 @@ public class PropertyUserStore extends UserStore implements PathWatcher.Listener
      * it has initially loaded it. Otherwise the users will be loaded and there will be no active monitoring thread so changes will not be detected.
      *
      *
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStart()
+     * @see AbstractLifeCycle#doStart()
      */
     protected void doStart() throws Exception
     {
@@ -356,7 +357,7 @@ public class PropertyUserStore extends UserStore implements PathWatcher.Listener
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStop()
+     * @see AbstractLifeCycle#doStop()
      */
     protected void doStop() throws Exception
     {

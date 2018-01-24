@@ -20,8 +20,8 @@ package org.eclipse.jetty.client.api;
 
 import java.net.URI;
 
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.util.Attributes;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.util.Attributes;
 
 /**
  * {@link Authentication} represents a mechanism to authenticate requests for protected resources.

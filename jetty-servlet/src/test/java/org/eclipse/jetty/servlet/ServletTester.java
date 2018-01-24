@@ -29,16 +29,16 @@ import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
 import javax.servlet.Servlet;
 
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.util.Attributes;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.util.Attributes;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
 
 public class ServletTester extends ContainerLifeCycle
 {

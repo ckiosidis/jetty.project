@@ -27,10 +27,10 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
-import org.eclipse.jetty.server.Dispatcher;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.Dispatcher;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.resource.Resource;
 
 
 /* ------------------------------------------------------------ */

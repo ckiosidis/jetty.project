@@ -23,10 +23,10 @@ import java.util.EventListener;
 import java.util.List;
 
 import org.eclipse.jetty.client.util.BufferingResponseListener;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.util.Callback;
 
 /**
  * <p>{@link Response} represents a HTTP response and offers methods to retrieve status code, HTTP version

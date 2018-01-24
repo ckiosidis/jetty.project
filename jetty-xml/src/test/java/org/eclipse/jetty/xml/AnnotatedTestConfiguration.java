@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.xml;
 
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.util.annotation.Name;
 
 public class AnnotatedTestConfiguration
 {

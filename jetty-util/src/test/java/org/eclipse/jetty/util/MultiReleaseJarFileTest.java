@@ -23,9 +23,12 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.stream.Collectors;
 
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.JavaVersion;
+import org.eclipse.betty.util.MultiReleaseJarFile;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.MultiReleaseJarFile.VersionedJarEntry;
+import org.eclipse.betty.util.MultiReleaseJarFile.VersionedJarEntry;
 import org.hamcrest.Matchers;
 import org.junit.Assume;
 import org.junit.Test;

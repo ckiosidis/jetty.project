@@ -20,7 +20,7 @@ package org.eclipse.jetty.websocket.common.ab;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.eclipse.jetty.websocket.api.ProtocolException;
 import org.eclipse.jetty.websocket.api.WebSocketBehavior;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;

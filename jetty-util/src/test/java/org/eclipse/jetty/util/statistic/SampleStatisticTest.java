@@ -20,6 +20,7 @@ package org.eclipse.jetty.util.statistic;
 
 import static org.junit.Assert.assertEquals;
 
+import org.eclipse.betty.util.statistic.SampleStatistic;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

@@ -18,11 +18,11 @@
 
 package org.eclipse.jetty.fcgi.server;
 
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.AbstractConnectionFactory;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.AbstractConnectionFactory;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
 
 public class ServerFCGIConnectionFactory extends AbstractConnectionFactory
 {

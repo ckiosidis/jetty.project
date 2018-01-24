@@ -21,6 +21,7 @@ package org.eclipse.jetty.http;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
+import org.eclipse.betty.http.QuotedCSV;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

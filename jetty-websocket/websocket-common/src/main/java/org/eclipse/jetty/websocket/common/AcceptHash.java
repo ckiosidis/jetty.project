@@ -21,7 +21,7 @@ package org.eclipse.jetty.websocket.common;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
-import org.eclipse.jetty.util.B64Code;
+import org.eclipse.betty.util.B64Code;
 
 /**
  * Logic for working with the <code>Sec-WebSocket-Key</code> and <code>Sec-WebSocket-Accept</code> headers.

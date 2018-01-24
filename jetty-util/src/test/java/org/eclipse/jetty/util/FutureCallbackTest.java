@@ -24,6 +24,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.eclipse.betty.util.FutureCallback;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

@@ -20,15 +20,15 @@
 package org.eclipse.jetty.http2.hpack;
 
 
-import org.eclipse.jetty.http.BadMessageException;
-import org.eclipse.jetty.http.HostPortHttpField;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpScheme;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
+import org.eclipse.betty.http.BadMessageException;
+import org.eclipse.betty.http.HostPortHttpField;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpScheme;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
 
 public class MetaDataBuilder
 {

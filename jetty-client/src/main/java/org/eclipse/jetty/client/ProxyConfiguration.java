@@ -24,8 +24,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.util.HostPort;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.util.HostPort;
 
 /**
  * The configuration of the forward proxy to use with {@link org.eclipse.jetty.client.HttpClient}.

@@ -23,7 +23,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.util.ArrayUtil;
+import org.eclipse.betty.util.ArrayUtil;
 
 /**
  * Groups rules that apply only to a specific virtual host

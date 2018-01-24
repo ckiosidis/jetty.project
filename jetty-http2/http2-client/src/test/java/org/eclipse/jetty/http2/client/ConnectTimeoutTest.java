@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.eclipse.jetty.http2.api.Session;
 import org.eclipse.jetty.http2.api.server.ServerSessionListener;
-import org.eclipse.jetty.util.Promise;
+import org.eclipse.betty.util.Promise;
 import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.Test;

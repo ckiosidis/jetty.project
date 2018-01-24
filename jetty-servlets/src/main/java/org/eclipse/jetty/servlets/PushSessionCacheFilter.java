@@ -34,13 +34,13 @@ import javax.servlet.ServletRequestListener;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpURI;
-import org.eclipse.jetty.server.PushBuilder;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Response;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.server.PushBuilder;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Response;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class PushSessionCacheFilter implements Filter
 {

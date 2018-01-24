@@ -38,17 +38,17 @@ import javax.servlet.ServletSecurityElement;
 import javax.servlet.annotation.ServletSecurity.EmptyRoleSemantic;
 import javax.servlet.annotation.ServletSecurity.TransportGuarantee;
 
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.http.PathMap;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Response;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.http.PathMap;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Response;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Constraint;
 
 /**
  * ConstraintSecurityHandler
@@ -607,7 +607,7 @@ public class ConstraintSecurityHandler extends SecurityHandler implements Constr
      * <li>Mappings with keys of the form "&lt;method&gt;.&lt;method&gt;.&lt;method&gt;.omission" that indicates it will match every method name EXCEPT those given</li>
      * </ol>
      * 
-     * @see org.eclipse.jetty.security.SecurityHandler#prepareConstraintInfo(java.lang.String, org.eclipse.jetty.server.Request)
+     * @see org.eclipse.jetty.security.SecurityHandler#prepareConstraintInfo(java.lang.String, Request)
      */
     @Override
     protected RoleInfo prepareConstraintInfo(String pathInContext, Request request)
@@ -712,7 +712,7 @@ public class ConstraintSecurityHandler extends SecurityHandler implements Constr
     
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.security.SecurityHandler#checkWebResourcePermissions(java.lang.String, org.eclipse.jetty.server.Request, org.eclipse.jetty.server.Response, java.lang.Object, org.eclipse.jetty.server.UserIdentity)
+     * @see org.eclipse.jetty.security.SecurityHandler#checkWebResourcePermissions(java.lang.String, Request, Response, java.lang.Object, UserIdentity)
      */
     @Override
     protected boolean checkWebResourcePermissions(String pathInContext, Request request, Response response, Object constraintInfo, UserIdentity userIdentity)

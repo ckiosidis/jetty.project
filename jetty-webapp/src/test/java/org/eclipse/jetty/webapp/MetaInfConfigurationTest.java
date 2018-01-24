@@ -30,7 +30,7 @@ import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.Test;
 
 /**

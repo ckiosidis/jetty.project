@@ -22,9 +22,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-import org.eclipse.jetty.util.IntrospectionUtil;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.TypeUtil;
+import org.eclipse.betty.util.IntrospectionUtil;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.TypeUtil;
 
 
 

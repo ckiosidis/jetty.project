@@ -31,16 +31,16 @@ import javax.naming.Name;
 import javax.naming.NameNotFoundException;
 import javax.naming.NamingException;
 
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.jndi.ContextFactory;
 import org.eclipse.jetty.jndi.NamingContext;
 import org.eclipse.jetty.jndi.NamingUtil;
 import org.eclipse.jetty.jndi.local.localContextRoot;
 import org.eclipse.jetty.plus.jndi.EnvEntry;
 import org.eclipse.jetty.plus.jndi.NamingEntryUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.webapp.AbstractConfiguration;
-import org.eclipse.jetty.webapp.Configuration;
 import org.eclipse.jetty.webapp.WebAppClassLoader;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.eclipse.jetty.xml.XmlConfiguration;
@@ -80,10 +80,10 @@ public class EnvConfiguration extends AbstractConfiguration
         {
             //look for a file called WEB-INF/jetty-env.xml
             //and process it if it exists
-            org.eclipse.jetty.util.resource.Resource web_inf = context.getWebInf();
+            Resource web_inf = context.getWebInf();
             if(web_inf!=null && web_inf.isDirectory())
             {
-                org.eclipse.jetty.util.resource.Resource jettyEnv = web_inf.addPath("jetty-env.xml");
+                Resource jettyEnv = web_inf.addPath("jetty-env.xml");
                 if(jettyEnv.exists())
                 {
                     jettyEnvXmlUrl = jettyEnv.getURL();

@@ -26,16 +26,16 @@ import org.eclipse.jetty.http2.HTTP2Connection;
 import org.eclipse.jetty.http2.api.server.ServerSessionListener;
 import org.eclipse.jetty.http2.generator.Generator;
 import org.eclipse.jetty.http2.parser.ServerParser;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.AbstractConnectionFactory;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.annotation.Name;
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.thread.ReservedThreadExecutor;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.AbstractConnectionFactory;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.annotation.Name;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.thread.ReservedThreadExecutor;
 
 @ManagedObject
 public abstract class AbstractHTTP2ServerConnectionFactory extends AbstractConnectionFactory

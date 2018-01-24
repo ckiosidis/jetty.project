@@ -21,15 +21,15 @@ package org.eclipse.jetty.http2.hpack;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.http.BadMessageException;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.http.MetaData;
+import org.eclipse.betty.http.BadMessageException;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.http.MetaData;
 import org.eclipse.jetty.http2.hpack.HpackContext.Entry;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Hpack Decoder

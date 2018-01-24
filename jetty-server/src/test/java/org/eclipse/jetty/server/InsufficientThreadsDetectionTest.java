@@ -18,11 +18,14 @@
 
 package org.eclipse.jetty.server;
 
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
-import org.eclipse.jetty.util.thread.ThreadPool;
-import org.eclipse.jetty.util.thread.ThreadPoolBudget;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.ThreadPool;
+import org.eclipse.betty.util.thread.ThreadPoolBudget;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;

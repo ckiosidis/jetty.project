@@ -23,8 +23,8 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.util.URIUtil;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.util.URIUtil;
 
 /**
  * Rewrite the URI by compacting to remove // 

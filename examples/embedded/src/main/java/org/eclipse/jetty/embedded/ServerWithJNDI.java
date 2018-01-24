@@ -21,7 +21,7 @@ package org.eclipse.jetty.embedded;
 import java.io.File;
 import java.util.Properties;
 
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.webapp.Configuration;
 import org.eclipse.jetty.webapp.WebAppContext;
 

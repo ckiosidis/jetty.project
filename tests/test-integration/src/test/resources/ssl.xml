@@ -1,4 +1,4 @@
-<Configure id="sslContextFactory" class="org.eclipse.jetty.util.ssl.SslContextFactory">
+<Configure id="sslContextFactory" class="org.eclipse.betty.util.ssl.SslContextFactory">
   <Set name="KeyStorePath"><Property name="jetty.home" default="." />/<Property name="jetty.sslContext.keyStorePath" default="keystore"/></Set>
   <Set name="KeyStorePassword"><Property name="jetty.sslContext.keyStorePassword" default="OBF:1vny1zlo1x8e1vnw1vn61x8g1zlu1vn4"/></Set>
   <Set name="KeyManagerPassword"><Property name="jetty.sslContext.keyManagerPassword" default="OBF:1u2u1wml1z7s1z7a1wnl1u2g"/></Set>
@@ -23,10 +23,10 @@
   <!-- Add a SecureRequestCustomizer to extract certificate and    -->
   <!-- session information                                         -->
   <!-- =========================================================== -->
-  <New id="sslHttpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+  <New id="sslHttpConfig" class="org.eclipse.betty.server.HttpConfiguration">
     <Arg><Ref refid="httpConfig"/></Arg>
     <Call name="addCustomizer">
-      <Arg><New class="org.eclipse.jetty.server.SecureRequestCustomizer"/></Arg>
+      <Arg><New class="org.eclipse.betty.server.SecureRequestCustomizer"/></Arg>
     </Call>
   </New>
 

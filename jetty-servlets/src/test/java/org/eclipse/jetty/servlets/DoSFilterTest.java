@@ -31,8 +31,8 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.ContextHandler;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.ContextHandler;
 import org.eclipse.jetty.servlets.DoSFilter.RateTracker;
 import org.hamcrest.Matchers;
 import org.junit.Assert;

@@ -23,10 +23,10 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.PathMap;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.http.PathMap;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.annotation.Name;
 
 /**
  * Rewrite the URI by replacing the matched {@link PathMap} path with a fixed string.

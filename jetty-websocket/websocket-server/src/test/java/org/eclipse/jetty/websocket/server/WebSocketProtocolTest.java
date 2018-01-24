@@ -24,8 +24,8 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.util.B64Code;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.util.B64Code;
 import org.eclipse.jetty.websocket.server.browser.BrowserDebugTool;
 import org.junit.After;
 import org.junit.Assert;

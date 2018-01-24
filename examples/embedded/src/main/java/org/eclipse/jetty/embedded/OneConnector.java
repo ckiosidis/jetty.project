@@ -18,8 +18,8 @@
 
 package org.eclipse.jetty.embedded;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 
 /**
  * A Jetty server with one connectors.

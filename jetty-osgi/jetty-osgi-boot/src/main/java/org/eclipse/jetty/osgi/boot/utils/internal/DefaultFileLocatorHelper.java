@@ -19,7 +19,6 @@
 package org.eclipse.jetty.osgi.boot.utils.internal;
 
 import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.URI;
@@ -31,9 +30,9 @@ import java.util.Enumeration;
 import java.util.zip.ZipFile;
 
 import org.eclipse.jetty.osgi.boot.utils.BundleFileLocatorHelper;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.resource.PathResource;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.resource.PathResource;
+import org.eclipse.betty.util.resource.Resource;
 import org.osgi.framework.Bundle;
 
 /**

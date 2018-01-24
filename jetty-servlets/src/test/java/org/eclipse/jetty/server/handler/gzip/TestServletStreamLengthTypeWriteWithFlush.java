@@ -18,6 +18,8 @@
 
 package org.eclipse.jetty.server.handler.gzip;
 
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;

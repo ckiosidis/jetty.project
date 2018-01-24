@@ -36,13 +36,13 @@ import javax.servlet.http.HttpSession;
 import org.eclipse.jetty.security.authentication.DeferredAuthentication;
 import org.eclipse.jetty.security.authentication.LoginCallbackImpl;
 import org.eclipse.jetty.security.authentication.SessionAuthentication;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Constraint;
-import org.eclipse.jetty.util.security.Password;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Constraint;
+import org.eclipse.betty.util.security.Password;
 
 @Deprecated
 public class FormAuthModule extends BaseAuthModule

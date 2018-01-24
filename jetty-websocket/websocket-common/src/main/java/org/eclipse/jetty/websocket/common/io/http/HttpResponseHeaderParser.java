@@ -22,9 +22,9 @@ import java.nio.ByteBuffer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.Utf8LineParser;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.Utf8LineParser;
 
 /**
  * Responsible for reading UTF8 Response Header lines and parsing them into a provided UpgradeResponse object.

@@ -26,7 +26,7 @@ import javax.websocket.MessageHandler;
 import javax.websocket.PongMessage;
 import javax.websocket.Session;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 public class PongMessageEndpoint extends Endpoint implements MessageHandler.Whole<PongMessage>
 {

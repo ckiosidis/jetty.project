@@ -26,7 +26,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-import org.eclipse.jetty.util.component.Dumpable;
+import org.eclipse.betty.server.ClassLoaderDump;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.component.Dumpable;
 import org.junit.Test;
 
 public class ClassLoaderDumptTest

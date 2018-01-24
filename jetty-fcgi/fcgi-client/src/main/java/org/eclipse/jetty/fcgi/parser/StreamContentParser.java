@@ -21,8 +21,8 @@ package org.eclipse.jetty.fcgi.parser;
 import java.nio.ByteBuffer;
 
 import org.eclipse.jetty.fcgi.FCGI;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * <p>A stream content parser parses frame bodies of type STDIN, STDOUT and STDERR.</p>

@@ -34,9 +34,9 @@ import java.util.concurrent.Executor;
 import javax.websocket.ContainerProvider;
 import javax.websocket.WebSocketContainer;
 
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.After;
 import org.junit.Test;
 

@@ -46,16 +46,16 @@ import javax.servlet.UnavailableException;
 
 import org.eclipse.jetty.security.IdentityService;
 import org.eclipse.jetty.security.RunAsToken;
-import org.eclipse.jetty.server.MultiPartCleanerListener;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.MultiPartCleanerListener;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Servlet Instance and Context Holder.
@@ -751,7 +751,7 @@ public class ServletHolder extends Holder<Servlet> implements UserIdentity.Scope
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.server.UserIdentity.Scope#getContextPath()
+     * @see UserIdentity.Scope#getContextPath()
      */
     @Override
     public String getContextPath()
@@ -761,7 +761,7 @@ public class ServletHolder extends Holder<Servlet> implements UserIdentity.Scope
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.server.UserIdentity.Scope#getRoleRefMap()
+     * @see UserIdentity.Scope#getRoleRefMap()
      */
     @Override
     public Map<String, String> getRoleRefMap()

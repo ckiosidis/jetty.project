@@ -25,10 +25,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.jetty.io.LeakTrackingByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
+import org.eclipse.betty.io.AbstractConnection;
+import org.eclipse.betty.io.LeakTrackingByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
 import org.eclipse.jetty.toolchain.test.EventQueue;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.common.Generator;
 import org.eclipse.jetty.websocket.common.WebSocketFrame;
@@ -122,7 +123,7 @@ public class TooFastClientTest
     
     /**
      * Test where were a client sends a HTTP Upgrade to websocket AND enough websocket frame(s)
-     * to completely overfill the {@link org.eclipse.jetty.io.AbstractConnection#getInputBufferSize()}
+     * to completely overfill the {@link AbstractConnection#getInputBufferSize()}
      * to test a situation where the WebSocket connection opens with prefill that exceeds 
      * the normal input buffer sizes.
      * @throws Exception on test failure

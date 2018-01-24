@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
   <Call class="org.eclipse.jetty.webapp.WebAppContext" name="addSystemClasses">
     <Arg><Ref refid="Server"/></Arg>
     <Arg>
-      <Call class="org.eclipse.jetty.util.StringUtil" name="csvSplit">
+      <Call class="org.eclipse.betty.util.StringUtil" name="csvSplit">
         <Arg><Property name="jetty.webapp.addSystemClasses"/></Arg>
       </Call>
     </Arg>
@@ -14,7 +14,7 @@
   <Call class="org.eclipse.jetty.webapp.WebAppContext" name="addServerClasses">
     <Arg><Ref refid="Server"/></Arg>
     <Arg>
-      <Call class="org.eclipse.jetty.util.StringUtil" name="csvSplit">
+      <Call class="org.eclipse.betty.util.StringUtil" name="csvSplit">
         <Arg><Property name="jetty.webapp.addServerClasses"/></Arg>
       </Call>
     </Arg>

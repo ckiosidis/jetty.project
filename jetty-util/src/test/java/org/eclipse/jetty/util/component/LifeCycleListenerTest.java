@@ -22,7 +22,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.junit.Test;
 
 

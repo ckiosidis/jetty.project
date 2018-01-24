@@ -21,9 +21,9 @@ package org.eclipse.jetty.websocket.common;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Utf8StringBuilder;
-import org.eclipse.jetty.util.Utf8Appendable.NotUtf8Exception;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Utf8StringBuilder;
+import org.eclipse.betty.util.Utf8Appendable.NotUtf8Exception;
 import org.eclipse.jetty.websocket.api.BadPayloadException;
 import org.eclipse.jetty.websocket.api.CloseStatus;
 import org.eclipse.jetty.websocket.api.ProtocolException;

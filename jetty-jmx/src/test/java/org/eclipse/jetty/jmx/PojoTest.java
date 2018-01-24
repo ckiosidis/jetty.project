@@ -20,7 +20,10 @@ package org.eclipse.jetty.jmx;
 
 import java.util.Arrays;
 import java.util.List;
-import org.eclipse.jetty.util.log.jmx.LogMBean;
+
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.jmx.ObjectMBean;
+import org.eclipse.betty.util.log.jmx.LogMBean;
 import org.junit.Test;
 import com.openpojo.reflection.impl.PojoClassFactory;
 import com.openpojo.validation.Validator;

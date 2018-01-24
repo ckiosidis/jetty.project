@@ -26,8 +26,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.AbstractHandler;
 
 public class EchoHandler extends AbstractHandler
 {

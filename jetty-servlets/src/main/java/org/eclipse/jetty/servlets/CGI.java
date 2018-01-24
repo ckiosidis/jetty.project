@@ -36,13 +36,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpMethod;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.MultiMap;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.UrlEncoded;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.UrlEncoded;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * CGI Servlet.

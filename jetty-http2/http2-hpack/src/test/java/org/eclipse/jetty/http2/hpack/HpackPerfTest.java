@@ -25,11 +25,11 @@ import java.io.FilenameFilter;
 import java.nio.ByteBuffer;
 import java.util.Map;
 
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.eclipse.jetty.util.ajax.JSON;
 import org.junit.After;
 import org.junit.Before;

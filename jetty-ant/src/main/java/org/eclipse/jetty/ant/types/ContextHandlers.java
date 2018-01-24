@@ -22,7 +22,7 @@ package org.eclipse.jetty.ant.types;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
 
 /**
  * Specifies <code>&lt;contextHandlers/&gt;</code> element in web app configuration.

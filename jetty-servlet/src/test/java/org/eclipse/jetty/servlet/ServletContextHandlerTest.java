@@ -46,20 +46,20 @@ import javax.servlet.http.HttpSessionListener;
 
 import org.eclipse.jetty.security.ConstraintSecurityHandler;
 import org.eclipse.jetty.security.SecurityHandler;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.AbstractHandlerContainer;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
-import org.eclipse.jetty.server.handler.HandlerList;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.server.handler.ResourceHandler;
-import org.eclipse.jetty.server.handler.gzip.GzipHandler;
-import org.eclipse.jetty.server.session.SessionHandler;
-import org.eclipse.jetty.util.DecoratedObjectFactory;
-import org.eclipse.jetty.util.Decorator;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.AbstractHandlerContainer;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.handler.HandlerList;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.handler.ResourceHandler;
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
+import org.eclipse.betty.server.session.SessionHandler;
+import org.eclipse.betty.util.DecoratedObjectFactory;
+import org.eclipse.betty.util.Decorator;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
@@ -468,7 +468,7 @@ public class ServletContextHandlerTest
     }
     
     /**
-     * Test behavior of new {@link org.eclipse.jetty.util.Decorator}, with
+     * Test behavior of new {@link Decorator}, with
      * new DecoratedObjectFactory class
      * @throws Exception on test failure
      */
@@ -524,7 +524,7 @@ public class ServletContextHandlerTest
         }
     }
     
-    public static class DummyUtilDecorator implements org.eclipse.jetty.util.Decorator
+    public static class DummyUtilDecorator implements Decorator
     {
         @Override
         public <T> T decorate(T o)

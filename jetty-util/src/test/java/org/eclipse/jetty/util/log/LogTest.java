@@ -25,6 +25,11 @@ import static org.junit.Assert.assertThat;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.eclipse.betty.util.log.JavaUtilLog;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.log.Slf4jLog;
+import org.eclipse.betty.util.log.StdErrLog;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;

@@ -31,12 +31,12 @@ import java.util.Properties;
 
 import javax.servlet.ServletRequest;
 
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.security.Credential;
 
 /* ------------------------------------------------------------ */
 /**
@@ -293,7 +293,7 @@ public class JDBCLoginService extends AbstractLoginService
 
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStop()
+     * @see AbstractLifeCycle#doStop()
      */
     @Override
     protected void doStop() throws Exception

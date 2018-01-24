@@ -21,6 +21,7 @@ package org.eclipse.jetty.util;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.betty.util.LeakDetector;
 import org.junit.Assert;
 import org.junit.Test;
 

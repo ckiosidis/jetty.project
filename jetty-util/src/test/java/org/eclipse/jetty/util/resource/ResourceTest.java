@@ -31,10 +31,11 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.OS;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

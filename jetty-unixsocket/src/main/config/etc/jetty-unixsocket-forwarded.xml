@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
-<Configure id="unixSocketHttpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+<Configure id="unixSocketHttpConfig" class="org.eclipse.betty.server.HttpConfiguration">
   <Call name="addCustomizer">
     <Arg>
-      <New class="org.eclipse.jetty.server.ForwardedRequestCustomizer">
+      <New class="org.eclipse.betty.server.ForwardedRequestCustomizer">
         <Set name="forwardedHostHeader"><Property name="jetty.unixSocketHttpConfig.forwardedHostHeader" default="X-Forwarded-Host"/></Set>
         <Set name="forwardedServerHeader"><Property name="jetty.unixSocketHttpConfig.forwardedServerHeader" default="X-Forwarded-Server"/></Set>
         <Set name="forwardedProtoHeader"><Property name="jetty.unixSocketHttpConfig.forwardedProtoHeader" default="X-Forwarded-Proto"/></Set>

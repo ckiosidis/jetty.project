@@ -31,14 +31,15 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.betty.server.HttpChannel;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Result;
 import org.eclipse.jetty.client.http.HttpDestinationOverHTTP;
 import org.eclipse.jetty.client.util.ByteBufferContentProvider;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -263,7 +264,7 @@ public class HttpRequestAbortTest extends AbstractHttpClientServerTest
         start(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 try
                 {
@@ -321,13 +322,13 @@ public class HttpRequestAbortTest extends AbstractHttpClientServerTest
     @Test
     public void testAbortOnContent() throws Exception
     {
-        try (StacklessLogging suppressor = new StacklessLogging(org.eclipse.jetty.server.HttpChannel.class))
+        try (StacklessLogging suppressor = new StacklessLogging(HttpChannel.class))
         {
             CountDownLatch serverLatch = new CountDownLatch(1);
             start(new EmptyServerHandler()
             {
                 @Override
-                protected void service(String target, org.eclipse.jetty.server.Request jettyRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+                protected void service(String target, org.eclipse.betty.server.Request jettyRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
                 {
                     try
                     {
@@ -389,7 +390,7 @@ public class HttpRequestAbortTest extends AbstractHttpClientServerTest
         start(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 try
                 {
@@ -432,7 +433,7 @@ public class HttpRequestAbortTest extends AbstractHttpClientServerTest
         start(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 try
                 {
@@ -493,7 +494,7 @@ public class HttpRequestAbortTest extends AbstractHttpClientServerTest
         start(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 try
                 {
@@ -533,7 +534,7 @@ public class HttpRequestAbortTest extends AbstractHttpClientServerTest
         start(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 baseRequest.setHandled(true);
                 if (!"/done".equals(request.getRequestURI()))

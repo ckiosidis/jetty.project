@@ -43,8 +43,10 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.http.Part;
 
-import org.eclipse.jetty.util.MultiPartInputStreamParser.MultiPart;
-import org.hamcrest.Matchers;
+import org.eclipse.betty.util.B64Code;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.MultiPartInputStreamParser;
+import org.eclipse.betty.util.MultiPartInputStreamParser.MultiPart;
 import org.junit.Test;
 
 /**
@@ -77,7 +79,7 @@ public class MultiPartInputStreamTest
         "\r\n--" + boundary + "-\r\n\r\n";
 
         MultipartConfigElement config = new MultipartConfigElement(_dirname, 1024, 3072, 50);
-        MultiPartInputStreamParser mpis = new MultiPartInputStreamParser(new ByteArrayInputStream(str.getBytes()), 
+        MultiPartInputStreamParser mpis = new MultiPartInputStreamParser(new ByteArrayInputStream(str.getBytes()),
                                                                          "multipart/form-data, boundary="+boundary,
                                                                          config,
                                                                          _tmpDir);
@@ -967,7 +969,7 @@ public class MultiPartInputStreamTest
                         "Content-Transfer-Encoding: base64\r\n"+
                         "Content-Type: application/octet-stream\r\n"+
                         "\r\n"+
-                        B64Code.encode("hello jetty") + "\r\n"+                  
+                        B64Code.encode("hello jetty") + "\r\n"+
                         "--AaB03x\r\n"+
                         "Content-disposition: form-data; name=\"final\"\r\n"+
                         "Content-Type: text/plain\r\n"+

@@ -20,7 +20,7 @@ package org.eclipse.jetty.webapp;
 
 import java.util.List;
 
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * Ordering options for jars in WEB-INF lib.

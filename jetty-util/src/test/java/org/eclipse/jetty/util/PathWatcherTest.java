@@ -18,9 +18,9 @@
 
 package org.eclipse.jetty.util;
 
-import static org.eclipse.jetty.util.PathWatcher.PathWatchEventType.ADDED;
-import static org.eclipse.jetty.util.PathWatcher.PathWatchEventType.DELETED;
-import static org.eclipse.jetty.util.PathWatcher.PathWatchEventType.MODIFIED;
+import static org.eclipse.betty.util.PathWatcher.PathWatchEventType.ADDED;
+import static org.eclipse.betty.util.PathWatcher.PathWatchEventType.DELETED;
+import static org.eclipse.betty.util.PathWatcher.PathWatchEventType.MODIFIED;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.is;
@@ -34,8 +34,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.nio.file.attribute.DosFileAttributes;
-import java.nio.file.attribute.FileTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -44,13 +42,14 @@ import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.betty.util.PathWatcher;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.OS;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.PathWatcher.PathWatchEvent;
-import org.eclipse.jetty.util.PathWatcher.PathWatchEventType;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.PathWatcher.PathWatchEvent;
+import org.eclipse.betty.util.PathWatcher.PathWatchEventType;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.junit.Assume;
 import org.junit.Ignore;
 import org.junit.Rule;

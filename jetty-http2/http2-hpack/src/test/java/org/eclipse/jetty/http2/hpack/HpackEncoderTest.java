@@ -25,12 +25,11 @@ import static org.junit.Assert.assertThat;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.TypeUtil;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.util.BufferUtil;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

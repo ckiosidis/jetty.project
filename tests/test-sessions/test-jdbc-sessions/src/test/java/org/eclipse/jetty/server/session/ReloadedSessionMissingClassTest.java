@@ -30,14 +30,18 @@ import java.net.URLClassLoader;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.DefaultSessionCacheFactory;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.junit.After;
 import org.junit.Rule;
@@ -89,7 +93,7 @@ public class ReloadedSessionMissingClassTest
 
         DefaultSessionCacheFactory cacheFactory = new DefaultSessionCacheFactory();
         cacheFactory.setEvictionPolicy(SessionCache.NEVER_EVICT);
-        SessionDataStoreFactory storeFactory = JdbcTestHelper.newSessionDataStoreFactory();   
+        SessionDataStoreFactory storeFactory = JdbcTestHelper.newSessionDataStoreFactory();
         ((AbstractSessionDataStoreFactory)storeFactory).setGracePeriodSec(TestServer.DEFAULT_SCAVENGE_SEC);
        
         TestServer server1 = new TestServer(0, TestServer.DEFAULT_MAX_INACTIVE, TestServer.DEFAULT_SCAVENGE_SEC,cacheFactory, storeFactory);

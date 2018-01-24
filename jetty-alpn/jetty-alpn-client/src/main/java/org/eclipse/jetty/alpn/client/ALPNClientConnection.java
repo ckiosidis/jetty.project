@@ -24,11 +24,11 @@ import java.util.concurrent.Executor;
 
 import javax.net.ssl.SSLEngine;
 
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.NegotiatingClientConnection;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.NegotiatingClientConnection;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class ALPNClientConnection extends NegotiatingClientConnection
 {

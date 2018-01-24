@@ -20,7 +20,7 @@ package org.eclipse.jetty.websocket.common.util;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 public final class Hex
 {

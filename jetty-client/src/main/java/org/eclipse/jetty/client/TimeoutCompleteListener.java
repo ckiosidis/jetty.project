@@ -25,11 +25,10 @@ import java.util.concurrent.atomic.AtomicReference;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
-import org.eclipse.jetty.io.CyclicTimeout;
-import org.eclipse.jetty.util.component.Destroyable;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.io.CyclicTimeout;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.thread.Scheduler;
 
 public class TimeoutCompleteListener extends CyclicTimeout implements Response.CompleteListener
 {

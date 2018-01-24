@@ -23,7 +23,7 @@ import java.util.List;
 
 import javax.security.auth.Subject;
 
-import org.eclipse.jetty.server.UserIdentity;
+import org.eclipse.betty.server.UserIdentity;
 
 public class SpnegoUserIdentity implements UserIdentity
 {

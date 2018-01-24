@@ -24,7 +24,7 @@ import static org.junit.Assert.assertThat;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 public class ByteBufferAssert
 {

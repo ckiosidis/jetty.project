@@ -31,22 +31,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.CompressedContentFormat;
-import org.eclipse.jetty.http.HttpContent;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.MimeTypes;
-import org.eclipse.jetty.http.PreEncodedHttpField;
-import org.eclipse.jetty.http.pathmap.MappedResource;
-import org.eclipse.jetty.server.CachedContentFactory;
-import org.eclipse.jetty.server.ResourceContentFactory;
-import org.eclipse.jetty.server.ResourceService;
-import org.eclipse.jetty.server.ResourceService.WelcomeFactory;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.resource.ResourceFactory;
+import org.eclipse.betty.http.CompressedContentFormat;
+import org.eclipse.betty.http.HttpContent;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.MimeTypes;
+import org.eclipse.betty.http.PreEncodedHttpField;
+import org.eclipse.betty.http.pathmap.MappedResource;
+import org.eclipse.betty.server.CachedContentFactory;
+import org.eclipse.betty.server.ResourceContentFactory;
+import org.eclipse.betty.server.ResourceService;
+import org.eclipse.betty.server.ResourceService.WelcomeFactory;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.resource.ResourceFactory;
 
 
 /** 

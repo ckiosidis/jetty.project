@@ -45,21 +45,21 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.security.authentication.BasicAuthenticator;
 import org.eclipse.jetty.security.authentication.DigestAuthenticator;
 import org.eclipse.jetty.security.authentication.FormAuthenticator;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.server.session.SessionHandler;
-import org.eclipse.jetty.util.B64Code;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.security.Constraint;
-import org.eclipse.jetty.util.security.Password;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.session.SessionHandler;
+import org.eclipse.betty.util.B64Code;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.security.Constraint;
+import org.eclipse.betty.util.security.Password;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
@@ -1381,7 +1381,7 @@ public class ConstraintTest
     {
         /* ------------------------------------------------------------ */
         /**
-         * @see org.eclipse.jetty.server.handler.HandlerWrapper#handle(java.lang.String, Request, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+         * @see HandlerWrapper#handle(java.lang.String, Request, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
          */
         @Override
         public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException

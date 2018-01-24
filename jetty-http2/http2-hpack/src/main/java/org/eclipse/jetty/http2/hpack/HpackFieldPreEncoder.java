@@ -21,10 +21,10 @@ package org.eclipse.jetty.http2.hpack;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.http.HttpFieldPreEncoder;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.HttpFieldPreEncoder;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.util.BufferUtil;
 
 
 /* ------------------------------------------------------------ */
@@ -34,7 +34,7 @@ public class HpackFieldPreEncoder implements HttpFieldPreEncoder
 {
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.http.HttpFieldPreEncoder#getHttpVersion()
+     * @see HttpFieldPreEncoder#getHttpVersion()
      */
     @Override
     public HttpVersion getHttpVersion()
@@ -44,7 +44,7 @@ public class HpackFieldPreEncoder implements HttpFieldPreEncoder
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.http.HttpFieldPreEncoder#getEncodedField(org.eclipse.jetty.http.HttpHeader, java.lang.String, java.lang.String)
+     * @see HttpFieldPreEncoder#getEncodedField(HttpHeader, java.lang.String, java.lang.String)
      */
     @Override
     public byte[] getEncodedField(HttpHeader header, String name, String value)

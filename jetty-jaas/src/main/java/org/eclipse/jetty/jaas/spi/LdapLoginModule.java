@@ -43,11 +43,11 @@ import javax.security.auth.callback.UnsupportedCallbackException;
 import javax.security.auth.login.LoginException;
 
 import org.eclipse.jetty.jaas.callback.ObjectCallback;
-import org.eclipse.jetty.util.B64Code;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.util.B64Code;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Credential;
 
 /**
  * A LdapLoginModule for use with JAAS setups

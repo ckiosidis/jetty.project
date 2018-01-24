@@ -20,7 +20,7 @@ package org.eclipse.jetty.websocket.common.frames;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.StringUtil;
 import org.eclipse.jetty.websocket.common.OpCode;
 
 public class ContinuationFrame extends DataFrame

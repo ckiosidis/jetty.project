@@ -30,9 +30,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.client.util.DeferredContentProvider;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

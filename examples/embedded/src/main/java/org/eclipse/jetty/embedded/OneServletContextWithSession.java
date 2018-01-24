@@ -18,11 +18,11 @@
 
 package org.eclipse.jetty.embedded;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.session.DefaultSessionCache;
-import org.eclipse.jetty.server.session.NullSessionDataStore;
-import org.eclipse.jetty.server.session.SessionCache;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.session.DefaultSessionCache;
+import org.eclipse.betty.server.session.NullSessionDataStore;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
 

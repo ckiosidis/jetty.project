@@ -23,7 +23,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.PathMap;
+import org.eclipse.betty.http.PathMap;
 
 /**
  * Abstract rule that use a {@link PathMap} for pattern matching. It uses the 

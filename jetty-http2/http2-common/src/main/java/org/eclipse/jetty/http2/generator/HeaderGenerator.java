@@ -22,7 +22,7 @@ import java.nio.ByteBuffer;
 
 import org.eclipse.jetty.http2.frames.Frame;
 import org.eclipse.jetty.http2.frames.FrameType;
-import org.eclipse.jetty.io.ByteBufferPool;
+import org.eclipse.betty.io.ByteBufferPool;
 
 public class HeaderGenerator
 {

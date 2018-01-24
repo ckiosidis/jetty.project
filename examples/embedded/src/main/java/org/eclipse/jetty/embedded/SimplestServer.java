@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.embedded;
 
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.Server;
 
 /**
  * The simplest possible Jetty server.

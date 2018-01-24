@@ -31,9 +31,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

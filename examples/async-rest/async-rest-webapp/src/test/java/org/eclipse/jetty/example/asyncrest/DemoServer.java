@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.example.asyncrest;
 
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 public class DemoServer

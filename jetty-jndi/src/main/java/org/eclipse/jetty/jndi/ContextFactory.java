@@ -31,8 +31,8 @@ import javax.naming.Reference;
 import javax.naming.StringRefAddr;
 import javax.naming.spi.ObjectFactory;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.log.Logger;
 
 
 
@@ -153,7 +153,7 @@ public class ContextFactory implements ObjectFactory
         if (ContextHandler.getCurrentContext() != null)
         {
             
-            if (__log.isDebugEnabled() && loader != null) __log.debug("Trying classloader of current org.eclipse.jetty.server.handler.ContextHandler");
+            if (__log.isDebugEnabled() && loader != null) __log.debug("Trying classloader of current ContextHandler");
             loader = ContextHandler.getCurrentContext().getContextHandler().getClassLoader();
             ctx = (Context)__contextMap.get(loader);    
 

@@ -26,12 +26,12 @@ import java.util.Deque;
 import java.util.List;
 import java.util.Objects;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.IteratingCallback;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.IteratingCallback;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.api.BatchMode;
 import org.eclipse.jetty.websocket.api.WriteCallback;
 import org.eclipse.jetty.websocket.api.extensions.Frame;

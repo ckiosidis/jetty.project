@@ -20,7 +20,12 @@ package org.eclipse.jetty.http;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpGenerator;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.util.BufferUtil;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
@@ -33,7 +38,7 @@ public class HttpGeneratorClientTest
     {
         Info(String method,String uri)
         {
-            super(method,new HttpURI(uri),HttpVersion.HTTP_1_1,new HttpFields(),-1);
+            super(method,new HttpURI(uri), HttpVersion.HTTP_1_1,new HttpFields(),-1);
         }
 
         public Info(String method,String uri, int contentLength)

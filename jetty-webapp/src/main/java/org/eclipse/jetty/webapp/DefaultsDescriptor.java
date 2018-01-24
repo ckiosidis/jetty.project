@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.webapp;
 
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * DefaultsDescriptor

@@ -18,6 +18,7 @@
 
 package org.eclipse.jetty.util;
 
+import org.eclipse.betty.util.Uptime;
 import org.junit.Test;
 
 public class UptimeTest
@@ -26,6 +27,6 @@ public class UptimeTest
     public void testUptime()
     {
         // should not throw an exception (if it does, the exception flows out and fails the testcase)
-        System.err.printf("Uptime = %,d%n",Uptime.getUptime());
+        System.err.printf("Uptime = %,d%n", Uptime.getUptime());
     }
 }

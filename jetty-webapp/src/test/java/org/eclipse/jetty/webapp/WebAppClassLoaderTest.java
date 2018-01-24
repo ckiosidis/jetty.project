@@ -41,9 +41,9 @@ import java.util.Enumeration;
 import java.util.List;
 
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.resource.PathResource;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.resource.PathResource;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

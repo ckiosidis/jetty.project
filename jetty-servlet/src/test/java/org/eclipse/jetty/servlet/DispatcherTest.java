@@ -49,16 +49,16 @@ import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 
-import org.eclipse.jetty.server.Dispatcher;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
-import org.eclipse.jetty.server.handler.ResourceHandler;
+import org.eclipse.betty.server.Dispatcher;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.handler.ResourceHandler;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.UrlEncoded;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.UrlEncoded;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -364,7 +364,7 @@ public class DispatcherTest
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
         {
             RequestDispatcher dispatcher = null;
-            request.setAttribute("org.eclipse.jetty.server.Request.queryEncoding", "cp1251");          
+            request.setAttribute("Request.queryEncoding", "cp1251");
             dispatcher = getServletContext().getRequestDispatcher("/AssertForwardServlet?do=end&else=%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BE%3D%D0%A2%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0");
             dispatcher.forward(request, response);
         }
