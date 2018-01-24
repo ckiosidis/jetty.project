@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.spring;
 
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.xml.XmlConfiguration;
 
 /**

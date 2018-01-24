@@ -27,11 +27,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.eclipse.jetty.server.SessionIdManager;
+import org.eclipse.betty.server.session.DatabaseAdaptor;
+import org.eclipse.betty.server.session.JDBCSessionDataStore;
+import org.eclipse.betty.server.session.JDBCSessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 
 /**

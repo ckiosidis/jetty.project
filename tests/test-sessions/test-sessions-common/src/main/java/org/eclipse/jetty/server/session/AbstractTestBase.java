@@ -19,6 +19,8 @@
 
 package org.eclipse.jetty.server.session;
 
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+
 /**
  * AbstractTestBase
  *

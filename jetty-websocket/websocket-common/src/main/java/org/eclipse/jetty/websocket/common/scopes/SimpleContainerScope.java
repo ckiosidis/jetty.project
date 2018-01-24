@@ -20,12 +20,12 @@ package org.eclipse.jetty.websocket.common.scopes;
 
 import java.util.concurrent.Executor;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.util.DecoratedObjectFactory;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.util.DecoratedObjectFactory;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.common.WebSocketSession;
 

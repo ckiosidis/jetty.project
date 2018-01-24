@@ -35,13 +35,18 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.DefaultSessionCacheFactory;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.Log;
 import org.junit.Test;
 
 /**
@@ -186,7 +191,7 @@ public abstract class AbstractSessionExpiryTest extends AbstractTestBase
         
         try
         {
-            Log.getLogger(org.eclipse.jetty.util.thread.QueuedThreadPool.class).setDebugEnabled(true);
+            Log.getLogger(QueuedThreadPool.class).setDebugEnabled(true);
             server1.start();
             int port1 = server1.getPort();
 
@@ -216,7 +221,7 @@ public abstract class AbstractSessionExpiryTest extends AbstractTestBase
         }
         finally
         {
-            Log.getLogger(org.eclipse.jetty.util.thread.QueuedThreadPool.class).setDebugEnabled(false);
+            Log.getLogger(QueuedThreadPool.class).setDebugEnabled(false);
             client.stop();
             server1.stop();
         }

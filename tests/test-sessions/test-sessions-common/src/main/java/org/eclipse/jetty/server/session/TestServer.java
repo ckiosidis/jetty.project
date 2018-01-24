@@ -18,10 +18,17 @@
 
 package org.eclipse.jetty.server.session;
 
-import org.eclipse.jetty.server.NetworkConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.SessionIdManager;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.NetworkConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.SessionIdManager;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.session.DefaultSessionIdManager;
+import org.eclipse.betty.server.session.HouseKeeper;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionCacheFactory;
+import org.eclipse.betty.server.session.SessionDataStore;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.webapp.WebAppContext;
 

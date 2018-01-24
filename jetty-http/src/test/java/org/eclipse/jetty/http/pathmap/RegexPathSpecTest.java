@@ -22,6 +22,9 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
+import org.eclipse.betty.http.pathmap.PathSpec;
+import org.eclipse.betty.http.pathmap.PathSpecGroup;
+import org.eclipse.betty.http.pathmap.RegexPathSpec;
 import org.junit.Test;
 
 public class RegexPathSpecTest
@@ -45,7 +48,7 @@ public class RegexPathSpecTest
         assertEquals("Spec.pathSpec","^/a$",spec.getDeclaration());
         assertEquals("Spec.pattern","^/a$",spec.getPattern().pattern());
         assertEquals("Spec.pathDepth",1,spec.getPathDepth());
-        assertEquals("Spec.group",PathSpecGroup.EXACT,spec.group);
+        assertEquals("Spec.group", PathSpecGroup.EXACT,spec.group);
 
         assertMatches(spec,"/a");
 

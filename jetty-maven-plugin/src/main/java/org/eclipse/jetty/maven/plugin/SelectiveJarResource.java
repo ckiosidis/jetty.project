@@ -32,11 +32,11 @@ import java.util.jar.JarInputStream;
 import java.util.jar.Manifest;
 
 import org.codehaus.plexus.util.SelectorUtils;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.JarResource;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.JarResource;
 
 
 
@@ -111,7 +111,7 @@ public class SelectiveJarResource extends JarResource
   
 
     /** 
-     * @see org.eclipse.jetty.util.resource.JarResource#copyTo(java.io.File)
+     * @see JarResource#copyTo(java.io.File)
      */
     @Override
     public void copyTo(File directory) throws IOException

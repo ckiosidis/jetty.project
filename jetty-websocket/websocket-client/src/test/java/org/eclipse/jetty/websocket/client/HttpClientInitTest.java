@@ -33,9 +33,9 @@ import java.util.concurrent.Executor;
 
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
-import org.eclipse.jetty.util.thread.ThreadClassLoaderScope;
+import org.eclipse.betty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.ThreadClassLoaderScope;
 import org.junit.Test;
 
 public class HttpClientInitTest

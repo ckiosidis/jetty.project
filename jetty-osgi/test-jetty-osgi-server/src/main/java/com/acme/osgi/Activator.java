@@ -21,11 +21,12 @@ package com.acme.osgi;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
-import org.eclipse.jetty.util.component.AbstractLifeCycle.AbstractLifeCycleListener;
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.component.AbstractLifeCycle.AbstractLifeCycleListener;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
@@ -52,7 +53,7 @@ public class Activator implements BundleActivator
         {
 
             /** 
-             * @see org.eclipse.jetty.util.component.AbstractLifeCycle.AbstractLifeCycleListener#lifeCycleStarted(org.eclipse.jetty.util.component.LifeCycle)
+             * @see AbstractLifeCycle.AbstractLifeCycleListener#lifeCycleStarted(LifeCycle)
              */
             @Override
             public void lifeCycleStarted(LifeCycle event)

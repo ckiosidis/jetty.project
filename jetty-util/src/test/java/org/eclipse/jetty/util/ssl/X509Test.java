@@ -23,6 +23,7 @@ import static org.junit.Assert.assertThat;
 
 import java.security.cert.X509Certificate;
 
+import org.eclipse.betty.util.ssl.X509;
 import org.junit.Test;
 
 public class X509Test

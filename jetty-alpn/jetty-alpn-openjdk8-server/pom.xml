@@ -68,7 +68,8 @@
                  <Export-Package>*</Export-Package>
                  <Import-Package>org.eclipse.jetty.alpn;version="${alpn.majorVersion}.${alpn.minorVersion}.${alpn.incrementalVersion}",*</Import-Package>
                  <Require-Capability>osgi.extender; filter:="(osgi.extender=osgi.serviceloader.registrar)"</Require-Capability>
-                 <Provide-Capability>osgi.serviceloader; osgi.serviceloader=org.eclipse.jetty.io.ssl.ALPNProcessor$Server</Provide-Capability>
+                 <Provide-Capability>osgi.serviceloader;
+                     osgi.serviceloader=org.eclipse.betty.io.ssl.ALPNProcessor$Server</Provide-Capability>
                  <_nouses>true</_nouses>
                </instructions>
              </configuration>

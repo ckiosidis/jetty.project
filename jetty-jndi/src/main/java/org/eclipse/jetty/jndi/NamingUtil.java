@@ -29,7 +29,8 @@ import javax.naming.NameParser;
 import javax.naming.NamingEnumeration;
 import javax.naming.NamingException;
 
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 
 /**
@@ -37,7 +38,7 @@ import org.eclipse.jetty.util.log.Logger;
  */
 public class NamingUtil
 {
-    public final static Logger __log=org.eclipse.jetty.util.log.Log.getLogger("jndi");
+    public final static Logger __log= Log.getLogger("jndi");
 
     /* ------------------------------------------------------------ */
     /**

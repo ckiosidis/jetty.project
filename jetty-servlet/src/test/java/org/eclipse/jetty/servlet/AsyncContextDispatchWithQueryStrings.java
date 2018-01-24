@@ -30,12 +30,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.DefaultHandler;
-import org.eclipse.jetty.server.handler.HandlerList;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.DefaultHandler;
+import org.eclipse.betty.server.handler.HandlerList;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

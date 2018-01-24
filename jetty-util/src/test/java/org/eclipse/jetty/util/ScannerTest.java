@@ -26,12 +26,14 @@ import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.Scanner;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.OS;
 import org.eclipse.jetty.toolchain.test.annotation.Slow;
-import org.eclipse.jetty.util.Scanner.Notification;
+import org.eclipse.betty.util.Scanner.Notification;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Assume;

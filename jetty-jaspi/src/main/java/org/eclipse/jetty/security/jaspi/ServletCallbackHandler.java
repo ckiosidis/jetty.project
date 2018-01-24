@@ -36,7 +36,7 @@ import org.eclipse.jetty.security.LoginService;
 import org.eclipse.jetty.security.authentication.LoginCallback;
 import org.eclipse.jetty.security.authentication.LoginCallbackImpl;
 import org.eclipse.jetty.security.jaspi.callback.CredentialValidationCallback;
-import org.eclipse.jetty.server.UserIdentity;
+import org.eclipse.betty.server.UserIdentity;
 
 /**
  * Idiot class required by jaspi stupidity

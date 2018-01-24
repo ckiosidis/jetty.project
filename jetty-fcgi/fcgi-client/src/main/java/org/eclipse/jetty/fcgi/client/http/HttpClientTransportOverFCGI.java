@@ -30,11 +30,11 @@ import org.eclipse.jetty.client.Origin;
 import org.eclipse.jetty.client.api.Connection;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.fcgi.FCGI;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
 
 @ManagedObject("The FastCGI/1.0 client transport")
 public class HttpClientTransportOverFCGI extends AbstractConnectorHttpClientTransport
@@ -82,7 +82,7 @@ public class HttpClientTransportOverFCGI extends AbstractConnectorHttpClientTran
     }
 
     @Override
-    public org.eclipse.jetty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
+    public org.eclipse.betty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
     {
         HttpDestination destination = (HttpDestination)context.get(HTTP_DESTINATION_CONTEXT_KEY);
         @SuppressWarnings("unchecked")

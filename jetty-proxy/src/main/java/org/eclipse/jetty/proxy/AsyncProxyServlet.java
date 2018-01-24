@@ -35,8 +35,8 @@ import org.eclipse.jetty.client.api.ContentProvider;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.util.DeferredContentProvider;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.IteratingCallback;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.IteratingCallback;
 
 /**
  * <p>Servlet 3.1 asynchronous proxy servlet.</p>

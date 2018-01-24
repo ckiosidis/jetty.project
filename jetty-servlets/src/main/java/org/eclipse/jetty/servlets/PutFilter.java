@@ -43,9 +43,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.URIUtil;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.URIUtil;
 
 /**
  * PutFilter

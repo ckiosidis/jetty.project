@@ -20,6 +20,7 @@ package org.eclipse.jetty.util;
 
 import java.nio.charset.StandardCharsets;
 
+import org.eclipse.betty.util.B64Code;
 import org.junit.Assert;
 import org.junit.Test;
 

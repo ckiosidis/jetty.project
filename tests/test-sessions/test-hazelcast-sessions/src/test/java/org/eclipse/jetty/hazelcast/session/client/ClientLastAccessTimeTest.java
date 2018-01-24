@@ -24,7 +24,7 @@ import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import org.eclipse.jetty.hazelcast.session.HazelcastSessionDataStoreFactory;
 import org.eclipse.jetty.server.session.AbstractClusteredLastAccessTimeTest;
-import org.eclipse.jetty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.junit.After;
 import org.junit.Before;
 

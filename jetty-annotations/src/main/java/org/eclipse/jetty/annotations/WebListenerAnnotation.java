@@ -30,9 +30,9 @@ import javax.servlet.http.HttpSessionListener;
 
 import org.eclipse.jetty.servlet.ListenerHolder;
 import org.eclipse.jetty.servlet.Source;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.webapp.DiscoveredAnnotation;
 import org.eclipse.jetty.webapp.MetaData;
 import org.eclipse.jetty.webapp.Origin;

@@ -27,7 +27,7 @@ import javax.websocket.DecodeException;
 import javax.websocket.Decoder;
 import javax.websocket.EndpointConfig;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.eclipse.jetty.websocket.jsr356.samples.Fruit;
 import org.eclipse.jetty.websocket.jsr356.samples.FruitBinaryEncoder;
 

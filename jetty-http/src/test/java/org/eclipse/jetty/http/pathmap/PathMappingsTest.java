@@ -22,6 +22,11 @@ import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import org.eclipse.betty.http.pathmap.MappedResource;
+import org.eclipse.betty.http.pathmap.PathMappings;
+import org.eclipse.betty.http.pathmap.RegexPathSpec;
+import org.eclipse.betty.http.pathmap.ServletPathSpec;
+import org.eclipse.betty.http.pathmap.UriTemplatePathSpec;
 import org.junit.Assert;
 import org.junit.Test;
 

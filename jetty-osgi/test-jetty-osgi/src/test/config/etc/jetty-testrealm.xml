@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-" "http://www.eclipse.org/jetty/configure_9_3.dtd">
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
     <!-- =========================================================== -->
     <!-- Configure Authentication Login Service                      -->
     <!-- Realms may be configured for the entire server here, or     -->

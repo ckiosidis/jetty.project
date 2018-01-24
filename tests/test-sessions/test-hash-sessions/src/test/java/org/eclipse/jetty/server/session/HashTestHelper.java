@@ -18,6 +18,9 @@
 
 package org.eclipse.jetty.server.session;
 
+import org.eclipse.betty.server.session.NullSessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+
 /**
  * HashTestHelper
  * 

@@ -21,6 +21,8 @@ package org.eclipse.jetty.http;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.http.HttpStatus;
 import org.junit.Test;
 
 public class HttpStatusCodeTest
@@ -42,6 +44,6 @@ public class HttpStatusCodeTest
 
     public void testHttpMethod()
     {
-        assertEquals("GET",HttpMethod.GET.toString());
+        assertEquals("GET", HttpMethod.GET.toString());
     }
 }

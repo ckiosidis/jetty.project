@@ -23,7 +23,7 @@ import java.nio.ByteBuffer;
 import javax.websocket.DecodeException;
 import javax.websocket.Decoder;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 public class ByteArrayDecoder extends AbstractDecoder implements Decoder.Binary<byte[]>
 {

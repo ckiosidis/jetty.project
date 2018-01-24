@@ -19,11 +19,11 @@
 package org.eclipse.jetty.servlet;
 
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.StatisticsHandler;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.StatisticsHandler;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

@@ -28,9 +28,9 @@ import java.util.Locale;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Response.Listener;
 import org.eclipse.jetty.client.api.Result;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.util.BufferUtil;
 
 /**
  * <p>Implementation of {@link Listener} that buffers the content up to a maximum length

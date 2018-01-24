@@ -4,7 +4,7 @@
 <!-- =============================================================== -->
 <!-- Configure the Logback Request Log                               -->
 <!-- =============================================================== -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
   <Set name="RequestLog">
     <New id="RequestLog" class="ch.qos.logback.access.jetty.RequestLogImpl">
       <Set name="name">logback-access</Set>

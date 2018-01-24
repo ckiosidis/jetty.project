@@ -19,8 +19,8 @@
 
 package org.eclipse.jetty.server.session;
 
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.session.infinispan.InfinispanSessionDataStoreFactory;
-import org.eclipse.jetty.toolchain.test.JDK;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 

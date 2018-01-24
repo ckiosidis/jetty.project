@@ -23,13 +23,13 @@ import java.nio.ByteBuffer;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.Executor;
 
-import org.eclipse.jetty.io.AbstractConnection;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.IteratingCallback;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.AbstractConnection;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.IteratingCallback;
+import org.eclipse.betty.util.log.Logger;
 
 public abstract class ProxyConnection extends AbstractConnection
 {

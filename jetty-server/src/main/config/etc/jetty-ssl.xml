@@ -6,22 +6,22 @@
 <!-- This configuration needs to be used together with 1 or more   -->
 <!-- of jetty-https.xml or jetty-http2.xml                         -->
 <!-- ============================================================= -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
   <!-- =========================================================== -->
   <!-- Add a SSL Connector with no protocol factories              -->
   <!-- =========================================================== -->
   <Call  name="addConnector">
     <Arg>
-      <New id="sslConnector" class="org.eclipse.jetty.server.ServerConnector">
+      <New id="sslConnector" class="org.eclipse.betty.server.ServerConnector">
         <Arg name="server"><Ref refid="Server" /></Arg>
         <Arg name="acceptors" type="int"><Property name="jetty.ssl.acceptors" deprecated="ssl.acceptors" default="-1"/></Arg>
         <Arg name="selectors" type="int"><Property name="jetty.ssl.selectors" deprecated="ssl.selectors" default="-1"/></Arg>
         <Arg name="factories">
-          <Array type="org.eclipse.jetty.server.ConnectionFactory">
+          <Array type="org.eclipse.betty.server.ConnectionFactory">
             <!-- uncomment to support proxy protocol
             <Item>
-              <New class="org.eclipse.jetty.server.ProxyConnectionFactory"/>
+              <New class="ProxyConnectionFactory"/>
             </Item>-->
           </Array>
         </Arg>
@@ -46,11 +46,11 @@
   <!-- Add a SecureRequestCustomizer to extract certificate and    -->
   <!-- session information                                         -->
   <!-- =========================================================== -->
-  <New id="sslHttpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+  <New id="sslHttpConfig" class="org.eclipse.betty.server.HttpConfiguration">
     <Arg><Ref refid="httpConfig"/></Arg>
     <Call name="addCustomizer">
       <Arg>
-        <New class="org.eclipse.jetty.server.SecureRequestCustomizer">
+        <New class="org.eclipse.betty.server.SecureRequestCustomizer">
           <Arg name="sniHostCheck" type="boolean"><Property name="jetty.ssl.sniHostCheck" default="true"/></Arg>
           <Arg name="stsMaxAgeSeconds" type="int"><Property name="jetty.ssl.stsMaxAgeSeconds" default="-1"/></Arg>
           <Arg name="stsIncludeSubdomains" type="boolean"><Property name="jetty.ssl.stsIncludeSubdomains" default="false"/></Arg>

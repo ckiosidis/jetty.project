@@ -24,6 +24,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.Test;
 
 public class ClassPathResourceTest

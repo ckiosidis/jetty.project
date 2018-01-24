@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.util.security.Credential;
 
 /**
  * UserInfo

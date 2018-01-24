@@ -19,7 +19,7 @@
 package org.eclipse.jetty.http2.generator;
 
 import org.eclipse.jetty.http2.frames.Frame;
-import org.eclipse.jetty.io.ByteBufferPool;
+import org.eclipse.betty.io.ByteBufferPool;
 
 public class DisconnectGenerator extends FrameGenerator
 {

@@ -25,6 +25,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.betty.util.LazyList;
+import org.eclipse.betty.util.MultiMap;
 import org.junit.Assert;
 import org.junit.Test;
 

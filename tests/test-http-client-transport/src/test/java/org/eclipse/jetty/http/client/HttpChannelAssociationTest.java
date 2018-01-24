@@ -39,10 +39,10 @@ import org.eclipse.jetty.http2.client.HTTP2Client;
 import org.eclipse.jetty.http2.client.http.HttpChannelOverHTTP2;
 import org.eclipse.jetty.http2.client.http.HttpClientTransportOverHTTP2;
 import org.eclipse.jetty.http2.client.http.HttpConnectionOverHTTP2;
-import org.eclipse.jetty.io.EndPoint;
+import org.eclipse.betty.io.EndPoint;
 import org.eclipse.jetty.unixsocket.client.HttpClientTransportOverUnixSockets;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.Assert;
 import org.junit.Test;
 

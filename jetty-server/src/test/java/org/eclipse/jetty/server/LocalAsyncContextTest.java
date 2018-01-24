@@ -21,8 +21,6 @@ package org.eclipse.jetty.server;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Supplier;
 
 import javax.servlet.AsyncContext;
@@ -33,8 +31,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.hamcrest.Matchers;
 import org.junit.After;

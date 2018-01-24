@@ -23,14 +23,14 @@ import java.io.IOException;
 import javax.servlet.ServletContext;
 import javax.servlet.UnavailableException;
 
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
-import org.eclipse.jetty.util.component.Dumpable;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.util.component.Dumpable;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * AbstractHolder

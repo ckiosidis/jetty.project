@@ -25,7 +25,7 @@ import java.nio.ByteBuffer;
 import javax.websocket.EncodeException;
 import javax.websocket.Encoder;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 public class DefaultBinaryStreamEncoder extends AbstractEncoder implements Encoder.BinaryStream<ByteBuffer>
 {

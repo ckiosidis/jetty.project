@@ -21,8 +21,10 @@ package org.eclipse.jetty.server;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.junit.runner.RunWith;
 
 @RunWith(AdvancedRunner.class)

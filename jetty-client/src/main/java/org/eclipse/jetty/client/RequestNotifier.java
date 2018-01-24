@@ -22,8 +22,8 @@ import java.nio.ByteBuffer;
 import java.util.List;
 
 import org.eclipse.jetty.client.api.Request;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class RequestNotifier
 {

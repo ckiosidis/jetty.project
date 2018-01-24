@@ -41,24 +41,23 @@ import javax.net.ssl.SNIServerName;
 import javax.net.ssl.SSLParameters;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.SecureRequestCustomizer;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.server.SocketCustomizationListener;
-import org.eclipse.jetty.server.SslConnectionFactory;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.Utf8StringBuilder;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.SecureRequestCustomizer;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.SocketCustomizationListener;
+import org.eclipse.betty.server.SslConnectionFactory;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.Utf8StringBuilder;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
@@ -399,10 +398,10 @@ public class SniSslConnectionFactoryTest
         String response = getResponse("127.0.0.1", null);
         Assert.assertThat(response, Matchers.containsString("X-HOST: 127.0.0.1"));
 
-        Assert.assertEquals("customize connector class org.eclipse.jetty.io.ssl.SslConnection,false", history.poll());
-        Assert.assertEquals("customize ssl class org.eclipse.jetty.io.ssl.SslConnection,false", history.poll());
-        Assert.assertEquals("customize connector class org.eclipse.jetty.server.HttpConnection,true", history.poll());
-        Assert.assertEquals("customize http class org.eclipse.jetty.server.HttpConnection,true", history.poll());
+        Assert.assertEquals("customize connector class SslConnection,false", history.poll());
+        Assert.assertEquals("customize ssl class SslConnection,false", history.poll());
+        Assert.assertEquals("customize connector class HttpConnection,true", history.poll());
+        Assert.assertEquals("customize http class HttpConnection,true", history.poll());
         Assert.assertEquals(0, history.size());
     }
 }

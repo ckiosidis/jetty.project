@@ -34,8 +34,8 @@ import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLSocket;
 
 import org.eclipse.jetty.alpn.ALPN;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

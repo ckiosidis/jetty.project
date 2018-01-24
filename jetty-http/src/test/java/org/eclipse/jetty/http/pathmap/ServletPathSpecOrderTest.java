@@ -24,6 +24,8 @@ import static org.junit.Assert.assertThat;
 import java.util.Arrays;
 import java.util.List;
 
+import org.eclipse.betty.http.pathmap.PathMappings;
+import org.eclipse.betty.http.pathmap.ServletPathSpec;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

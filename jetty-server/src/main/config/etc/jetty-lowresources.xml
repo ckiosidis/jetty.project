@@ -5,10 +5,10 @@
 <!-- Mixin the Low Resources Monitor                                 -->
 <!-- =============================================================== -->
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
   <Call name="addBean">
     <Arg>
-      <New class="org.eclipse.jetty.server.LowResourceMonitor">
+      <New class="org.eclipse.betty.server.LowResourceMonitor">
         <Arg name="server"><Ref refid='Server'/></Arg>
         <Set name="period"><Property name="jetty.lowresources.period" deprecated="lowresources.period" default="1000"/></Set>
         <Set name="lowResourcesIdleTimeout"><Property name="jetty.lowresources.idleTimeout" deprecated="lowresources.lowResourcesIdleTimeout" default="1000"/></Set>

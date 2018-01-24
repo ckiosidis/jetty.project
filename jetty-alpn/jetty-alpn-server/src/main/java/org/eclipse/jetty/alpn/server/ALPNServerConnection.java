@@ -24,12 +24,12 @@ import java.util.List;
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLSession;
 
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.ConnectionFactory;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.NegotiatingServerConnection;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.ConnectionFactory;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.NegotiatingServerConnection;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class ALPNServerConnection extends NegotiatingServerConnection
 {

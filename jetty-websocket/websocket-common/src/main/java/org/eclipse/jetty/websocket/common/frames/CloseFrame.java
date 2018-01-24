@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.websocket.common.frames;
 
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.StringUtil;
 import org.eclipse.jetty.websocket.common.OpCode;
 
 public class CloseFrame extends ControlFrame

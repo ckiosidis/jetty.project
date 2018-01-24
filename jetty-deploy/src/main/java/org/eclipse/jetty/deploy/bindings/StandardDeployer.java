@@ -21,7 +21,7 @@ package org.eclipse.jetty.deploy.bindings;
 import org.eclipse.jetty.deploy.App;
 import org.eclipse.jetty.deploy.AppLifeCycle;
 import org.eclipse.jetty.deploy.graph.Node;
-import org.eclipse.jetty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
 
 public class StandardDeployer implements AppLifeCycle.Binding
 {

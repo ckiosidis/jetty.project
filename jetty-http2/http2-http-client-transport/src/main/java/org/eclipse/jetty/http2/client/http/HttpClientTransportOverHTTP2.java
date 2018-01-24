@@ -31,19 +31,19 @@ import org.eclipse.jetty.client.MultiplexConnectionPool;
 import org.eclipse.jetty.client.Origin;
 import org.eclipse.jetty.client.ProxyConfiguration;
 import org.eclipse.jetty.client.api.Connection;
-import org.eclipse.jetty.http.HttpScheme;
+import org.eclipse.betty.http.HttpScheme;
 import org.eclipse.jetty.http2.HTTP2Session;
 import org.eclipse.jetty.http2.api.Session;
 import org.eclipse.jetty.http2.client.HTTP2Client;
 import org.eclipse.jetty.http2.client.HTTP2ClientConnectionFactory;
 import org.eclipse.jetty.http2.frames.GoAwayFrame;
 import org.eclipse.jetty.http2.frames.SettingsFrame;
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 
 @ManagedObject("The HTTP/2 client transport")
 public class HttpClientTransportOverHTTP2 extends AbstractHttpClientTransport
@@ -137,7 +137,7 @@ public class HttpClientTransportOverHTTP2 extends AbstractHttpClientTransport
     }
 
     @Override
-    public org.eclipse.jetty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
+    public org.eclipse.betty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
     {
         endPoint.setIdleTimeout(getHttpClient().getIdleTimeout());
 

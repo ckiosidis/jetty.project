@@ -26,7 +26,7 @@ import javax.naming.NamingException;
 import javax.transaction.UserTransaction;
 
 import org.eclipse.jetty.jndi.NamingUtil;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Transaction

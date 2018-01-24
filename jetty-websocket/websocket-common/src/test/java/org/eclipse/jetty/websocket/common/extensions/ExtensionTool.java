@@ -24,8 +24,8 @@ import static org.hamcrest.Matchers.notNullValue;
 import java.nio.ByteBuffer;
 import java.util.Collections;
 
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.util.TypeUtil;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.util.TypeUtil;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.api.extensions.Extension;
 import org.eclipse.jetty.websocket.api.extensions.ExtensionConfig;

@@ -41,11 +41,11 @@ import org.eclipse.jetty.jaas.callback.RequestParameterCallback;
 import org.eclipse.jetty.security.DefaultIdentityService;
 import org.eclipse.jetty.security.IdentityService;
 import org.eclipse.jetty.security.LoginService;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /* ---------------------------------------------------- */
 /** 
@@ -170,7 +170,7 @@ public class JAASLoginService extends AbstractLifeCycle implements LoginService
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStart()
+     * @see AbstractLifeCycle#doStart()
      */
     protected void doStart() throws Exception
     {

@@ -30,6 +30,7 @@ import java.net.URL;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.webapp.Descriptor;
 import org.eclipse.jetty.webapp.FragmentDescriptor;
 import org.eclipse.jetty.webapp.Origin;
@@ -67,20 +68,20 @@ public class PlusDescriptorProcessorTest
         org.eclipse.jetty.plus.jndi.Resource ds = new org.eclipse.jetty.plus.jndi.Resource (context, "jdbc/mydatasource", new Object());
 
         URL webXml = Thread.currentThread().getContextClassLoader().getResource("web.xml");
-        webDescriptor = new WebDescriptor(org.eclipse.jetty.util.resource.Resource.newResource(webXml));
+        webDescriptor = new WebDescriptor(Resource.newResource(webXml));
         webDescriptor.parse();
 
         URL frag1Xml = Thread.currentThread().getContextClassLoader().getResource("web-fragment-1.xml");
-        fragDescriptor1 = new FragmentDescriptor(org.eclipse.jetty.util.resource.Resource.newResource(frag1Xml));
+        fragDescriptor1 = new FragmentDescriptor(Resource.newResource(frag1Xml));
         fragDescriptor1.parse();
         URL frag2Xml = Thread.currentThread().getContextClassLoader().getResource("web-fragment-2.xml");
-        fragDescriptor2 = new FragmentDescriptor(org.eclipse.jetty.util.resource.Resource.newResource(frag2Xml));
+        fragDescriptor2 = new FragmentDescriptor(Resource.newResource(frag2Xml));
         fragDescriptor2.parse();
         URL frag3Xml = Thread.currentThread().getContextClassLoader().getResource("web-fragment-3.xml");
-        fragDescriptor3 = new FragmentDescriptor(org.eclipse.jetty.util.resource.Resource.newResource(frag3Xml));
+        fragDescriptor3 = new FragmentDescriptor(Resource.newResource(frag3Xml));
         fragDescriptor3.parse();
         URL frag4Xml = Thread.currentThread().getContextClassLoader().getResource("web-fragment-4.xml");
-        fragDescriptor4 = new FragmentDescriptor(org.eclipse.jetty.util.resource.Resource.newResource(frag4Xml));
+        fragDescriptor4 = new FragmentDescriptor(Resource.newResource(frag4Xml));
         fragDescriptor4.parse();
     }
 

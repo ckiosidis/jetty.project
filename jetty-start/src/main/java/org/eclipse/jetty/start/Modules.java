@@ -37,7 +37,7 @@ import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.eclipse.jetty.util.TopologicalSort;
+import org.eclipse.betty.util.TopologicalSort;
 
 /**
  * Access for all modules declared, as well as what is enabled.

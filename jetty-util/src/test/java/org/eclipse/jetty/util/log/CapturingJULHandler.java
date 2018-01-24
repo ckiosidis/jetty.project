@@ -25,7 +25,7 @@ import java.io.StringWriter;
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.junit.Assert;
 
 public class CapturingJULHandler extends Handler

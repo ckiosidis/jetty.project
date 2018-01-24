@@ -20,9 +20,9 @@ package org.eclipse.jetty.websocket.common.test;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.io.LeakTrackingByteBufferPool;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.io.LeakTrackingByteBufferPool;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.common.Parser;
 

@@ -25,6 +25,7 @@ import static org.junit.Assert.assertThat;
 import java.net.URL;
 import java.net.URLClassLoader;
 
+import org.eclipse.betty.util.thread.ThreadClassLoaderScope;
 import org.junit.Test;
 
 public class ThreadClassLoaderScopeTest

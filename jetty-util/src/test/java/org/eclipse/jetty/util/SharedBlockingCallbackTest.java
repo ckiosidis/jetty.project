@@ -30,7 +30,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.eclipse.jetty.util.SharedBlockingCallback.Blocker;
+import org.eclipse.betty.util.SharedBlockingCallback;
+import org.eclipse.betty.util.SharedBlockingCallback.Blocker;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

@@ -19,6 +19,11 @@
 
 package org.eclipse.jetty.server.session;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStore;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionHandler;
+
 /**
  * TestSessionDataStoreFactory
  *
@@ -28,7 +33,7 @@ public class TestSessionDataStoreFactory extends AbstractSessionDataStoreFactory
 {
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStoreFactory#getSessionDataStore(org.eclipse.jetty.server.session.SessionHandler)
+     * @see SessionDataStoreFactory#getSessionDataStore(SessionHandler)
      */
     @Override
     public SessionDataStore getSessionDataStore(SessionHandler handler) throws Exception

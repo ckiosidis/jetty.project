@@ -26,9 +26,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Response;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Response;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.handler.ScopedHandler;
 import org.junit.Before;
 import org.junit.Test;
 

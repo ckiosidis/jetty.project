@@ -19,13 +19,13 @@
 package org.eclipse.jetty.hazelcast.session;
 
 import com.hazelcast.core.IMap;
-import org.eclipse.jetty.server.session.AbstractSessionDataStore;
-import org.eclipse.jetty.server.session.SessionContext;
-import org.eclipse.jetty.server.session.SessionData;
-import org.eclipse.jetty.server.session.SessionDataStore;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.session.AbstractSessionDataStore;
+import org.eclipse.betty.server.session.SessionContext;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.session.SessionDataStore;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 import java.util.Collections;
 import java.util.Set;

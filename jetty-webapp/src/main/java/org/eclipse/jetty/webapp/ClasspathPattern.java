@@ -36,14 +36,14 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Predicate;
 
-import org.eclipse.jetty.io.RuntimeIOException;
-import org.eclipse.jetty.util.ArrayTernaryTrie;
-import org.eclipse.jetty.util.IncludeExcludeSet;
-import org.eclipse.jetty.util.TypeUtil;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.io.RuntimeIOException;
+import org.eclipse.betty.util.ArrayTernaryTrie;
+import org.eclipse.betty.util.IncludeExcludeSet;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * Classpath classes list performs pattern matching of a class name 

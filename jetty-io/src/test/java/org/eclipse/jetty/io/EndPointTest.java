@@ -24,7 +24,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Test;
 
 public abstract class EndPointTest<T extends EndPoint>

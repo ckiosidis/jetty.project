@@ -32,10 +32,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import org.eclipse.jetty.http.HttpScheme;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.NetworkConnector;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.http.HttpScheme;
+import org.eclipse.betty.server.NetworkConnector;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.xml.XmlConfiguration;
 import org.junit.Assert;
 import org.junit.Ignore;

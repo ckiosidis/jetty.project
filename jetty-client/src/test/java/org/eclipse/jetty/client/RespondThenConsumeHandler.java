@@ -25,12 +25,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.AbstractHandler;
 
 class RespondThenConsumeHandler extends AbstractHandler
 {
     @Override
-    public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response)
+    public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException
     {
         baseRequest.setHandled(true);

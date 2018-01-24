@@ -28,14 +28,14 @@ import java.nio.channels.SocketChannel;
 import java.util.Map;
 
 import org.eclipse.jetty.client.api.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.ManagedSelector;
-import org.eclipse.jetty.io.SelectorManager;
-import org.eclipse.jetty.io.SocketChannelEndPoint;
-import org.eclipse.jetty.io.ssl.SslClientConnectionFactory;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.ManagedSelector;
+import org.eclipse.betty.io.SelectorManager;
+import org.eclipse.betty.io.SocketChannelEndPoint;
+import org.eclipse.betty.io.ssl.SslClientConnectionFactory;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
 
 @ManagedObject
 public abstract class AbstractConnectorHttpClientTransport extends AbstractHttpClientTransport
@@ -166,7 +166,7 @@ public abstract class AbstractConnectorHttpClientTransport extends AbstractHttpC
         }
 
         @Override
-        public org.eclipse.jetty.io.Connection newConnection(SelectableChannel channel, EndPoint endPoint, Object attachment) throws IOException
+        public org.eclipse.betty.io.Connection newConnection(SelectableChannel channel, EndPoint endPoint, Object attachment) throws IOException
         {
             @SuppressWarnings("unchecked")
             Map<String, Object> context = (Map<String, Object>)attachment;

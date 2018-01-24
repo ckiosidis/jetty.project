@@ -24,8 +24,8 @@ import org.eclipse.jetty.http2.frames.DataFrame;
 import org.eclipse.jetty.http2.frames.Frame;
 import org.eclipse.jetty.http2.frames.PushPromiseFrame;
 import org.eclipse.jetty.http2.frames.WindowUpdateFrame;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.Promise;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.Promise;
 
 /**
  * <p>The SPI interface for implementing a HTTP/2 session.</p>

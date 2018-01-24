@@ -9,7 +9,7 @@
 <!-- https://www.eclipse.org/jetty/documentation/current/        -->
 <!-- =============================================================== -->
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
     <!-- =========================================================== -->
     <!-- Server Thread Pool                                          -->
@@ -24,24 +24,24 @@
     <!-- Set handler Collection Structure                            -->
     <!-- =========================================================== -->
     <Set name="handler">
-      <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+      <New id="Handlers" class="org.eclipse.betty.server.handler.HandlerCollection">
         <Set name="handlers">
-         <Array type="org.eclipse.jetty.server.Handler">
+         <Array type="org.eclipse.betty.server.Handler">
            <Item>
-             <New id="Contexts" class="org.eclipse.jetty.server.handler.ContextHandlerCollection"/>
+             <New id="Contexts" class="org.eclipse.betty.server.handler.ContextHandlerCollection"/>
            </Item>
            <Item>
-             <New id="DefaultHandler" class="org.eclipse.jetty.server.handler.DefaultHandler"/>
+             <New id="DefaultHandler" class="org.eclipse.betty.server.handler.DefaultHandler"/>
            </Item>
            <Item>
-             <New id="RequestLog" class="org.eclipse.jetty.server.handler.RequestLogHandler"/>
+             <New id="RequestLog" class="org.eclipse.betty.server.handler.RequestLogHandler"/>
            </Item>
          </Array>
         </Set>
       </New>
     </Set>
 
-    <New id="httpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+    <New id="httpConfig" class="org.eclipse.betty.server.HttpConfiguration">
       <Set name="secureScheme">https</Set>
       <Set name="securePort"><Property name="jetty.httpConfig.securePort" default="8443" /></Set>
       <Set name="outputBufferSize">32768</Set>

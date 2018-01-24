@@ -48,28 +48,28 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.pathmap.MappedResource;
-import org.eclipse.jetty.http.pathmap.PathMappings;
-import org.eclipse.jetty.http.pathmap.PathSpec;
-import org.eclipse.jetty.http.pathmap.ServletPathSpec;
+import org.eclipse.betty.http.pathmap.MappedResource;
+import org.eclipse.betty.http.pathmap.PathMappings;
+import org.eclipse.betty.http.pathmap.PathSpec;
+import org.eclipse.betty.http.pathmap.ServletPathSpec;
 import org.eclipse.jetty.security.IdentityService;
 import org.eclipse.jetty.security.SecurityHandler;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.ServletRequestHttpWrapper;
-import org.eclipse.jetty.server.ServletResponseHttpWrapper;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ScopedHandler;
-import org.eclipse.jetty.util.ArrayUtil;
-import org.eclipse.jetty.util.LazyList;
-import org.eclipse.jetty.util.MultiException;
-import org.eclipse.jetty.util.MultiMap;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.ServletRequestHttpWrapper;
+import org.eclipse.betty.server.ServletResponseHttpWrapper;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ScopedHandler;
+import org.eclipse.betty.util.ArrayUtil;
+import org.eclipse.betty.util.LazyList;
+import org.eclipse.betty.util.MultiException;
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Servlet HttpHandler.

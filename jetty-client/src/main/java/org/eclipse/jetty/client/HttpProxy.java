@@ -28,16 +28,16 @@ import org.eclipse.jetty.client.api.Destination;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.http.HttpConnectionOverHTTP;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpMethod;
-import org.eclipse.jetty.http.HttpScheme;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.Promise;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.http.HttpScheme;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.Promise;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 
 public class HttpProxy extends ProxyConfiguration.Proxy
 {
@@ -76,7 +76,7 @@ public class HttpProxy extends ProxyConfiguration.Proxy
         }
 
         @Override
-        public org.eclipse.jetty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
+        public org.eclipse.betty.io.Connection newConnection(EndPoint endPoint, Map<String, Object> context) throws IOException
         {
             HttpDestination destination = (HttpDestination)context.get(HttpClientTransport.HTTP_DESTINATION_CONTEXT_KEY);
             SslContextFactory sslContextFactory = destination.getHttpClient().getSslContextFactory();
@@ -205,7 +205,7 @@ public class HttpProxy extends ProxyConfiguration.Proxy
                 HttpClient client = destination.getHttpClient();
                 ClientConnectionFactory sslConnectionFactory = client.newSslClientConnectionFactory(connectionFactory);
                 HttpConnectionOverHTTP oldConnection = (HttpConnectionOverHTTP)endPoint.getConnection();
-                org.eclipse.jetty.io.Connection newConnection = sslConnectionFactory.newConnection(endPoint, context);
+                org.eclipse.betty.io.Connection newConnection = sslConnectionFactory.newConnection(endPoint, context);
                 // Creating the connection will link the new Connection the EndPoint,
                 // but we need the old Connection linked for the upgrade to do its job.
                 endPoint.setConnection(oldConnection);

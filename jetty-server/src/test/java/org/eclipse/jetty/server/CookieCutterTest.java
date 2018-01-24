@@ -23,7 +23,8 @@ import static org.junit.Assert.assertThat;
 
 import javax.servlet.http.Cookie;
 
-import org.eclipse.jetty.http.CookieCompliance;
+import org.eclipse.betty.http.CookieCompliance;
+import org.eclipse.betty.server.CookieCutter;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.junit.Ignore;
 import org.junit.Test;

@@ -28,9 +28,9 @@ import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.http.HttpConnectionOverHTTP;
 import org.eclipse.jetty.client.http.HttpDestinationOverHTTP;
 import org.eclipse.jetty.client.util.FutureResponseListener;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.util.FuturePromise;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.util.FuturePromise;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

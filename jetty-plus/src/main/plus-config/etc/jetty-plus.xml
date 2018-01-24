@@ -4,7 +4,7 @@
 <!-- =============================================================== -->
 <!-- Configure extended support for webapps                          -->
 <!-- =============================================================== -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
   <!-- =========================================================== -->
   <!-- Add plus Configuring classes to all webapps for this Server -->

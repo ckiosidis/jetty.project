@@ -27,11 +27,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.util.BytesContentProvider;
-import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.io.ConnectionStatistics;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.io.ConnectionStatistics;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.util.IO;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Assume;

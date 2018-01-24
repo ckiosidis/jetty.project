@@ -22,7 +22,7 @@ package org.eclipse.jetty.rewrite.handler;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
+import org.eclipse.betty.server.Request;
 
 
 /**

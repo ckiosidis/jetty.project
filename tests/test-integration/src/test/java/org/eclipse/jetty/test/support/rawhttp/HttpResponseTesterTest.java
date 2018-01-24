@@ -25,8 +25,8 @@ import static org.junit.Assert.assertThat;
 import java.io.IOException;
 import java.util.List;
 
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpStatus;
 import org.eclipse.jetty.http.HttpTester;
 import org.junit.Assert;
 import org.junit.Test;

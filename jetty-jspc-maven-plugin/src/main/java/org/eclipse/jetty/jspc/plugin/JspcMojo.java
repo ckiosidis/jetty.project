@@ -47,8 +47,8 @@ import org.apache.tomcat.JarScanner;
 import org.apache.tomcat.util.scan.StandardJarScanner;
 import org.codehaus.plexus.util.FileUtils;
 import org.codehaus.plexus.util.StringUtils;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * This goal will compile jsps for a webapp so that they can be included in a

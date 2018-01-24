@@ -21,9 +21,9 @@ package org.eclipse.jetty.security;
 import java.io.Serializable;
 import java.util.Set;
 
-import org.eclipse.jetty.server.Authentication.User;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.server.UserIdentity.Scope;
+import org.eclipse.betty.server.Authentication.User;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.server.UserIdentity.Scope;
 
 /**
  * AbstractUserAuthentication

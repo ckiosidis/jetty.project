@@ -23,8 +23,8 @@ import java.nio.ByteBuffer;
 import org.eclipse.jetty.client.HttpChannel;
 import org.eclipse.jetty.client.HttpExchange;
 import org.eclipse.jetty.client.HttpReceiver;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.util.Callback;
 
 public class HttpReceiverOverFCGI extends HttpReceiver
 {

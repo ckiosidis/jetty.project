@@ -22,9 +22,9 @@ import java.util.List;
 
 import org.eclipse.jetty.plus.annotation.ContainerInitializer;
 import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 
@@ -46,7 +46,7 @@ public class ServletContainerInitializersStarter extends AbstractLifeCycle imple
  
    /** 
     * Call the doStart method of the ServletContainerInitializers
-    * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStart()
+    * @see AbstractLifeCycle#doStart()
     */
     public void doStart()
     {

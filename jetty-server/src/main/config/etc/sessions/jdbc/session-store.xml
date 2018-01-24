@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
 
   <!-- ===================================================================== -->
@@ -9,7 +9,7 @@
   <!-- ===================================================================== -->
   <Call name="addBean">
    <Arg>
-    <New id="sessionDataStoreFactory" class="org.eclipse.jetty.server.session.JDBCSessionDataStoreFactory">   
+    <New id="sessionDataStoreFactory" class="org.eclipse.betty.server.session.JDBCSessionDataStoreFactory">
       <Set name="gracePeriodSec"><Property name="jetty.session.gracePeriod.seconds" default="3600" /></Set>
       <Set name="savePeriodSec"><Property name="jetty.session.savePeriod.seconds" default="0" /></Set>
       <Set name="databaseAdaptor">
@@ -17,7 +17,7 @@
       </Set>
 	<Set name="sessionTableSchema">
 		<New
-			class="org.eclipse.jetty.server.session.JDBCSessionDataStore$SessionTableSchema">
+			class="org.eclipse.betty.server.session.JDBCSessionDataStore$SessionTableSchema">
 			<Set name="accessTimeColumn">
 				<Property name="jetty.session.jdbc.schema.accessTimeColumn" default="accessTime" />
 			</Set>

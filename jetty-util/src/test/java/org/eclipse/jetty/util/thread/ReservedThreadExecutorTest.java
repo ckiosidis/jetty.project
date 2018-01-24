@@ -30,6 +30,8 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.eclipse.betty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.ReservedThreadExecutor;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

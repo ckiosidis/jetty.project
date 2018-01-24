@@ -25,11 +25,15 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import javax.servlet.ReadListener;
 
-import org.eclipse.jetty.server.HttpChannelState.Action;
-import org.eclipse.jetty.server.HttpInput.Content;
+import org.eclipse.betty.server.HttpChannel;
+import org.eclipse.betty.server.HttpChannelState;
+import org.eclipse.betty.server.HttpChannelState.Action;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpInput;
+import org.eclipse.betty.server.HttpInput.Content;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.thread.Scheduler;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
@@ -37,8 +41,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.eclipse.jetty.server.HttpInput.EARLY_EOF_CONTENT;
-import static org.eclipse.jetty.server.HttpInput.EOF_CONTENT;
+import static org.eclipse.betty.server.HttpInput.EARLY_EOF_CONTENT;
+import static org.eclipse.betty.server.HttpInput.EOF_CONTENT;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertFalse;
@@ -379,7 +383,7 @@ public class HttpInputAsyncStateTest
             check("onReadReady false");       
         });
 
-        check("onError:org.eclipse.jetty.io.EofException: Early EOF");       
+        check("onError:EofException: Early EOF");
     }
 
 
@@ -397,7 +401,7 @@ public class HttpInputAsyncStateTest
         _in.setReadListener(_listener);
         check("onReadReady true","wake");
         wake();
-        check("onError:org.eclipse.jetty.io.EofException: Early EOF");        
+        check("onError:EofException: Early EOF");
     }
 
     @Test
@@ -415,7 +419,7 @@ public class HttpInputAsyncStateTest
         deliver(EARLY_EOF_CONTENT);
         check("onReadPossible true");
         handle();
-        check("onError:org.eclipse.jetty.io.EofException: Early EOF");      
+        check("onError:EofException: Early EOF");
     }
 
 
@@ -434,7 +438,7 @@ public class HttpInputAsyncStateTest
         _in.setReadListener(_listener);
         check("onReadReady true","wake");
         wake();
-        check("onError:org.eclipse.jetty.io.EofException: Early EOF");       
+        check("onError:EofException: Early EOF");
     }
 
 
@@ -454,7 +458,7 @@ public class HttpInputAsyncStateTest
         check("onReadPossible true");        
         
         handle();
-        check("onError:org.eclipse.jetty.io.EofException: Early EOF");      
+        check("onError:EofException: Early EOF");
     }
 
     
@@ -568,8 +572,8 @@ public class HttpInputAsyncStateTest
         check(
             "onDataAvailable",
             "read 5",
-            "read org.eclipse.jetty.io.EofException: Early EOF",
-            "onError:org.eclipse.jetty.io.EofException: Early EOF");       
+            "read EofException: Early EOF",
+            "onError:EofException: Early EOF");
     }
 
 
@@ -590,8 +594,8 @@ public class HttpInputAsyncStateTest
         check(
             "onDataAvailable",
             "read 5",
-            "read org.eclipse.jetty.io.EofException: Early EOF",
-            "onError:org.eclipse.jetty.io.EofException: Early EOF");  
+            "read EofException: Early EOF",
+            "onError:EofException: Early EOF");
     }
 
     
@@ -613,8 +617,8 @@ public class HttpInputAsyncStateTest
         check(
             "onDataAvailable",
             "read 5",
-            "read org.eclipse.jetty.io.EofException: Early EOF",
-            "onError:org.eclipse.jetty.io.EofException: Early EOF");  
+            "read EofException: Early EOF",
+            "onError:EofException: Early EOF");
     }
 
 
@@ -636,8 +640,8 @@ public class HttpInputAsyncStateTest
         check(
             "onDataAvailable",
             "read 5",
-            "read org.eclipse.jetty.io.EofException: Early EOF",
-            "onError:org.eclipse.jetty.io.EofException: Early EOF");  
+            "read EofException: Early EOF",
+            "onError:EofException: Early EOF");
     }
 
 
@@ -660,8 +664,8 @@ public class HttpInputAsyncStateTest
         check(
             "onDataAvailable",
             "read 5",
-            "read org.eclipse.jetty.io.EofException: Early EOF",
-            "onError:org.eclipse.jetty.io.EofException: Early EOF");  
+            "read EofException: Early EOF",
+            "onError:EofException: Early EOF");
     }
     
     

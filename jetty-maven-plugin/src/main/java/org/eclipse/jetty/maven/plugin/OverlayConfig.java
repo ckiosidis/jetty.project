@@ -25,7 +25,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.codehaus.plexus.util.xml.Xpp3Dom;
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.StringUtil;
 
 /**
  * OverlayConfig

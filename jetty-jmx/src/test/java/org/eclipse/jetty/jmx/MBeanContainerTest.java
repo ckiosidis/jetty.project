@@ -24,8 +24,9 @@ import javax.management.MBeanServer;
 import javax.management.ObjectName;
 
 import com.acme.Managed;
-import org.eclipse.jetty.util.component.Container;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.util.component.Container;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -27,11 +27,11 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.util.Random;
 
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.api.RemoteEndpoint;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;

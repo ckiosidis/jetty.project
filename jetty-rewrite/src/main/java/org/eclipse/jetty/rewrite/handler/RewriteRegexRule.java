@@ -24,8 +24,8 @@ import java.util.regex.Matcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.util.annotation.Name;
 
 /**
  * Rewrite the URI by matching with a regular expression. 

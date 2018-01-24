@@ -29,10 +29,15 @@ import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.HttpChannel;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.handler.AbstractHandler;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

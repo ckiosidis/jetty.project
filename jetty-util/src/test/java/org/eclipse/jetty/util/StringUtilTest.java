@@ -20,6 +20,8 @@ package org.eclipse.jetty.util;
 
 import java.nio.charset.StandardCharsets;
 
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.Utf8StringBuffer;
 import org.junit.Assert;
 import org.junit.Test;
 

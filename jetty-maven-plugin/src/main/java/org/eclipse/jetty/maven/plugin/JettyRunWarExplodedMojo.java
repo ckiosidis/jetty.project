@@ -23,8 +23,8 @@ import java.util.List;
 
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
-import org.eclipse.jetty.util.PathWatcher;
-import org.eclipse.jetty.util.PathWatcher.PathWatchEvent;
+import org.eclipse.betty.util.PathWatcher;
+import org.eclipse.betty.util.PathWatcher.PathWatchEvent;
 
 /**
  * 

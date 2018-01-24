@@ -21,8 +21,16 @@ package org.eclipse.jetty.server.session;
 import javax.servlet.SessionCookieConfig;
 import javax.servlet.http.HttpServletRequest;
 
-import org.eclipse.jetty.http.HttpCookie;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.http.HttpCookie;
+import org.eclipse.betty.server.SessionIdManager;
+import org.eclipse.betty.server.session.AbstractSessionCache;
+import org.eclipse.betty.server.session.DefaultSessionIdManager;
+import org.eclipse.betty.server.session.NullSessionDataStore;
+import org.eclipse.betty.server.session.Session;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -46,7 +54,7 @@ public class SessionCookieTest
 
       
         /** 
-         * @see org.eclipse.jetty.server.session.SessionCache#shutdown()
+         * @see SessionCache#shutdown()
          */
         @Override
         public void shutdown()
@@ -56,7 +64,7 @@ public class SessionCookieTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionCache#newSession(org.eclipse.jetty.server.session.SessionData)
+         * @see AbstractSessionCache#newSession(SessionData)
          */
         @Override
         public Session newSession(SessionData data)
@@ -66,7 +74,7 @@ public class SessionCookieTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionCache#doGet(String)
+         * @see AbstractSessionCache#doGet(String)
          */
         @Override
         public Session doGet(String key)
@@ -76,7 +84,7 @@ public class SessionCookieTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionCache#doPutIfAbsent(String, Session)
+         * @see AbstractSessionCache#doPutIfAbsent(String, Session)
          */
         @Override
         public Session doPutIfAbsent(String key, Session session)
@@ -87,7 +95,7 @@ public class SessionCookieTest
       
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionCache#doDelete(String)
+         * @see AbstractSessionCache#doDelete(String)
          */
         @Override
         public Session doDelete(String key)
@@ -98,7 +106,7 @@ public class SessionCookieTest
       
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionCache#doReplace(java.lang.String, org.eclipse.jetty.server.session.Session, org.eclipse.jetty.server.session.Session)
+         * @see AbstractSessionCache#doReplace(java.lang.String, Session, Session)
          */
         @Override
         public boolean doReplace(String id, Session oldValue, Session newValue)
@@ -108,7 +116,7 @@ public class SessionCookieTest
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionCache#newSession(javax.servlet.http.HttpServletRequest, org.eclipse.jetty.server.session.SessionData)
+         * @see AbstractSessionCache#newSession(javax.servlet.http.HttpServletRequest, SessionData)
          */
         @Override
         public Session newSession(HttpServletRequest request, SessionData data)
@@ -130,7 +138,7 @@ public class SessionCookieTest
         }
 
         /**
-         * @see org.eclipse.jetty.server.SessionIdManager#isIdInUse(java.lang.String)
+         * @see SessionIdManager#isIdInUse(java.lang.String)
          */
         @Override
         public boolean isIdInUse(String id)
@@ -139,7 +147,7 @@ public class SessionCookieTest
         }
 
         /**
-         * @see org.eclipse.jetty.server.SessionIdManager#expireAll(java.lang.String)
+         * @see SessionIdManager#expireAll(java.lang.String)
          */
         @Override
         public void expireAll(String id)

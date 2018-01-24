@@ -27,10 +27,10 @@ import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import javax.servlet.DispatcherType;
 
-import org.eclipse.jetty.jmx.MBeanContainer;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.junit.Assert;

@@ -24,12 +24,14 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.eclipse.betty.io.ByteArrayEndPoint;
+import org.eclipse.betty.io.EndPoint;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.annotation.Slow;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.FutureCallback;
-import org.eclipse.jetty.util.thread.Scheduler;
-import org.eclipse.jetty.util.thread.TimerScheduler;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.FutureCallback;
+import org.eclipse.betty.util.thread.Scheduler;
+import org.eclipse.betty.util.thread.TimerScheduler;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

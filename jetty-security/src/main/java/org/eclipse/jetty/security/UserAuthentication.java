@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.security;
 
-import org.eclipse.jetty.server.UserIdentity;
+import org.eclipse.betty.server.UserIdentity;
 
 
 /**

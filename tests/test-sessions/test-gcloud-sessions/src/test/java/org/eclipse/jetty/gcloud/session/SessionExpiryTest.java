@@ -20,11 +20,9 @@
 package org.eclipse.jetty.gcloud.session;
 
 import org.eclipse.jetty.server.session.AbstractSessionExpiryTest;
-import org.eclipse.jetty.server.session.SessionDataStoreFactory;
-import org.junit.AfterClass;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.junit.After;
 import org.junit.Assert;
-import org.junit.Test;
 
 
 /**

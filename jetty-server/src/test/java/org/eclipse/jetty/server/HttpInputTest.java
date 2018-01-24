@@ -26,8 +26,12 @@ import java.util.concurrent.TimeoutException;
 
 import javax.servlet.ReadListener;
 
+import org.eclipse.betty.server.HttpChannel;
+import org.eclipse.betty.server.HttpChannelState;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpInput;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

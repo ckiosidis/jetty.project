@@ -44,17 +44,22 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.EofException;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.StatisticsHandler;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.EofException;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConnection;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.StatisticsHandler;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.OS;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
@@ -282,7 +287,7 @@ public class GracefulStopTest
         server.setStopTimeout(stopTimeout);
 
         CountDownLatch closed = new CountDownLatch(1);
-        ServerConnector connector = new ServerConnector(server, 2, 2, new HttpConnectionFactory() 
+        ServerConnector connector = new ServerConnector(server, 2, 2, new HttpConnectionFactory()
         {
 
             @Override

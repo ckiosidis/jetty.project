@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 import org.eclipse.jetty.http2.api.Session;
 import org.eclipse.jetty.http2.api.server.ServerSessionListener;
 import org.eclipse.jetty.http2.frames.PingFrame;
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.util.Callback;
 import org.junit.Assert;
 import org.junit.Test;
 

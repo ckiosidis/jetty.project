@@ -33,10 +33,10 @@ import java.util.Set;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.MultipartConfigElement;
-import javax.servlet.ServletException;
 import javax.servlet.SessionTrackingMode;
 
-import org.eclipse.jetty.http.pathmap.ServletPathSpec;
+import org.eclipse.betty.http.pathmap.ServletPathSpec;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.eclipse.jetty.security.ConstraintAware;
 import org.eclipse.jetty.security.ConstraintMapping;
 import org.eclipse.jetty.security.authentication.FormAuthenticator;
@@ -50,12 +50,11 @@ import org.eclipse.jetty.servlet.ServletContextHandler.TagLib;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.servlet.ServletMapping;
 import org.eclipse.jetty.servlet.Source;
-import org.eclipse.jetty.util.ArrayUtil;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.betty.util.ArrayUtil;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Constraint;
 import org.eclipse.jetty.xml.XmlParser;
 import org.eclipse.jetty.xml.XmlParser.Node;
 
@@ -655,8 +654,8 @@ public class StandardDescriptorProcessor extends IterativeDescriptorProcessor
         if (tNode != null)
         { 
             java.math.BigDecimal asDecimal = new java.math.BigDecimal(tNode.toString(false, true));
-            if (asDecimal.compareTo(org.eclipse.jetty.server.session.SessionHandler.MAX_INACTIVE_MINUTES) > 0)
-                throw new IllegalStateException ("Max session-timeout in minutes is "+org.eclipse.jetty.server.session.SessionHandler.MAX_INACTIVE_MINUTES);
+            if (asDecimal.compareTo(SessionHandler.MAX_INACTIVE_MINUTES) > 0)
+                throw new IllegalStateException ("Max session-timeout in minutes is "+ SessionHandler.MAX_INACTIVE_MINUTES);
 
             context.getSessionHandler().setMaxInactiveInterval(asDecimal.intValueExact() * 60);
         }

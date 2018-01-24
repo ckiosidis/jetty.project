@@ -24,6 +24,8 @@ import java.io.PipedOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.betty.util.BlockingArrayQueue;
+import org.eclipse.betty.util.ReadLineInputStream;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

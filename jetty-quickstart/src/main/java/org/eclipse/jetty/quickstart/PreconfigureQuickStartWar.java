@@ -20,11 +20,11 @@ package org.eclipse.jetty.quickstart;
 
 import java.util.Locale;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.JarResource;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.JarResource;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.xml.XmlConfiguration;
 
 public class PreconfigureQuickStartWar

@@ -19,7 +19,7 @@
 package org.eclipse.jetty.websocket.server.pathmap;
 
 /**
- * @deprecated moved to jetty-http {@link org.eclipse.jetty.http.pathmap.PathSpec} (this facade will be removed in Jetty 9.4)
+ * @deprecated moved to jetty-http {@link org.eclipse.betty.http.pathmap.PathSpec} (this facade will be removed in Jetty 9.4)
  */
 @Deprecated
 public abstract class PathSpec

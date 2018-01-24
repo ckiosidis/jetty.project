@@ -18,11 +18,11 @@
 
 package org.eclipse.jetty.server.handler;
 
-import static org.eclipse.jetty.http.HttpHeader.CONTENT_LENGTH;
-import static org.eclipse.jetty.http.HttpHeader.CONTENT_TYPE;
-import static org.eclipse.jetty.http.HttpHeader.LAST_MODIFIED;
-import static org.eclipse.jetty.http.HttpHeader.LOCATION;
-import static org.eclipse.jetty.http.HttpHeader.SERVER;
+import static org.eclipse.betty.http.HttpHeader.CONTENT_LENGTH;
+import static org.eclipse.betty.http.HttpHeader.CONTENT_TYPE;
+import static org.eclipse.betty.http.HttpHeader.LAST_MODIFIED;
+import static org.eclipse.betty.http.HttpHeader.LOCATION;
+import static org.eclipse.betty.http.HttpHeader.SERVER;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.endsWith;
 import static org.hamcrest.Matchers.equalTo;
@@ -40,17 +40,19 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ResourceHandler;
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConnectionFactory;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.annotation.Slow;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.IO;
 import org.hamcrest.Matchers;
 import org.junit.AfterClass;
 import org.junit.Assert;

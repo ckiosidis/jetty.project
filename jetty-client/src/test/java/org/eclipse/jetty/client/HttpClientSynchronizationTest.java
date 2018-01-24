@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

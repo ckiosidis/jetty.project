@@ -22,11 +22,10 @@ package org.eclipse.jetty.gcloud.session;
 
 
 import org.eclipse.jetty.security.HashLoginService;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.AllowSymLinkAliasChecker;
-import org.eclipse.jetty.server.session.DefaultSessionIdManager;
-import org.eclipse.jetty.server.session.DefaultSessionCache;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.AllowSymLinkAliasChecker;
+import org.eclipse.betty.server.session.DefaultSessionIdManager;
+import org.eclipse.betty.server.session.DefaultSessionCache;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 public class GCloudSessionTester

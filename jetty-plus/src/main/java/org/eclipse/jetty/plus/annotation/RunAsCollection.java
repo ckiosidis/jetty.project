@@ -21,8 +21,8 @@ package org.eclipse.jetty.plus.annotation;
 import java.util.HashMap;
 
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 
 /**

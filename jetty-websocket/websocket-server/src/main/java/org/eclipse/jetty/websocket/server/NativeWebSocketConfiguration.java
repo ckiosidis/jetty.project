@@ -22,13 +22,13 @@ import java.util.Iterator;
 
 import javax.servlet.ServletContext;
 
-import org.eclipse.jetty.http.pathmap.MappedResource;
-import org.eclipse.jetty.http.pathmap.PathMappings;
-import org.eclipse.jetty.http.pathmap.PathSpec;
-import org.eclipse.jetty.http.pathmap.RegexPathSpec;
-import org.eclipse.jetty.http.pathmap.ServletPathSpec;
-import org.eclipse.jetty.http.pathmap.UriTemplatePathSpec;
-import org.eclipse.jetty.util.component.ContainerLifeCycle;
+import org.eclipse.betty.http.pathmap.MappedResource;
+import org.eclipse.betty.http.pathmap.PathMappings;
+import org.eclipse.betty.http.pathmap.PathSpec;
+import org.eclipse.betty.http.pathmap.RegexPathSpec;
+import org.eclipse.betty.http.pathmap.ServletPathSpec;
+import org.eclipse.betty.http.pathmap.UriTemplatePathSpec;
+import org.eclipse.betty.util.component.ContainerLifeCycle;
 import org.eclipse.jetty.websocket.api.WebSocketException;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.servlet.ServletUpgradeRequest;

@@ -20,9 +20,9 @@ package org.eclipse.jetty.embedded;
 
 import java.lang.management.ManagementFactory;
 
-import org.eclipse.jetty.jmx.MBeanContainer;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;

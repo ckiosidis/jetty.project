@@ -30,7 +30,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
-import org.eclipse.jetty.io.ArrayByteBufferPool;
+import org.eclipse.betty.http.CompressedContentFormat;
+import org.eclipse.betty.http.GZIPContentDecoder;
+import org.eclipse.betty.io.ArrayByteBufferPool;
 import org.eclipse.jetty.toolchain.test.TestTracker;
 import org.junit.After;
 import org.junit.Before;

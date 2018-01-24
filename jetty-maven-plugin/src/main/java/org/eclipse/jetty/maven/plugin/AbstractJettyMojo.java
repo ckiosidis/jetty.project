@@ -40,15 +40,15 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.project.MavenProject;
 import org.eclipse.jetty.security.LoginService;
-import org.eclipse.jetty.server.RequestLog;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ShutdownMonitor;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
-import org.eclipse.jetty.server.handler.HandlerCollection;
-import org.eclipse.jetty.util.PathWatcher;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.RequestLog;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ShutdownMonitor;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.server.handler.HandlerCollection;
+import org.eclipse.betty.util.PathWatcher;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.xml.XmlConfiguration;
 
 /**

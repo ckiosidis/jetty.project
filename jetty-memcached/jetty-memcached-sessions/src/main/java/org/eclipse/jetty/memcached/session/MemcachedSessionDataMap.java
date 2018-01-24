@@ -22,12 +22,12 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.List;
 
-import org.eclipse.jetty.server.session.SessionContext;
-import org.eclipse.jetty.server.session.SessionData;
-import org.eclipse.jetty.server.session.SessionDataMap;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.server.session.SessionContext;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.session.SessionDataMap;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
 
 import net.rubyeye.xmemcached.MemcachedClient;
 import net.rubyeye.xmemcached.XMemcachedClientBuilder;
@@ -118,7 +118,7 @@ public class MemcachedSessionDataMap extends AbstractLifeCycle implements Sessio
 
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataMap#initialize(org.eclipse.jetty.server.session.SessionContext)
+     * @see SessionDataMap#initialize(SessionContext)
      */
     @Override
     public void initialize(SessionContext context)
@@ -135,7 +135,7 @@ public class MemcachedSessionDataMap extends AbstractLifeCycle implements Sessio
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataMap#load(java.lang.String)
+     * @see SessionDataMap#load(java.lang.String)
      */
     @Override
     public SessionData load(String id) throws Exception
@@ -146,7 +146,7 @@ public class MemcachedSessionDataMap extends AbstractLifeCycle implements Sessio
 
     
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataMap#store(java.lang.String, org.eclipse.jetty.server.session.SessionData)
+     * @see SessionDataMap#store(java.lang.String, SessionData)
      */
     @Override
     public void store(String id, SessionData data) throws Exception
@@ -156,7 +156,7 @@ public class MemcachedSessionDataMap extends AbstractLifeCycle implements Sessio
 
     
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataMap#delete(java.lang.String)
+     * @see SessionDataMap#delete(java.lang.String)
      */
     @Override
     public boolean delete(String id) throws Exception

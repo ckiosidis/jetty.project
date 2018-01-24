@@ -27,7 +27,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.http.HttpField;
+import org.eclipse.betty.http.HttpField;
 import org.eclipse.jetty.http2.hpack.HpackContext.Entry;
 import org.hamcrest.Matchers;
 import org.junit.Assert;

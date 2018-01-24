@@ -27,8 +27,8 @@ import java.util.Set;
 
 import org.eclipse.jetty.deploy.graph.Graph;
 import org.eclipse.jetty.deploy.graph.Node;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * The lifecycle of an App in the {@link DeploymentManager}.

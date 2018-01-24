@@ -20,7 +20,7 @@ package org.eclipse.jetty.http2;
 
 import org.eclipse.jetty.http2.frames.Frame;
 import org.eclipse.jetty.http2.frames.WindowUpdateFrame;
-import org.eclipse.jetty.util.Callback;
+import org.eclipse.betty.util.Callback;
 
 public class SimpleFlowControlStrategy extends AbstractFlowControlStrategy
 {

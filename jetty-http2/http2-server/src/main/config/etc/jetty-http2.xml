@@ -4,7 +4,7 @@
 <!-- ============================================================= -->
 <!-- Configure a HTTP2 on the ssl connector.                       -->
 <!-- ============================================================= -->
-<Configure id="sslConnector" class="org.eclipse.jetty.server.ServerConnector">
+<Configure id="sslConnector" class="org.eclipse.betty.server.ServerConnector">
   <Call name="addConnectionFactory">
     <Arg>
       <New class="org.eclipse.jetty.http2.server.HTTP2ServerConnectionFactory">

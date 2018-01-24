@@ -28,13 +28,13 @@ import java.net.Socket;
 import java.net.URL;
 import java.net.URLConnection;
 
-import org.eclipse.jetty.http.HttpScheme;
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpScheme;
+import org.eclipse.betty.http.HttpStatus;
 import org.eclipse.jetty.http.HttpTester;
 import org.eclipse.jetty.test.support.TestableJettyServer;
 import org.eclipse.jetty.test.support.rawhttp.HttpSocketImpl;
 import org.eclipse.jetty.test.support.rawhttp.HttpTesting;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;

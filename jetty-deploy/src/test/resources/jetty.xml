@@ -23,7 +23,7 @@
 <!-- Consult the javadoc of o.e.j.server.Server for all              -->
 <!-- configuration that may be set here.                             -->
 <!-- =============================================================== -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
     <!-- =========================================================== -->
     <!-- Configure the Server Thread Pool.                           -->
@@ -43,7 +43,7 @@
     <!-- for all configuration that may be set here.                 -->
     <!-- =========================================================== -->
     <!-- uncomment to change type of threadpool
-    <Arg name="threadpool"><New id="threadpool" class="org.eclipse.jetty.util.thread.QueuedThreadPool"/></Arg>
+    <Arg name="threadpool"><New id="threadpool" class="QueuedThreadPool"/></Arg>
     -->
     <Get name="ThreadPool">
       <Set name="minThreads" type="int"><Property name="jetty.threadPool.minThreads" default="10"/></Set>
@@ -57,7 +57,7 @@
     <!-- =========================================================== -->
     <Call name="addBean">
       <Arg>
-        <New class="org.eclipse.jetty.util.thread.ScheduledExecutorScheduler"/>
+        <New class="org.eclipse.betty.util.thread.ScheduledExecutorScheduler"/>
       </Arg>
     </Call>
 
@@ -76,7 +76,7 @@
     <!-- Consult the javadoc of o.e.j.server.HttpConfiguration       -->
     <!-- for all configuration that may be set here.                 -->
     <!-- =========================================================== -->
-    <New id="httpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+    <New id="httpConfig" class="org.eclipse.betty.server.HttpConfiguration">
       <Set name="secureScheme">https</Set>
       <Set name="securePort" type="java.lang.Integer"><Property name="jetty.httpConfig.securePort" default="8443" /></Set>
       <Set name="outputBufferSize">32768</Set>
@@ -88,7 +88,7 @@
 
       <!-- Uncomment to enable handling of X-Forwarded- style headers
       <Call name="addCustomizer">
-        <Arg><New class="org.eclipse.jetty.server.ForwardedRequestCustomizer"/></Arg>
+        <Arg><New class="ForwardedRequestCustomizer"/></Arg>
       </Call>
       -->
     </New>
@@ -106,14 +106,14 @@
     <!-- RequestLogHandler after the default handler                 -->
     <!-- =========================================================== -->
     <Set name="handler">
-      <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+      <New id="Handlers" class="org.eclipse.betty.server.handler.HandlerCollection">
         <Set name="handlers">
-         <Array type="org.eclipse.jetty.server.Handler">
+         <Array type="org.eclipse.betty.server.Handler">
            <Item>
-             <New id="Contexts" class="org.eclipse.jetty.server.handler.ContextHandlerCollection"/>
+             <New id="Contexts" class="org.eclipse.betty.server.handler.ContextHandlerCollection"/>
            </Item>
            <Item>
-             <New id="DefaultHandler" class="org.eclipse.jetty.server.handler.DefaultHandler"/>
+             <New id="DefaultHandler" class="org.eclipse.betty.server.handler.DefaultHandler"/>
            </Item>
          </Array>
         </Set>

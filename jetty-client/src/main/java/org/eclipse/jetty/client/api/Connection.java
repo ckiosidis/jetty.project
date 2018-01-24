@@ -20,7 +20,7 @@ package org.eclipse.jetty.client.api;
 
 import java.io.Closeable;
 
-import org.eclipse.jetty.util.Promise;
+import org.eclipse.betty.util.Promise;
 
 /**
  * {@link Connection} represent a connection to a {@link Destination} and allow applications to send

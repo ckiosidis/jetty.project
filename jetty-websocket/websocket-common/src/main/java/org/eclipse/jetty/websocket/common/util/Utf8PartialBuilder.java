@@ -20,8 +20,7 @@ package org.eclipse.jetty.websocket.common.util;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.Utf8Appendable;
-import org.eclipse.jetty.util.Utf8StringBuilder;
+import org.eclipse.betty.util.Utf8StringBuilder;
 
 /**
  * Similar in scope to the {@link Utf8StringBuilder}, but allowing partially constructed Strings without throwing

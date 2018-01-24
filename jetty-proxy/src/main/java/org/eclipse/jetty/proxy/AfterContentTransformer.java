@@ -33,10 +33,10 @@ import java.nio.file.attribute.FileAttribute;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.component.Destroyable;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.component.Destroyable;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * <p>A specialized transformer for {@link AsyncMiddleManServlet} that performs
@@ -223,7 +223,7 @@ public abstract class AfterContentTransformer implements AsyncMiddleManServlet.C
      * // Identity transformation (no transformation, the input is copied to the output)
      * public boolean transform(Source source, Sink sink)
      * {
-     *     org.eclipse.jetty.util.IO.copy(source.getInputStream(), sink.getOutputStream());
+     *     IO.copy(source.getInputStream(), sink.getOutputStream());
      *     return true;
      * }
      * </pre>

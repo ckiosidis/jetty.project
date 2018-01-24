@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
-import org.eclipse.jetty.util.JavaVersion;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.JavaVersion;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.Assume;
 import org.junit.Test;
 

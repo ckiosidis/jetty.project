@@ -28,9 +28,10 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 import java.util.regex.Pattern;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.PatternMatcher;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * JarScannerConfiguration
@@ -46,7 +47,7 @@ import org.eclipse.jetty.util.resource.Resource;
  * @deprecated Does not handle MR Jars
  */
 @Deprecated()
-public abstract class JarScanner extends org.eclipse.jetty.util.PatternMatcher
+public abstract class JarScanner extends PatternMatcher
 {
     private static final Logger LOG = Log.getLogger(JarScanner.class);
 

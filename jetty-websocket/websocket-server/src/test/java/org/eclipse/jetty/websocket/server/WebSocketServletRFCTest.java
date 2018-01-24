@@ -26,10 +26,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.EventQueue;
-import org.eclipse.jetty.util.Utf8Appendable.NotUtf8Exception;
-import org.eclipse.jetty.util.Utf8StringBuilder;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.log.StdErrLog;
+import org.eclipse.betty.util.Utf8Appendable.NotUtf8Exception;
+import org.eclipse.betty.util.Utf8StringBuilder;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.StdErrLog;
 import org.eclipse.jetty.websocket.api.StatusCode;
 import org.eclipse.jetty.websocket.api.extensions.Frame;
 import org.eclipse.jetty.websocket.common.CloseInfo;

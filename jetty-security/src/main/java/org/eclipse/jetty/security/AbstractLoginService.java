@@ -25,11 +25,11 @@ import java.security.Principal;
 import javax.security.auth.Subject;
 import javax.servlet.ServletRequest;
 
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Credential;
 
 /**
  * AbstractLoginService
@@ -187,7 +187,7 @@ public abstract class AbstractLoginService extends AbstractLifeCycle implements 
 
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.security.LoginService#validate(org.eclipse.jetty.server.UserIdentity)
+     * @see org.eclipse.jetty.security.LoginService#validate(UserIdentity)
      */
     @Override
     public boolean validate(UserIdentity user)
@@ -222,7 +222,7 @@ public abstract class AbstractLoginService extends AbstractLifeCycle implements 
    
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.security.LoginService#logout(org.eclipse.jetty.server.UserIdentity)
+     * @see org.eclipse.jetty.security.LoginService#logout(UserIdentity)
      */
     @Override
     public void logout(UserIdentity user)

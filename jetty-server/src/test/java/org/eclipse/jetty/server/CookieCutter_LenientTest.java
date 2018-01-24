@@ -26,6 +26,7 @@ import java.util.List;
 
 import javax.servlet.http.Cookie;
 
+import org.eclipse.betty.server.CookieCutter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

@@ -18,6 +18,7 @@
 
 package org.eclipse.jetty.server;
 
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.junit.After;
 import org.junit.Before;

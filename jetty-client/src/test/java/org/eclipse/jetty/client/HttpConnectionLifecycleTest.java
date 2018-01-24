@@ -37,14 +37,14 @@ import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
 import org.eclipse.jetty.client.http.HttpDestinationOverHTTP;
 import org.eclipse.jetty.client.util.ByteBufferContentProvider;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.handler.AbstractHandler;
 import org.eclipse.jetty.toolchain.test.annotation.Slow;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -336,7 +336,7 @@ public class HttpConnectionLifecycleTest extends AbstractHttpClientServerTest
         start(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 response.setHeader("Connection", "close");
                 baseRequest.setHandled(true);
@@ -383,7 +383,7 @@ public class HttpConnectionLifecycleTest extends AbstractHttpClientServerTest
             start(new AbstractHandler()
             {
                 @Override
-                public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+                public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
                 {
                     response.setHeader("Connection", "close");
                     baseRequest.setHandled(true);

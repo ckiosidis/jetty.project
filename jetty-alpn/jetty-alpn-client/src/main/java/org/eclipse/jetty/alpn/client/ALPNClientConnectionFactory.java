@@ -28,15 +28,15 @@ import java.util.concurrent.Executor;
 
 import javax.net.ssl.SSLEngine;
 
-import org.eclipse.jetty.io.ClientConnectionFactory;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.NegotiatingClientConnectionFactory;
-import org.eclipse.jetty.io.ssl.ALPNProcessor.Client;
-import org.eclipse.jetty.io.ssl.SslClientConnectionFactory;
-import org.eclipse.jetty.io.ssl.SslHandshakeListener;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.ClientConnectionFactory;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.NegotiatingClientConnectionFactory;
+import org.eclipse.betty.io.ssl.ALPNProcessor.Client;
+import org.eclipse.betty.io.ssl.SslClientConnectionFactory;
+import org.eclipse.betty.io.ssl.SslHandshakeListener;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class ALPNClientConnectionFactory extends NegotiatingClientConnectionFactory implements SslHandshakeListener
 {

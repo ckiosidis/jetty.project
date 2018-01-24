@@ -28,8 +28,8 @@ import static org.junit.Assert.assertThat;
 
 import java.nio.ByteBuffer;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.StringUtil;
 import org.eclipse.jetty.websocket.common.frames.CloseFrame;
 import org.junit.Test;
 

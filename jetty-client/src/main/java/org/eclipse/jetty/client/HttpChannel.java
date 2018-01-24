@@ -19,8 +19,8 @@
 package org.eclipse.jetty.client;
 
 import org.eclipse.jetty.client.api.Result;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public abstract class HttpChannel
 {

@@ -35,6 +35,8 @@ import java.util.Arrays;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.RolloverFileOutputStream;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.hamcrest.Matchers;

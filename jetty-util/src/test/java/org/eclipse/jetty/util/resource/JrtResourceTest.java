@@ -19,14 +19,13 @@
 package org.eclipse.jetty.util.resource;
 
 import java.net.URI;
-import java.util.Arrays;
 
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.toolchain.test.JDK;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.TypeUtil;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.TypeUtil;
 import org.hamcrest.Matchers;
-import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.Test;
 

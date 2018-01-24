@@ -32,15 +32,15 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.security.ServerAuthException;
 import org.eclipse.jetty.security.UserAuthentication;
-import org.eclipse.jetty.server.Authentication;
-import org.eclipse.jetty.server.Authentication.User;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.B64Code;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.security.CertificateUtils;
-import org.eclipse.jetty.util.security.CertificateValidator;
-import org.eclipse.jetty.util.security.Constraint;
-import org.eclipse.jetty.util.security.Password;
+import org.eclipse.betty.server.Authentication;
+import org.eclipse.betty.server.Authentication.User;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.B64Code;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.security.CertificateUtils;
+import org.eclipse.betty.util.security.CertificateValidator;
+import org.eclipse.betty.util.security.Constraint;
+import org.eclipse.betty.util.security.Password;
 
 public class ClientCertAuthenticator extends LoginAuthenticator
 {

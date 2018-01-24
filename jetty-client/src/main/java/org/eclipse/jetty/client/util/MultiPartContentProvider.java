@@ -33,13 +33,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import org.eclipse.jetty.client.AsyncContentProvider;
 import org.eclipse.jetty.client.Synchronizable;
 import org.eclipse.jetty.client.api.ContentProvider;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.io.RuntimeIOException;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.io.RuntimeIOException;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * <p>A {@link ContentProvider} for form uploads with the {@code "multipart/form-data"}

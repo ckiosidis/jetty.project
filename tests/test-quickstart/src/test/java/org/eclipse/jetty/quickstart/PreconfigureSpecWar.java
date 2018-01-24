@@ -21,11 +21,11 @@ package org.eclipse.jetty.quickstart;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
 
 public class PreconfigureSpecWar
 {

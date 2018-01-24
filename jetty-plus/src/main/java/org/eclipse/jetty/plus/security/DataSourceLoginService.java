@@ -37,10 +37,10 @@ import javax.sql.DataSource;
 import org.eclipse.jetty.plus.jndi.NamingEntryUtil;
 import org.eclipse.jetty.security.AbstractLoginService;
 import org.eclipse.jetty.security.IdentityService;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.security.Credential;
 
 
 /**

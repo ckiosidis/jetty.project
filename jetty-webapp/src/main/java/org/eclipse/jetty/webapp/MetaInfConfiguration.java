@@ -38,10 +38,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.EmptyResource;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.EmptyResource;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * MetaInfConfiguration

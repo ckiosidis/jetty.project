@@ -32,7 +32,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 import org.eclipse.jetty.client.api.Response;
-import org.eclipse.jetty.util.URIUtil;
+import org.eclipse.betty.util.URIUtil;
 
 public class BalancerServlet extends ProxyServlet
 {

@@ -18,11 +18,11 @@
 
 package org.eclipse.jetty.test.jmx.jmx;
 
-import org.eclipse.jetty.jmx.ObjectMBean;
+import org.eclipse.betty.jmx.ObjectMBean;
 import org.eclipse.jetty.test.jmx.Pinger;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.annotation.ManagedOperation;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.annotation.ManagedOperation;
 
 @ManagedObject("Pinger facility")
 public class PingerMBean extends ObjectMBean

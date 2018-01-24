@@ -38,16 +38,17 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
+import org.eclipse.betty.server.session.AbstractSessionDataStore;
+import org.eclipse.betty.server.session.SessionDataStore;
 import org.eclipse.jetty.nosql.NoSqlSessionDataStore;
-import org.eclipse.jetty.server.session.SessionData;
-import org.eclipse.jetty.util.ClassLoadingObjectInputStream;
-import org.eclipse.jetty.util.annotation.ManagedAttribute;
-import org.eclipse.jetty.util.annotation.ManagedObject;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.util.ClassLoadingObjectInputStream;
+import org.eclipse.betty.util.annotation.ManagedAttribute;
+import org.eclipse.betty.util.annotation.ManagedObject;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * MongoSessionDataStore
@@ -183,7 +184,7 @@ public class MongoSessionDataStore extends NoSqlSessionDataStore
   
     
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#load(String)
+     * @see SessionDataStore#load(String)
      */
     @Override
     public SessionData load(String id) throws Exception
@@ -278,7 +279,7 @@ public class MongoSessionDataStore extends NoSqlSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#delete(String)
+     * @see SessionDataStore#delete(String)
      */
     @Override
     public boolean delete(String id) throws Exception
@@ -338,7 +339,7 @@ public class MongoSessionDataStore extends NoSqlSessionDataStore
     
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#exists(java.lang.String)
+     * @see SessionDataStore#exists(java.lang.String)
      */
     @Override
     public boolean exists(String id) throws Exception
@@ -365,7 +366,7 @@ public class MongoSessionDataStore extends NoSqlSessionDataStore
 
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#getExpired(Set)
+     * @see SessionDataStore#getExpired(Set)
      */
     @Override
     public Set<String> doGetExpired(Set<String> candidates)
@@ -435,7 +436,7 @@ public class MongoSessionDataStore extends NoSqlSessionDataStore
     }
 
     /** 
-     * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doStore(String, SessionData, long) 
+     * @see AbstractSessionDataStore#doStore(String, SessionData, long)
      */
     @Override
     public void doStore(String id, SessionData data, long lastSaveTime) throws Exception
@@ -696,7 +697,7 @@ public class MongoSessionDataStore extends NoSqlSessionDataStore
 
 
     /** 
-     * @see org.eclipse.jetty.server.session.SessionDataStore#isPassivating()
+     * @see SessionDataStore#isPassivating()
      */
     @ManagedAttribute(value="does store serialize sessions", readonly=true)
     @Override
@@ -707,7 +708,7 @@ public class MongoSessionDataStore extends NoSqlSessionDataStore
 
 
     /** 
-     * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#toString()
+     * @see AbstractSessionDataStore#toString()
      */
     @Override
     public String toString()

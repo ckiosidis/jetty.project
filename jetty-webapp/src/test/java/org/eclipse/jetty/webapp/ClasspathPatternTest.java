@@ -23,7 +23,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 
 import org.eclipse.jetty.toolchain.test.JDK;
-import org.eclipse.jetty.util.TypeUtil;
+import org.eclipse.betty.util.TypeUtil;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Assume;

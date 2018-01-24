@@ -24,7 +24,7 @@ import java.util.regex.Matcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.util.annotation.Name;
+import org.eclipse.betty.util.annotation.Name;
 
 /**
  * If this rule matches, terminate the processing of other rules.

@@ -25,7 +25,7 @@ import java.io.OutputStreamWriter;
 import java.util.Map;
 import java.util.Stack;
 
-import org.eclipse.jetty.util.StringUtil;
+import org.eclipse.betty.util.StringUtil;
 
 public class XmlAppendable
 {

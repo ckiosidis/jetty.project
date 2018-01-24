@@ -20,7 +20,7 @@ package org.eclipse.jetty.util.ajax;
 
 import java.util.Map;
 
-import org.eclipse.jetty.util.Loader;
+import org.eclipse.betty.util.Loader;
 import org.eclipse.jetty.util.ajax.JSON.Convertor;
 import org.eclipse.jetty.util.ajax.JSON.Output;
 

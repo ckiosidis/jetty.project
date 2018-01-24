@@ -27,8 +27,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.eclipse.jetty.server.session.SessionDataStore;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.server.session.SessionDataStore;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.threeten.bp.Duration;
 
 import com.google.cloud.datastore.Datastore;
@@ -61,7 +61,7 @@ public class GCloudSessionTestSupport
             _d = d;
         }
         /** 
-         * @see org.eclipse.jetty.gcloud.session.GCloudSessionDataStoreFactory#getSessionDataStore(org.eclipse.jetty.server.session.SessionHandler)
+         * @see org.eclipse.jetty.gcloud.session.GCloudSessionDataStoreFactory#getSessionDataStore(SessionHandler)
          */
         @Override
         public SessionDataStore getSessionDataStore(SessionHandler handler) throws Exception

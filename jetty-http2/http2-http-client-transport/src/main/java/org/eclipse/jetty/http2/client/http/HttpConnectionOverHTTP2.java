@@ -33,11 +33,11 @@ import org.eclipse.jetty.client.HttpDestination;
 import org.eclipse.jetty.client.HttpExchange;
 import org.eclipse.jetty.client.HttpRequest;
 import org.eclipse.jetty.client.SendFailure;
-import org.eclipse.jetty.http.HttpVersion;
+import org.eclipse.betty.http.HttpVersion;
 import org.eclipse.jetty.http2.ErrorCode;
 import org.eclipse.jetty.http2.api.Session;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.thread.Sweeper;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.thread.Sweeper;
 
 public class HttpConnectionOverHTTP2 extends HttpConnection implements Sweeper.Sweepable
 {

@@ -24,6 +24,9 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.UrlEncoded;
+import org.eclipse.betty.util.Utf8Appendable;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

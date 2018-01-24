@@ -18,8 +18,9 @@
 
 package org.eclipse.jetty.server.session;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.junit.After;
 import org.junit.Test;
 

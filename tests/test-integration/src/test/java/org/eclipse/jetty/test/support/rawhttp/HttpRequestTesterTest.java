@@ -22,8 +22,8 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

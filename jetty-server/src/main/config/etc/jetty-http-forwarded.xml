@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
-<Configure id="httpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+<Configure id="httpConfig" class="org.eclipse.betty.server.HttpConfiguration">
   <Call name="addCustomizer">
     <Arg>
-      <New class="org.eclipse.jetty.server.ForwardedRequestCustomizer">
+      <New class="org.eclipse.betty.server.ForwardedRequestCustomizer">
         <Set name="forwardedOnly"><Property name="jetty.httpConfig.forwardedOnly" default="false"/></Set>
         <Set name="proxyAsAuthority"><Property name="jetty.httpConfig.forwardedProxyAsAuthority" default="false"/></Set>
         <Set name="forwardedHeader"><Property name="jetty.httpConfig.forwardedHeader" default="Forwarded"/></Set>

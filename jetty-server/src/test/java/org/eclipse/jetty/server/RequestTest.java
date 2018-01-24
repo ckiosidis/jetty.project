@@ -58,22 +58,30 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-import org.eclipse.jetty.http.BadMessageException;
+import org.eclipse.betty.http.BadMessageException;
+import org.eclipse.betty.server.ForwardedRequestCustomizer;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.HttpChannel;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.MultiPartCleanerListener;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.http.MimeTypes;
-import org.eclipse.jetty.server.LocalConnector.LocalEndPoint;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ErrorHandler;
+import org.eclipse.betty.http.MimeTypes;
+import org.eclipse.betty.server.LocalConnector.LocalEndPoint;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ErrorHandler;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.MultiPartInputStreamParser;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.MultiPartInputStreamParser;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Before;
@@ -1517,8 +1525,8 @@ public class RequestTest
         try (StacklessLogging stackless = new StacklessLogging(HttpChannel.class))
         {
             // Expecting maxFormKeys limit and Closing HttpParser exceptions...
-            _server.setAttribute("org.eclipse.jetty.server.Request.maxFormContentSize",-1);
-            _server.setAttribute("org.eclipse.jetty.server.Request.maxFormKeys",1000);
+            _server.setAttribute("Request.maxFormContentSize",-1);
+            _server.setAttribute("Request.maxFormKeys",1000);
 
             StringBuilder buf = new StringBuilder(4000000);
             buf.append("a=b");
@@ -1578,8 +1586,8 @@ public class RequestTest
         try (StacklessLogging stackless = new StacklessLogging(HttpChannel.class))
         {
             LOG.info("Expecting maxFormSize limit and too much data exceptions...");
-            _server.setAttribute("org.eclipse.jetty.server.Request.maxFormContentSize",3396);
-            _server.setAttribute("org.eclipse.jetty.server.Request.maxFormKeys",1000);
+            _server.setAttribute("Request.maxFormContentSize",3396);
+            _server.setAttribute("Request.maxFormKeys",1000);
 
             StringBuilder buf = new StringBuilder(4000000);
             buf.append("a=b");

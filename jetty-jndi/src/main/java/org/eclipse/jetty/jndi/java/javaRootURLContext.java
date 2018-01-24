@@ -32,7 +32,7 @@ import javax.naming.StringRefAddr;
 import org.eclipse.jetty.jndi.ContextFactory;
 import org.eclipse.jetty.jndi.NamingContext;
 import org.eclipse.jetty.jndi.NamingUtil;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Logger;
 
 
 

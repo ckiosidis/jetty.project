@@ -22,8 +22,8 @@ import java.net.URI;
 
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpStatus;
 
 /**
  * <p>A protocol handler that handles the 401 response code

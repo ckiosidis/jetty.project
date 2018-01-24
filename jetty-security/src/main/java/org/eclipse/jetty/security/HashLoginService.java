@@ -18,16 +18,15 @@
 
 package org.eclipse.jetty.security;
 
-import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.Resource;
 
 /* ------------------------------------------------------------ */
 /**
@@ -174,7 +173,7 @@ public class HashLoginService extends AbstractLoginService
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStart()
+     * @see AbstractLifeCycle#doStart()
      */
     @Override
     protected void doStart() throws Exception
@@ -197,7 +196,7 @@ public class HashLoginService extends AbstractLoginService
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStop()
+     * @see AbstractLifeCycle#doStop()
      */
     @Override
     protected void doStop() throws Exception

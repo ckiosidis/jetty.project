@@ -24,8 +24,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLClassLoader;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,18 +32,18 @@ import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
 
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.NetworkConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.JavaVersion;
-import org.eclipse.jetty.util.PatternMatcher;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.JarResource;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.resource.ResourceCollection;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.NetworkConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.JavaVersion;
+import org.eclipse.betty.util.PatternMatcher;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.JarResource;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.resource.ResourceCollection;
 
 public class WebInfConfiguration extends AbstractConfiguration
 {
@@ -96,7 +94,7 @@ public class WebInfConfiguration extends AbstractConfiguration
        
         
         /** 
-         * @see org.eclipse.jetty.util.PatternMatcher#matched(java.net.URI)
+         * @see PatternMatcher#matched(java.net.URI)
          */
         @Override
         public void matched(URI uri) throws Exception
@@ -133,7 +131,7 @@ public class WebInfConfiguration extends AbstractConfiguration
         }
         
         /** 
-         * @see org.eclipse.jetty.util.PatternMatcher#matched(java.net.URI)
+         * @see PatternMatcher#matched(java.net.URI)
          */
         @Override
         public void matched(URI uri) throws Exception

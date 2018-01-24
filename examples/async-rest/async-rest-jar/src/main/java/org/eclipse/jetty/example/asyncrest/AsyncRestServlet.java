@@ -35,9 +35,9 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
-import org.eclipse.jetty.http.HttpMethod;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Utf8StringBuilder;
+import org.eclipse.betty.http.HttpMethod;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Utf8StringBuilder;
 import org.eclipse.jetty.util.ajax.JSON;
 
 /**

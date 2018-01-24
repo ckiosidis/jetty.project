@@ -22,9 +22,9 @@ import java.lang.management.ManagementFactory;
 
 import javax.management.remote.JMXServiceURL;
 
-import org.eclipse.jetty.jmx.ConnectorServer;
-import org.eclipse.jetty.jmx.MBeanContainer;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.jmx.ConnectorServer;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.server.Server;
 
 /**
  * The simplest possible Jetty server.

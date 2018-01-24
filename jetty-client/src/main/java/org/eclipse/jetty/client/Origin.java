@@ -20,7 +20,7 @@ package org.eclipse.jetty.client;
 
 import java.util.Objects;
 
-import org.eclipse.jetty.util.URIUtil;
+import org.eclipse.betty.util.URIUtil;
 
 public class Origin
 {

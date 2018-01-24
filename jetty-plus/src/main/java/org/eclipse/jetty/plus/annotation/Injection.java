@@ -26,9 +26,9 @@ import java.util.Locale;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import org.eclipse.jetty.util.IntrospectionUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.IntrospectionUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * Injection

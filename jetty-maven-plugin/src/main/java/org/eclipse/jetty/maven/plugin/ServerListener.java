@@ -19,8 +19,8 @@
 
 package org.eclipse.jetty.maven.plugin;
 
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * ServerListener
@@ -45,7 +45,7 @@ public class ServerListener implements LifeCycle.Listener
         return _tokenFile;
     }
     /** 
-     * @see org.eclipse.jetty.util.component.LifeCycle.Listener#lifeCycleStarting(org.eclipse.jetty.util.component.LifeCycle)
+     * @see LifeCycle.Listener#lifeCycleStarting(LifeCycle)
      */
     @Override
     public void lifeCycleStarting(LifeCycle event)
@@ -54,7 +54,7 @@ public class ServerListener implements LifeCycle.Listener
     }
 
     /** 
-     * @see org.eclipse.jetty.util.component.LifeCycle.Listener#lifeCycleStarted(org.eclipse.jetty.util.component.LifeCycle)
+     * @see LifeCycle.Listener#lifeCycleStarted(LifeCycle)
      */
     @Override
     public void lifeCycleStarted(LifeCycle event)
@@ -75,7 +75,7 @@ public class ServerListener implements LifeCycle.Listener
     }
 
     /** 
-     * @see org.eclipse.jetty.util.component.LifeCycle.Listener#lifeCycleFailure(org.eclipse.jetty.util.component.LifeCycle, java.lang.Throwable)
+     * @see LifeCycle.Listener#lifeCycleFailure(LifeCycle, java.lang.Throwable)
      */
     @Override
     public void lifeCycleFailure(LifeCycle event, Throwable cause)
@@ -84,7 +84,7 @@ public class ServerListener implements LifeCycle.Listener
     }
 
     /** 
-     * @see org.eclipse.jetty.util.component.LifeCycle.Listener#lifeCycleStopping(org.eclipse.jetty.util.component.LifeCycle)
+     * @see LifeCycle.Listener#lifeCycleStopping(LifeCycle)
      */
     @Override
     public void lifeCycleStopping(LifeCycle event)
@@ -93,7 +93,7 @@ public class ServerListener implements LifeCycle.Listener
     }
 
     /** 
-     * @see org.eclipse.jetty.util.component.LifeCycle.Listener#lifeCycleStopped(org.eclipse.jetty.util.component.LifeCycle)
+     * @see LifeCycle.Listener#lifeCycleStopped(LifeCycle)
      */
     @Override
     public void lifeCycleStopped(LifeCycle event)

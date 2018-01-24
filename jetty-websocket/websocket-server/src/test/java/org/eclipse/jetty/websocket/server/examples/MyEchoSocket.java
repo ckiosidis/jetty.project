@@ -20,7 +20,7 @@ package org.eclipse.jetty.websocket.server.examples;
 
 import java.io.IOException;
 
-import org.eclipse.jetty.io.RuntimeIOException;
+import org.eclipse.betty.io.RuntimeIOException;
 import org.eclipse.jetty.websocket.api.BatchMode;
 import org.eclipse.jetty.websocket.api.RemoteEndpoint;
 import org.eclipse.jetty.websocket.api.WebSocketAdapter;

@@ -21,8 +21,8 @@ package org.eclipse.jetty.http2.hpack;
 import java.nio.ByteBuffer;
 import java.util.Locale;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.TypeUtil;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.TypeUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

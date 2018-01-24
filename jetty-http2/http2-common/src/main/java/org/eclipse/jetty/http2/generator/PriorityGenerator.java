@@ -24,8 +24,8 @@ import org.eclipse.jetty.http2.Flags;
 import org.eclipse.jetty.http2.frames.Frame;
 import org.eclipse.jetty.http2.frames.FrameType;
 import org.eclipse.jetty.http2.frames.PriorityFrame;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.util.BufferUtil;
 
 public class PriorityGenerator extends FrameGenerator
 {

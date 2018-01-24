@@ -27,14 +27,14 @@ import org.eclipse.jetty.client.HttpRequest;
 import org.eclipse.jetty.client.HttpRequestException;
 import org.eclipse.jetty.client.HttpSender;
 import org.eclipse.jetty.client.api.ContentProvider;
-import org.eclipse.jetty.http.HttpGenerator;
-import org.eclipse.jetty.http.HttpURI;
-import org.eclipse.jetty.http.MetaData;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.IteratingCallback;
+import org.eclipse.betty.http.HttpGenerator;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.IteratingCallback;
 
 public class HttpSenderOverHTTP extends HttpSender
 {

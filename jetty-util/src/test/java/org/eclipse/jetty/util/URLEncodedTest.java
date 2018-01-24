@@ -27,6 +27,10 @@ import java.io.ByteArrayInputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.TypeUtil;
+import org.eclipse.betty.util.UrlEncoded;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;

@@ -32,11 +32,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

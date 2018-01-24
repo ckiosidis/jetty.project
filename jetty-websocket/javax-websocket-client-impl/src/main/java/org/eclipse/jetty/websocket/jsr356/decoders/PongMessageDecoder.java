@@ -24,7 +24,7 @@ import javax.websocket.DecodeException;
 import javax.websocket.Decoder;
 import javax.websocket.PongMessage;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 
 public class PongMessageDecoder extends AbstractDecoder implements Decoder.Binary<PongMessage>
 {

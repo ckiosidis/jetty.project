@@ -21,14 +21,14 @@ package org.eclipse.jetty.nosql.mongodb;
 
 import java.net.UnknownHostException;
 
-import org.eclipse.jetty.server.session.AbstractSessionDataStoreFactory;
-import org.eclipse.jetty.server.session.SessionHandler;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.server.session.SessionDataStore;
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionHandler;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.server.session.SessionDataStore;
 
 
 import com.mongodb.Mongo;
-import com.mongodb.MongoException;
 import com.mongodb.MongoURI;
 
 /**
@@ -127,7 +127,7 @@ public class MongoSessionDataStoreFactory extends AbstractSessionDataStoreFactor
 
     /**
      * @throws Exception  {@link UnknownHostException} if any issue while resolving MongoDB Host
-     * @see org.eclipse.jetty.server.session.SessionDataStoreFactory#getSessionDataStore(org.eclipse.jetty.server.session.SessionHandler)
+     * @see SessionDataStoreFactory#getSessionDataStore(SessionHandler)
      */
     @Override
     public SessionDataStore getSessionDataStore(SessionHandler handler) throws Exception

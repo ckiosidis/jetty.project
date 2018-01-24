@@ -18,6 +18,8 @@
 
 package org.eclipse.jetty.util;
 
+import org.eclipse.betty.util.IncludeExclude;
+import org.eclipse.betty.util.RegexSet;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;

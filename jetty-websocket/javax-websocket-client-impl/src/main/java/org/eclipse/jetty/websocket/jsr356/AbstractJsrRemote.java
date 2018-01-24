@@ -27,9 +27,9 @@ import javax.websocket.Encoder;
 import javax.websocket.RemoteEndpoint;
 import javax.websocket.SendHandler;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.api.BatchMode;
 import org.eclipse.jetty.websocket.common.WebSocketRemoteEndpoint;
 import org.eclipse.jetty.websocket.common.io.FutureWriteCallback;

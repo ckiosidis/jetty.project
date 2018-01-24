@@ -25,9 +25,9 @@ import java.io.IOException;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.eclipse.jetty.annotations.AnnotationConfiguration;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 
 /**
  * This goal runs the jetty quickstart feature on an unassembled webapp in order to generate

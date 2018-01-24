@@ -39,22 +39,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.derby.tools.ij;
+import org.eclipse.betty.server.Request;
 import org.eclipse.jetty.security.ConstraintMapping;
 import org.eclipse.jetty.security.ConstraintSecurityHandler;
 import org.eclipse.jetty.security.LoginService;
 import org.eclipse.jetty.security.authentication.BasicAuthenticator;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.HandlerCollection;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.HandlerCollection;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.Loader;
-import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.Loader;
+import org.eclipse.betty.util.security.Constraint;
 
 
 /**
@@ -110,7 +111,7 @@ public class DatabaseLoginServiceTestServer
             _resourcePath = repositoryPath;
         }
 
-        public void handle(String target, org.eclipse.jetty.server.Request baseRequest,
+        public void handle(String target, Request baseRequest,
                 HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException
         {

@@ -28,9 +28,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConfiguration;
 import org.eclipse.jetty.server.handler.gzip.GzipTester.ContentMetadata;
 import org.eclipse.jetty.toolchain.test.TestTracker;
 import org.eclipse.jetty.toolchain.test.TestingDir;

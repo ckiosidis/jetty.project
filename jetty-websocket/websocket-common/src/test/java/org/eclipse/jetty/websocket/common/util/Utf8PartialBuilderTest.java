@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Test;
 
 /**

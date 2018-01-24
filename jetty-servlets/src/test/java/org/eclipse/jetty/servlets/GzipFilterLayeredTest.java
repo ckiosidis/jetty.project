@@ -31,14 +31,14 @@ import java.util.concurrent.TimeUnit;
 
 import javax.servlet.DispatcherType;
 
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpStatus;
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConfiguration;
 import org.eclipse.jetty.server.handler.gzip.AsyncManipFilter;
 import org.eclipse.jetty.server.handler.gzip.AsyncScheduledDispatchWrite;
 import org.eclipse.jetty.server.handler.gzip.AsyncTimeoutCompleteWrite;
 import org.eclipse.jetty.server.handler.gzip.AsyncTimeoutDispatchWrite;
-import org.eclipse.jetty.server.handler.gzip.GzipHandler;
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
 import org.eclipse.jetty.server.handler.gzip.GzipTester;
 import org.eclipse.jetty.server.handler.gzip.GzipTester.ContentMetadata;
 import org.eclipse.jetty.server.handler.gzip.TestDirContentServlet;

@@ -18,8 +18,8 @@
 
 package org.eclipse.jetty.cdi.websocket;
 
-import org.eclipse.jetty.util.component.Container;
-import org.eclipse.jetty.util.component.LifeCycle;
+import org.eclipse.betty.util.component.Container;
+import org.eclipse.betty.util.component.LifeCycle;
 
 /**
  * Abstract implementation of listener that needs both Container events and LifeCycle events

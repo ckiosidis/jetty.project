@@ -21,10 +21,10 @@ package org.eclipse.jetty.quickstart;
 import java.io.FileOutputStream;
 import java.util.Locale;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.resource.JarResource;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.resource.JarResource;
+import org.eclipse.betty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 /**

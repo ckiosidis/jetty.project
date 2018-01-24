@@ -23,6 +23,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 
+import org.eclipse.betty.util.MultiException;
 import org.junit.Test;
 
 

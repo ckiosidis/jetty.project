@@ -18,6 +18,9 @@
 
 package org.eclipse.jetty.util.log;
 
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+
 public class Green
 {
     private static final Logger LOG = Log.getLogger(Green.class);

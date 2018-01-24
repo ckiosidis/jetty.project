@@ -26,8 +26,8 @@ import javax.management.MBeanServer;
 import javax.management.ObjectName;
 
 import org.eclipse.jetty.client.HttpClient;
-import org.eclipse.jetty.io.SelectorManager;
-import org.eclipse.jetty.jmx.MBeanContainer;
+import org.eclipse.betty.io.SelectorManager;
+import org.eclipse.betty.jmx.MBeanContainer;
 import org.junit.Assert;
 import org.junit.Test;
 

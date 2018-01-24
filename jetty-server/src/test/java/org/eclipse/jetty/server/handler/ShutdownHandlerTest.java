@@ -30,14 +30,16 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpStatus;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.handler.ShutdownHandler;
 import org.eclipse.jetty.http.HttpTester;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.component.LifeCycle;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.component.LifeCycle;
 import org.junit.Assert;
 import org.junit.Test;
 

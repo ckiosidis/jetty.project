@@ -28,8 +28,15 @@ import static org.junit.Assert.assertThat;
 import java.nio.ByteBuffer;
 import java.util.function.Supplier;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.hamcrest.Matchers;
+import org.eclipse.betty.http.BadMessageException;
+import org.eclipse.betty.http.DateGenerator;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpGenerator;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpHeaderValue;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.util.BufferUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

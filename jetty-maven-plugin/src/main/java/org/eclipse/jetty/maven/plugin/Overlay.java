@@ -19,7 +19,7 @@
 
 package org.eclipse.jetty.maven.plugin;
 
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * Overlay

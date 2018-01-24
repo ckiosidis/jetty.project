@@ -24,7 +24,7 @@ import java.nio.ByteBuffer;
 import javax.websocket.MessageHandler;
 import javax.websocket.MessageHandler.Partial;
 
-import org.eclipse.jetty.util.BufferUtil;
+import org.eclipse.betty.util.BufferUtil;
 import org.eclipse.jetty.websocket.common.message.MessageAppender;
 import org.eclipse.jetty.websocket.jsr356.MessageHandlerWrapper;
 

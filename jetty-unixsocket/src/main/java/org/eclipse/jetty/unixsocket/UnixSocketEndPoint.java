@@ -23,13 +23,13 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 
-import org.eclipse.jetty.io.ChannelEndPoint;
-import org.eclipse.jetty.io.EofException;
-import org.eclipse.jetty.io.ManagedSelector;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.io.ChannelEndPoint;
+import org.eclipse.betty.io.EofException;
+import org.eclipse.betty.io.ManagedSelector;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.thread.Scheduler;
 
 import jnr.unixsocket.UnixSocketChannel;
 

@@ -18,6 +18,9 @@
 
 package org.eclipse.jetty.util.log;
 
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.log.StdErrLog;
 import org.junit.Test;
 
 public class NamedLogTest

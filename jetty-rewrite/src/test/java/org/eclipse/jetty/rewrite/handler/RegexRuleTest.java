@@ -26,7 +26,7 @@ import java.util.regex.Matcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
+import org.eclipse.betty.server.Request;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

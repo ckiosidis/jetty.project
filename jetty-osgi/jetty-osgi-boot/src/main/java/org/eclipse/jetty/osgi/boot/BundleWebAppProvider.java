@@ -23,12 +23,13 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 
+import org.eclipse.betty.util.component.AbstractLifeCycle;
 import org.eclipse.jetty.deploy.App;
 import org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper;
 import org.eclipse.jetty.osgi.boot.utils.Util;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleEvent;
@@ -117,7 +118,7 @@ public class BundleWebAppProvider extends AbstractWebAppProvider implements Bund
     
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStart()
+     * @see AbstractLifeCycle#doStart()
      */
     protected void doStart() throws Exception
     {
@@ -132,7 +133,7 @@ public class BundleWebAppProvider extends AbstractWebAppProvider implements Bund
 
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStop()
+     * @see AbstractLifeCycle#doStop()
      */
     @Override
     protected void doStop() throws Exception

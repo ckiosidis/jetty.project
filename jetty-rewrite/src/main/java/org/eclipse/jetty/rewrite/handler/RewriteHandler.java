@@ -27,8 +27,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.HandlerWrapper;
 
 /* ------------------------------------------------------------ */
 /**
@@ -148,20 +148,20 @@ import org.eclipse.jetty.server.handler.HandlerWrapper;
  *     &lt;/New&gt;
  * 
  *     &lt;Set name="handler"&gt;
- *       &lt;New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection"&gt;
+ *       &lt;New id="Handlers" class="HandlerCollection"&gt;
  *         &lt;Set name="handlers"&gt;
- *           &lt;Array type="org.eclipse.jetty.server.Handler"&gt;
+ *           &lt;Array type="Handler"&gt;
  *             &lt;Item&gt;
  *               &lt;Ref id="RewriteHandler"/&gt;
  *             &lt;/Item&gt;
  *             &lt;Item&gt;
- *               &lt;New id="Contexts" class="org.eclipse.jetty.server.handler.ContextHandlerCollection"/&gt;
+ *               &lt;New id="Contexts" class="ContextHandlerCollection"/&gt;
  *             &lt;/Item&gt;
  *             &lt;Item&gt;
- *               &lt;New id="DefaultHandler" class="org.eclipse.jetty.server.handler.DefaultHandler"/&gt;
+ *               &lt;New id="DefaultHandler" class="DefaultHandler"/&gt;
  *             &lt;/Item&gt;
  *             &lt;Item&gt;
- *               &lt;New id="RequestLog" class="org.eclipse.jetty.server.handler.RequestLogHandler"/&gt;
+ *               &lt;New id="RequestLog" class="RequestLogHandler"/&gt;
  *             &lt;/Item&gt;
  *           &lt;/Array&gt;
  *         &lt;/Set&gt;
@@ -318,7 +318,7 @@ public class RewriteHandler extends HandlerWrapper
 
     /* ------------------------------------------------------------ */
     /* (non-Javadoc)
-     * @see org.eclipse.jetty.server.handler.HandlerWrapper#handle(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, int)
+     * @see HandlerWrapper#handle(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, int)
      */
     @Override
     public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException

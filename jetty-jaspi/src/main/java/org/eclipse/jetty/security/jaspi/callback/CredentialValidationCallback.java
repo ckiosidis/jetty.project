@@ -22,7 +22,7 @@ package org.eclipse.jetty.security.jaspi.callback;
 import javax.security.auth.Subject;
 import javax.security.auth.callback.Callback;
 
-import org.eclipse.jetty.util.security.Credential;
+import org.eclipse.betty.util.security.Credential;
 
 /**
  * CredentialValidationCallback

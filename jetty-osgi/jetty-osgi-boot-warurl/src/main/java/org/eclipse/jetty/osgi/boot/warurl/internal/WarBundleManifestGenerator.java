@@ -29,8 +29,8 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
-import org.eclipse.jetty.util.MultiMap;
-import org.eclipse.jetty.util.UrlEncoded;
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.UrlEncoded;
 import org.osgi.framework.Constants;
 
 public class WarBundleManifestGenerator

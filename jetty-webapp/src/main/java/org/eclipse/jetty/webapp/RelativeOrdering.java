@@ -24,8 +24,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 
-import org.eclipse.jetty.util.TopologicalSort;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.TopologicalSort;
+import org.eclipse.betty.util.resource.Resource;
 
 /**
  * Relative Fragment Ordering

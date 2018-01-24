@@ -24,7 +24,7 @@ import java.io.InputStream;
 import javax.websocket.ClientEndpoint;
 import javax.websocket.OnMessage;
 
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.eclipse.jetty.websocket.jsr356.endpoints.TrackingSocket;
 
 @ClientEndpoint

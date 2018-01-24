@@ -36,10 +36,10 @@ import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.AuthenticationStore;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.util.Attributes;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.TypeUtil;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.util.Attributes;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.TypeUtil;
 
 /**
  * Implementation of the HTTP "Digest" authentication defined in RFC 2617.

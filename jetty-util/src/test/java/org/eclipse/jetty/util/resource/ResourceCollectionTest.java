@@ -25,7 +25,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
 
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.resource.ResourceCollection;
 import org.junit.Test;
 
 public class ResourceCollectionTest

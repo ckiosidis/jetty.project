@@ -4,10 +4,10 @@
 <!-- =============================================================== -->
 <!-- Mixin the Start FileNoticeLifeCycleListener                     -->
 <!-- =============================================================== -->
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
   <Call name="addLifeCycleListener">
     <Arg>
-      <New class="org.eclipse.jetty.util.component.FileNoticeLifeCycleListener">
+      <New class="org.eclipse.betty.util.component.FileNoticeLifeCycleListener">
         <Arg><Property name="jetty.state" default="./jetty.state"/></Arg>
       </New>
     </Arg>

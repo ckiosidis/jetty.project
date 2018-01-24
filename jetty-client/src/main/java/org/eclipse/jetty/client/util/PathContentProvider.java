@@ -31,9 +31,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import org.eclipse.jetty.client.api.ContentProvider;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /**
  * <p>A {@link ContentProvider} for files using JDK 7's {@code java.nio.file} APIs.</p>

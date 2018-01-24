@@ -31,10 +31,13 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.eclipse.jetty.util.component.LifeCycle;
-import org.eclipse.jetty.util.thread.ExecutionStrategy;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
-import org.eclipse.jetty.util.thread.ExecutionStrategy.Producer;
+import org.eclipse.betty.util.component.LifeCycle;
+import org.eclipse.betty.util.thread.ExecutionStrategy;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.thread.ExecutionStrategy.Producer;
+import org.eclipse.betty.util.thread.strategy.EatWhatYouKill;
+import org.eclipse.betty.util.thread.strategy.ExecuteProduceConsume;
+import org.eclipse.betty.util.thread.strategy.ProduceExecuteConsume;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

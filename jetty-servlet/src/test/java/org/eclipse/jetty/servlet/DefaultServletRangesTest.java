@@ -25,14 +25,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.toolchain.test.FS;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.OS;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.IO;
+import org.eclipse.betty.util.IO;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

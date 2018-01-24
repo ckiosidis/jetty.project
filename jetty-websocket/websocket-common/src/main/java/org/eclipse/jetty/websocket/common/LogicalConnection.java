@@ -21,7 +21,7 @@ package org.eclipse.jetty.websocket.common;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executor;
 
-import org.eclipse.jetty.io.ByteBufferPool;
+import org.eclipse.betty.io.ByteBufferPool;
 import org.eclipse.jetty.websocket.api.SuspendToken;
 import org.eclipse.jetty.websocket.api.WebSocketPolicy;
 import org.eclipse.jetty.websocket.api.extensions.IncomingFrames;

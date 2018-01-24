@@ -24,6 +24,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 
+import org.eclipse.betty.http.MimeTypes;
 import org.junit.Test;
 
 public class MimeTypesTest

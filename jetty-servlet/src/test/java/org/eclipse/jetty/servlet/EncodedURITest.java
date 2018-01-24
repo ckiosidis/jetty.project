@@ -36,11 +36,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.LocalConnector;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.ContextHandlerCollection;
-import org.eclipse.jetty.util.URIUtil;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.ContextHandlerCollection;
+import org.eclipse.betty.util.URIUtil;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Before;

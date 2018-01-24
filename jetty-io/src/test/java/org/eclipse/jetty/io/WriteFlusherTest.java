@@ -32,9 +32,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.FutureCallback;
+import org.eclipse.betty.io.ByteArrayEndPoint;
+import org.eclipse.betty.io.WriteFlusher;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.FutureCallback;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

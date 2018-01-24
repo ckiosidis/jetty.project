@@ -18,6 +18,7 @@
 
 package org.eclipse.jetty.util;
 
+import org.eclipse.betty.util.RegexSet;
 import org.junit.Test;
 
 import org.junit.Assert;

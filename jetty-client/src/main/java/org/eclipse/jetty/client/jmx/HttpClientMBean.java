@@ -19,7 +19,7 @@
 package org.eclipse.jetty.client.jmx;
 
 import org.eclipse.jetty.client.HttpClient;
-import org.eclipse.jetty.jmx.ObjectMBean;
+import org.eclipse.betty.jmx.ObjectMBean;
 
 public class HttpClientMBean extends ObjectMBean
 {

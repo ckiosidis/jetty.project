@@ -18,7 +18,7 @@
 
 package com.acme;
 
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
 
 public class Base extends AbstractLifeCycle
 {

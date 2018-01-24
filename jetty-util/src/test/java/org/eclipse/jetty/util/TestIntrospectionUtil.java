@@ -24,6 +24,7 @@ import static org.junit.Assert.fail;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+import org.eclipse.betty.util.IntrospectionUtil;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

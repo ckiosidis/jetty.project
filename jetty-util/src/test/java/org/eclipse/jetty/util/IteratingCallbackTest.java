@@ -22,8 +22,9 @@ package org.eclipse.jetty.util;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.jetty.util.thread.ScheduledExecutorScheduler;
-import org.eclipse.jetty.util.thread.Scheduler;
+import org.eclipse.betty.util.IteratingCallback;
+import org.eclipse.betty.util.thread.ScheduledExecutorScheduler;
+import org.eclipse.betty.util.thread.Scheduler;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
-    <New id="databaseAdaptor" class="org.eclipse.jetty.server.session.DatabaseAdaptor">
+    <New id="databaseAdaptor" class="org.eclipse.betty.server.session.DatabaseAdaptor">
          <Call name="setDriverInfo">
              <Arg><Property name="jetty.session.jdbc.driverClass"/></Arg>
              <Arg><Property name="jetty.session.jdbc.driverUrl"/></Arg>

@@ -18,9 +18,13 @@
 
 package org.eclipse.jetty.server;
 
-import org.eclipse.jetty.server.handler.ErrorHandler;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.ProxyConnectionFactory;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.ErrorHandler;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.log.StacklessLogging;
+import org.eclipse.betty.util.log.StacklessLogging;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;

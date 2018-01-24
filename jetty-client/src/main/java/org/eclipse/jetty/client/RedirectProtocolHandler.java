@@ -21,8 +21,8 @@ package org.eclipse.jetty.client;
 import org.eclipse.jetty.client.api.Request;
 import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpHeader;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpHeader;
 
 /**
  * <p>A protocol handler that handles redirect status codes 301, 302, 303, 307 and 308.</p>

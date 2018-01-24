@@ -25,14 +25,15 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import org.eclipse.betty.server.session.SessionDataMap;
 import org.eclipse.jetty.memcached.session.MemcachedSessionDataMapFactory;
-import org.eclipse.jetty.server.session.AbstractSessionDataStore;
-import org.eclipse.jetty.server.session.AbstractSessionDataStoreFactory;
-import org.eclipse.jetty.server.session.CachingSessionDataStoreFactory;
-import org.eclipse.jetty.server.session.SessionData;
-import org.eclipse.jetty.server.session.SessionDataStore;
-import org.eclipse.jetty.server.session.SessionDataStoreFactory;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.server.session.AbstractSessionDataStore;
+import org.eclipse.betty.server.session.AbstractSessionDataStoreFactory;
+import org.eclipse.betty.server.session.CachingSessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.session.SessionDataStore;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionHandler;
 
 /**
  * MemcachedTestHelper
@@ -49,7 +50,7 @@ public class MemcachedTestHelper
         
         
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataStore#isPassivating()
+         * @see SessionDataStore#isPassivating()
          */
         @Override
         public boolean isPassivating()
@@ -58,7 +59,7 @@ public class MemcachedTestHelper
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataStore#exists(java.lang.String)
+         * @see SessionDataStore#exists(java.lang.String)
          */
         @Override
         public boolean exists(String id) throws Exception
@@ -67,7 +68,7 @@ public class MemcachedTestHelper
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataMap#load(java.lang.String)
+         * @see SessionDataMap#load(java.lang.String)
          */
         @Override
         public SessionData load(String id) throws Exception
@@ -87,7 +88,7 @@ public class MemcachedTestHelper
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataMap#delete(java.lang.String)
+         * @see SessionDataMap#delete(java.lang.String)
          */
         @Override
         public boolean delete(String id) throws Exception
@@ -96,7 +97,7 @@ public class MemcachedTestHelper
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doStore(java.lang.String, org.eclipse.jetty.server.session.SessionData, long)
+         * @see AbstractSessionDataStore#doStore(java.lang.String, SessionData, long)
          */
         @Override
         public void doStore(String id, SessionData data, long lastSaveTime) throws Exception
@@ -106,7 +107,7 @@ public class MemcachedTestHelper
         }
 
         /** 
-         * @see org.eclipse.jetty.server.session.AbstractSessionDataStore#doGetExpired(java.util.Set)
+         * @see AbstractSessionDataStore#doGetExpired(java.util.Set)
          */
         @Override
         public Set<String> doGetExpired(Set<String> candidates)
@@ -147,7 +148,7 @@ public class MemcachedTestHelper
     {
 
         /** 
-         * @see org.eclipse.jetty.server.session.SessionDataStoreFactory#getSessionDataStore(org.eclipse.jetty.server.session.SessionHandler)
+         * @see SessionDataStoreFactory#getSessionDataStore(SessionHandler)
          */
         @Override
         public SessionDataStore getSessionDataStore(SessionHandler handler) throws Exception

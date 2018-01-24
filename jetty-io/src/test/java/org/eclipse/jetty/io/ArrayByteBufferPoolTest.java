@@ -26,7 +26,9 @@ import static org.junit.Assert.assertTrue;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import org.eclipse.jetty.io.ByteBufferPool.Bucket;
+import org.eclipse.betty.io.ArrayByteBufferPool;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.ByteBufferPool.Bucket;
 import org.junit.Test;
 
 public class ArrayByteBufferPoolTest

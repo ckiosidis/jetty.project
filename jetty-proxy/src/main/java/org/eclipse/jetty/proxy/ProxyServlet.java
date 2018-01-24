@@ -39,9 +39,9 @@ import org.eclipse.jetty.client.api.Response;
 import org.eclipse.jetty.client.api.Result;
 import org.eclipse.jetty.client.util.DeferredContentProvider;
 import org.eclipse.jetty.client.util.InputStreamContentProvider;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.IteratingCallback;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.IteratingCallback;
 
 /**
  * <p>Servlet 3.0 asynchronous proxy servlet.</p>

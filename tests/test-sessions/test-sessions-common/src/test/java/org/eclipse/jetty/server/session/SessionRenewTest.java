@@ -35,6 +35,15 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionIdListener;
 
+import org.eclipse.betty.server.Response;
+import org.eclipse.betty.server.session.DefaultSessionCacheFactory;
+import org.eclipse.betty.server.session.DefaultSessionIdManager;
+import org.eclipse.betty.server.session.NullSessionCacheFactory;
+import org.eclipse.betty.server.session.Session;
+import org.eclipse.betty.server.session.SessionCache;
+import org.eclipse.betty.server.session.SessionCacheFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
@@ -236,7 +245,7 @@ public class SessionRenewTest
 
                 if (((Session)afterSession).isIdChanged())
                 {
-                    ((org.eclipse.jetty.server.Response)response).addCookie(sessionManager.getSessionCookie(afterSession, request.getContextPath(), request.isSecure()));
+                    ((Response)response).addCookie(sessionManager.getSessionCookie(afterSession, request.getContextPath(), request.isSecure()));
                 }
             }
         }

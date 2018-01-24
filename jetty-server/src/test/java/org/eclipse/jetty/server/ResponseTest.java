@@ -43,29 +43,38 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.eclipse.jetty.http.CookieCompliance;
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpFields;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpURI;
-import org.eclipse.jetty.http.HttpVersion;
-import org.eclipse.jetty.http.MetaData;
-import org.eclipse.jetty.io.AbstractEndPoint;
-import org.eclipse.jetty.io.ByteArrayEndPoint;
-import org.eclipse.jetty.io.RuntimeIOException;
-import org.eclipse.jetty.server.handler.AbstractHandler;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.ErrorHandler;
-import org.eclipse.jetty.server.session.DefaultSessionCache;
-import org.eclipse.jetty.server.session.DefaultSessionIdManager;
-import org.eclipse.jetty.server.session.NullSessionDataStore;
-import org.eclipse.jetty.server.session.Session;
-import org.eclipse.jetty.server.session.SessionData;
-import org.eclipse.jetty.server.session.SessionHandler;
+import org.eclipse.betty.http.CookieCompliance;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpFields;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.http.HttpVersion;
+import org.eclipse.betty.http.MetaData;
+import org.eclipse.betty.io.AbstractEndPoint;
+import org.eclipse.betty.io.ByteArrayEndPoint;
+import org.eclipse.betty.io.RuntimeIOException;
+import org.eclipse.betty.server.HttpChannel;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.HttpTransport;
+import org.eclipse.betty.server.LocalConnector;
+import org.eclipse.betty.server.NetworkConnector;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.Response;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ErrorHandler;
+import org.eclipse.betty.server.session.DefaultSessionCache;
+import org.eclipse.betty.server.session.DefaultSessionIdManager;
+import org.eclipse.betty.server.session.NullSessionDataStore;
+import org.eclipse.betty.server.session.Session;
+import org.eclipse.betty.server.session.SessionData;
+import org.eclipse.betty.server.session.SessionHandler;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
-import org.eclipse.jetty.util.Callback;
-import org.eclipse.jetty.util.thread.Scheduler;
-import org.eclipse.jetty.util.thread.TimerScheduler;
+import org.eclipse.betty.util.Callback;
+import org.eclipse.betty.util.thread.Scheduler;
+import org.eclipse.betty.util.thread.TimerScheduler;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Assert;
@@ -152,7 +161,7 @@ public class ResponseTest
             }
 
             @Override
-            public void push(org.eclipse.jetty.http.MetaData.Request request)
+            public void push(MetaData.Request request)
             {
             }
 

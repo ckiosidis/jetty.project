@@ -27,15 +27,16 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 
-import org.eclipse.jetty.http.CompressedContentFormat;
-import org.eclipse.jetty.http.HttpContent;
-import org.eclipse.jetty.http.MimeTypes;
-import org.eclipse.jetty.http.ResourceHttpContent;
+import org.eclipse.betty.http.CompressedContentFormat;
+import org.eclipse.betty.http.HttpContent;
+import org.eclipse.betty.http.MimeTypes;
+import org.eclipse.betty.http.ResourceHttpContent;
+import org.eclipse.betty.server.CachedContentFactory;
 import org.eclipse.jetty.toolchain.test.AdvancedRunner;
 import org.eclipse.jetty.toolchain.test.OS;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.resource.Resource;
-import org.eclipse.jetty.util.resource.ResourceCollection;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.resource.ResourceCollection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

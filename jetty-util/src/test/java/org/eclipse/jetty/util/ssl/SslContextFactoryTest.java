@@ -33,9 +33,10 @@ import java.security.KeyStore;
 
 import javax.net.ssl.SSLEngine;
 
-import org.eclipse.jetty.util.component.AbstractLifeCycle;
-import org.eclipse.jetty.util.log.StacklessLogging;
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.component.AbstractLifeCycle;
+import org.eclipse.betty.util.log.StacklessLogging;
+import org.eclipse.betty.util.resource.Resource;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

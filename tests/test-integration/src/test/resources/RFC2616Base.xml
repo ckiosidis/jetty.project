@@ -10,9 +10,9 @@
 <!-- =============================================================== -->
 
 
-<Configure id="Server" class="org.eclipse.jetty.server.Server">
+<Configure id="Server" class="org.eclipse.betty.server.Server">
 
-    <New id="httpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+    <New id="httpConfig" class="org.eclipse.betty.server.HttpConfiguration">
       <Set name="secureScheme">https</Set>
       <Set name="securePort"><Property name="jetty.secure.port" default="8443" /></Set>
       <Set name="outputBufferSize">32768</Set>
@@ -24,7 +24,7 @@
 
       <!-- Uncomment to enable handling of X-Forwarded- style headers
       <Call name="addCustomizer">
-        <Arg><New class="org.eclipse.jetty.server.ForwardedRequestCustomizer"/></Arg>
+        <Arg><New class="ForwardedRequestCustomizer"/></Arg>
       </Call>
       -->
     </New>
@@ -33,14 +33,14 @@
     <!-- Set handler Collection Structure                            -->
     <!-- =========================================================== -->
     <Set name="handler">
-      <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+      <New id="Handlers" class="org.eclipse.betty.server.handler.HandlerCollection">
         <Set name="handlers">
-         <Array type="org.eclipse.jetty.server.Handler">
+         <Array type="org.eclipse.betty.server.Handler">
            <Item>
-             <New id="WebappContexts" class="org.eclipse.jetty.server.handler.ContextHandlerCollection"/>
+             <New id="WebappContexts" class="org.eclipse.betty.server.handler.ContextHandlerCollection"/>
            </Item>
            <Item>
-             <New id="vcontexts" class="org.eclipse.jetty.server.handler.ContextHandler">
+             <New id="vcontexts" class="org.eclipse.betty.server.handler.ContextHandler">
                <Set name="contextPath">/tests</Set>
                <Set name="VirtualHosts">
                  <Array type="java.lang.String">
@@ -48,20 +48,20 @@
                  </Array>
                </Set>
                <Set name="ResourceBase"><Property name="test.docroot.base"/>/virtualhost</Set>
-               <Set name="Handler"><New id="reshandler" class="org.eclipse.jetty.server.handler.ResourceHandler"/></Set>
+               <Set name="Handler"><New id="reshandler" class="org.eclipse.betty.server.handler.ResourceHandler"/></Set>
                <Set name="DisplayName">virtual</Set>
              </New>
            </Item>
            <Item>
-             <New id="defcontext" class="org.eclipse.jetty.server.handler.ContextHandler">
+             <New id="defcontext" class="org.eclipse.betty.server.handler.ContextHandler">
                <Set name="contextPath">/tests</Set>
                <Set name="ResourceBase"><Property name="test.docroot.base"/>/default</Set>
-               <Set name="Handler"><New id="reshandler" class="org.eclipse.jetty.server.handler.ResourceHandler"/></Set>
+               <Set name="Handler"><New id="reshandler" class="org.eclipse.betty.server.handler.ResourceHandler"/></Set>
                <Set name="DisplayName">default</Set>
              </New>
            </Item>
            <Item>
-             <New id="echocontext" class="org.eclipse.jetty.server.handler.ContextHandler">
+             <New id="echocontext" class="org.eclipse.betty.server.handler.ContextHandler">
                <Set name="contextPath">/echo</Set>
                <Set name="Handler"><New id="echohandler" class="org.eclipse.jetty.test.support.EchoHandler"/></Set>
                <Set name="DisplayName">echo</Set>

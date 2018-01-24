@@ -20,9 +20,8 @@
 package org.eclipse.jetty.hazelcast.session;
 
 import org.eclipse.jetty.server.session.AbstractSessionExpiryTest;
-import org.eclipse.jetty.server.session.SessionDataStoreFactory;
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.junit.After;
-import org.junit.Test;
 
 public class SessionExpiryTest
     extends AbstractSessionExpiryTest

@@ -46,7 +46,7 @@ import org.eclipse.jetty.client.api.Result;
 import org.eclipse.jetty.client.util.BasicAuthentication;
 import org.eclipse.jetty.client.util.DeferredContentProvider;
 import org.eclipse.jetty.client.util.DigestAuthentication;
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpStatus;
 import org.eclipse.jetty.security.Authenticator;
 import org.eclipse.jetty.security.ConstraintMapping;
 import org.eclipse.jetty.security.ConstraintSecurityHandler;
@@ -54,15 +54,15 @@ import org.eclipse.jetty.security.HashLoginService;
 import org.eclipse.jetty.security.LoginService;
 import org.eclipse.jetty.security.authentication.BasicAuthenticator;
 import org.eclipse.jetty.security.authentication.DigestAuthenticator;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.handler.AbstractHandler;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.Attributes;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.security.Constraint;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.Attributes;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.security.Constraint;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -223,7 +223,7 @@ public class HttpClientAuthenticationTest extends AbstractHttpClientServerTest
             private final AtomicInteger requests = new AtomicInteger();
 
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 baseRequest.setHandled(true);
                 if (requests.incrementAndGet() == 1)
@@ -262,7 +262,7 @@ public class HttpClientAuthenticationTest extends AbstractHttpClientServerTest
         startBasic(new AbstractHandler()
         {
             @Override
-            public void handle(String target, org.eclipse.jetty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
+            public void handle(String target, org.eclipse.betty.server.Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
             {
                 baseRequest.setHandled(true);
                 if (request.getRequestURI().endsWith("/redirect"))
@@ -472,7 +472,7 @@ public class HttpClientAuthenticationTest extends AbstractHttpClientServerTest
         startBasic(new EmptyServerHandler()
         {
             @Override
-            protected void service(String target, org.eclipse.jetty.server.Request jettyRequest, HttpServletRequest request,
+            protected void service(String target, org.eclipse.betty.server.Request jettyRequest, HttpServletRequest request,
                                    HttpServletResponse response) throws IOException, ServletException
             {
                 IO.readBytes(jettyRequest.getInputStream());              

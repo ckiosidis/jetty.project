@@ -26,11 +26,11 @@ import javax.net.ssl.SSLException;
 
 import org.eclipse.jetty.alpn.ALPN;
 import org.eclipse.jetty.alpn.server.ALPNServerConnection;
-import org.eclipse.jetty.io.Connection;
-import org.eclipse.jetty.io.ssl.ALPNProcessor;
-import org.eclipse.jetty.util.JavaVersion;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.ssl.ALPNProcessor;
+import org.eclipse.betty.util.JavaVersion;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class OpenJDK8ServerALPNProcessor implements ALPNProcessor.Server
 {

@@ -24,16 +24,16 @@ import java.nio.ByteBuffer;
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLHandshakeException;
 
-import org.eclipse.jetty.io.AbstractConnection;
-import org.eclipse.jetty.io.ByteArrayEndPoint;
-import org.eclipse.jetty.io.ByteBufferPool;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.io.MappedByteBufferPool;
-import org.eclipse.jetty.io.ssl.SslConnection;
+import org.eclipse.betty.io.AbstractConnection;
+import org.eclipse.betty.io.ByteArrayEndPoint;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.io.ssl.SslConnection;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
-import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.thread.QueuedThreadPool;
 import org.junit.Assert;
 import org.junit.Test;
 

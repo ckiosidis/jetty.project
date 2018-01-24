@@ -25,7 +25,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.charset.UnsupportedCharsetException;
 
 import org.eclipse.jetty.client.api.ContentProvider;
-import org.eclipse.jetty.util.Fields;
+import org.eclipse.betty.util.Fields;
 
 /**
  * A {@link ContentProvider} for form uploads with the

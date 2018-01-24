@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.servlet.jmx;
 
-import org.eclipse.jetty.jmx.ObjectMBean;
+import org.eclipse.betty.jmx.ObjectMBean;
 import org.eclipse.jetty.servlet.FilterMapping;
 
 public class FilterMappingMBean extends ObjectMBean

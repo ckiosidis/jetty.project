@@ -24,6 +24,7 @@ import static org.hamcrest.Matchers.not;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import org.eclipse.betty.util.log.StdErrLog;
 import org.junit.Assert;
 
 public class StdErrCapture

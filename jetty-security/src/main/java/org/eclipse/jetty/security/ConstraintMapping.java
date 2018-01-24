@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.security;
 
-import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.betty.util.security.Constraint;
 
 public class ConstraintMapping
 {

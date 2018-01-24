@@ -21,8 +21,8 @@ package org.eclipse.jetty.websocket.common.extensions.compress;
 import java.nio.ByteBuffer;
 import java.util.zip.DataFormatException;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.api.BadPayloadException;
 import org.eclipse.jetty.websocket.api.BatchMode;
 import org.eclipse.jetty.websocket.api.WriteCallback;

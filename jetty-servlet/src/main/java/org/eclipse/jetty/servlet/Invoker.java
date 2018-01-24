@@ -32,16 +32,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.pathmap.MappedResource;
-import org.eclipse.jetty.server.Dispatcher;
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.eclipse.jetty.util.ArrayUtil;
-import org.eclipse.jetty.util.URIUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.http.pathmap.MappedResource;
+import org.eclipse.betty.server.Dispatcher;
+import org.eclipse.betty.server.Handler;
+import org.eclipse.betty.server.Request;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.HandlerWrapper;
+import org.eclipse.betty.util.ArrayUtil;
+import org.eclipse.betty.util.URIUtil;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 /* ------------------------------------------------------------ */
 /**  Dynamic Servlet Invoker.

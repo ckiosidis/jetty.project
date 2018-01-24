@@ -48,11 +48,12 @@ import javax.servlet.DispatcherType;
 import javax.servlet.Servlet;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.DateGenerator;
-import org.eclipse.jetty.http.HttpHeader;
+import org.eclipse.betty.http.DateGenerator;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
 import org.eclipse.jetty.http.HttpTester;
 import org.eclipse.jetty.http.HttpTester.Response;
-import org.eclipse.jetty.server.HttpConnectionFactory;
+import org.eclipse.betty.server.HttpConnectionFactory;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -60,8 +61,8 @@ import org.eclipse.jetty.servlet.ServletTester;
 import org.eclipse.jetty.toolchain.test.IO;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.TestingDir;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 

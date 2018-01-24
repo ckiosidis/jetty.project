@@ -36,7 +36,7 @@ detected.
   </Call>
   
   <Set name="gzipHandler">
-    <New class="org.eclipse.jetty.server.handler.gzip.GzipHandler">
+    <New class="org.eclipse.betty.server.handler.gzip.GzipHandler">
       <Set name="minGzipSize">2048</Set>      
     </New>
   </Set>
@@ -52,7 +52,7 @@ detected.
 
   <!-- Enable symlinks 
   <Call name="addAliasCheck">
-    <Arg><New class="org.eclipse.jetty.server.handler.AllowSymLinkAliasChecker"/></Arg>
+    <Arg><New class="AllowSymLinkAliasChecker"/></Arg>
   </Call>
   -->
   
@@ -109,9 +109,9 @@ detected.
   <!-- Add context specific logger
   <Call name="insertHandler">
     <Arg>
-      <New id="RequestLog" class="org.eclipse.jetty.server.handler.RequestLogHandler">
+      <New id="RequestLog" class="RequestLogHandler">
         <Set name="requestLog">
-          <New id="RequestLogImpl" class="org.eclipse.jetty.server.NCSARequestLog">
+          <New id="RequestLogImpl" class="NCSARequestLog">
             <Set name="filename"><Property name="jetty.logs" default="./logs"/>/test-yyyy_mm_dd.request.log</Set>
             <Set name="filenameDateFormat">yyyy_MM_dd</Set>
             <Set name="append">true</Set>

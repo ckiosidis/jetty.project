@@ -21,9 +21,8 @@ package org.eclipse.jetty.embedded;
 import java.io.File;
 import java.lang.management.ManagementFactory;
 
-import org.eclipse.jetty.jmx.MBeanContainer;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.AllowSymLinkAliasChecker;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 public class OneWebApp

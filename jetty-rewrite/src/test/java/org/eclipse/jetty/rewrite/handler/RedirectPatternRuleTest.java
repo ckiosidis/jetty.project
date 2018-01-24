@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 
 import java.io.IOException;
 
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.http.HttpStatus;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.http.HttpStatus;
 import org.junit.Before;
 import org.junit.Test;
 

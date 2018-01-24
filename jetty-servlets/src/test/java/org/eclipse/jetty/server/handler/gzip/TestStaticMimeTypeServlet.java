@@ -26,7 +26,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.http.MimeTypes;
+import org.eclipse.betty.http.MimeTypes;
 
 /**
  * Test servlet for testing against unusual MimeTypes and Content-Types.

@@ -32,8 +32,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.servlet.DispatcherType;
 
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.betty.http.pathmap.PathSpec;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.server.ServerConnector;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.toolchain.test.EventQueue;
@@ -230,7 +231,7 @@ public class WebSocketUpgradeFilterTest
                 // Add a jetty-http.jar to ensure that the classloader constraints
                 // and the WebAppClassloader setup is sane and correct
                 // The odd version string is present to capture bad regex behavior in Jetty
-                server.copyLib(org.eclipse.jetty.http.pathmap.PathSpec.class, "jetty-http-9.99.999.jar");
+                server.copyLib(PathSpec.class, "jetty-http-9.99.999.jar");
                 server.start();
             
                 WebAppContext webapp = server.createWebAppContext();

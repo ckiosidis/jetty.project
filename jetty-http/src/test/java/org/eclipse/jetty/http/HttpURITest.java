@@ -29,7 +29,8 @@ import static org.junit.Assert.fail;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.util.MultiMap;
+import org.eclipse.betty.http.HttpURI;
+import org.eclipse.betty.util.MultiMap;
 import org.junit.Test;
 
 public class HttpURITest

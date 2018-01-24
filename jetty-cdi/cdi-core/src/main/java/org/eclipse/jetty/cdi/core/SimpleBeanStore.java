@@ -25,8 +25,8 @@ import java.util.Map;
 
 import javax.enterprise.context.spi.Contextual;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 @Deprecated
 public class SimpleBeanStore

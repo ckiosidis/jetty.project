@@ -19,8 +19,8 @@
 
 package org.eclipse.jetty.http2.hpack;
 
-import org.eclipse.jetty.http.HttpField;
-import org.eclipse.jetty.http.HttpHeader;
+import org.eclipse.betty.http.HttpField;
+import org.eclipse.betty.http.HttpHeader;
 
 /* ------------------------------------------------------------ */
 public class StaticTableHttpField extends HttpField

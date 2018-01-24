@@ -24,6 +24,7 @@ import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
 
+import org.eclipse.betty.server.handler.gzip.GzipHandler;
 import org.junit.Test;
 
 public class GzipHandlerTest

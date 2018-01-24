@@ -25,9 +25,9 @@ import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.api.AuthenticationStore;
 import org.eclipse.jetty.client.api.ContentResponse;
 import org.eclipse.jetty.client.api.Request;
-import org.eclipse.jetty.http.HttpHeader;
-import org.eclipse.jetty.util.Attributes;
-import org.eclipse.jetty.util.B64Code;
+import org.eclipse.betty.http.HttpHeader;
+import org.eclipse.betty.util.Attributes;
+import org.eclipse.betty.util.B64Code;
 
 /**
  * Implementation of the HTTP "Basic" authentication defined in RFC 2617.

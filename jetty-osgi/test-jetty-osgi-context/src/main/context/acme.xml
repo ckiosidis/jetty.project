@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
 
-<Configure class="org.eclipse.jetty.server.handler.ContextHandler">
+<Configure class="org.eclipse.betty.server.handler.ContextHandler">
 
   <!-- Get root for static content, could be on file system or this bundle -->
-  <Call id="res" class="org.eclipse.jetty.util.resource.Resource" name="newResource">
+  <Call id="res" class="org.eclipse.betty.util.resource.Resource" name="newResource">
     <Arg><Property name="bundle.root"/></Arg>
   </Call>
 
@@ -22,7 +22,7 @@
   </Set>
 
   <Set name="handler">
-    <New class="org.eclipse.jetty.server.handler.ResourceHandler">
+    <New class="org.eclipse.betty.server.handler.ResourceHandler">
       <Set name="welcomeFiles">
         <Array type="String">
           <Item>index.html</Item>

@@ -20,12 +20,12 @@ package org.eclipse.jetty.rewrite;
 
 import java.io.IOException;
 
-import org.eclipse.jetty.io.RuntimeIOException;
+import org.eclipse.betty.io.RuntimeIOException;
 import org.eclipse.jetty.rewrite.handler.RuleContainer;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
-import org.eclipse.jetty.server.HttpConfiguration.Customizer;
-import org.eclipse.jetty.server.Request;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
+import org.eclipse.betty.server.HttpConfiguration.Customizer;
+import org.eclipse.betty.server.Request;
 
 public class RewriteCustomizer extends RuleContainer implements Customizer 
 {

@@ -26,8 +26,8 @@ import org.eclipse.jetty.security.authentication.ClientCertAuthenticator;
 import org.eclipse.jetty.security.authentication.DigestAuthenticator;
 import org.eclipse.jetty.security.authentication.FormAuthenticator;
 import org.eclipse.jetty.security.authentication.SpnegoAuthenticator;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.betty.server.Server;
+import org.eclipse.betty.util.security.Constraint;
 
 /* ------------------------------------------------------------ */
 /**

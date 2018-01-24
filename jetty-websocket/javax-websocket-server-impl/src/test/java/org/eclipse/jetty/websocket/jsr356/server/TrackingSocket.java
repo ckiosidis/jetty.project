@@ -29,8 +29,8 @@ import javax.websocket.CloseReason;
 import javax.websocket.CloseReason.CloseCode;
 
 import org.eclipse.jetty.toolchain.test.EventQueue;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.junit.Assert;
 
 /**

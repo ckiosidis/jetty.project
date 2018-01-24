@@ -34,9 +34,11 @@ import javax.management.MBeanException;
 import javax.management.MBeanInfo;
 import javax.management.ReflectionException;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
-import org.eclipse.jetty.util.log.StdErrLog;
+import org.eclipse.betty.jmx.MBeanContainer;
+import org.eclipse.betty.jmx.ObjectMBean;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
+import org.eclipse.betty.util.log.StdErrLog;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;

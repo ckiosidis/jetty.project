@@ -21,7 +21,7 @@ package org.eclipse.jetty.servlets;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.Request;
+import org.eclipse.betty.server.Request;
 
 /**
  * This is an extension to {@link DoSFilter} that uses Jetty APIs to

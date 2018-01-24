@@ -31,7 +31,7 @@ import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.jetty.util.resource.Resource;
+import org.eclipse.betty.util.resource.Resource;
 import org.junit.Test;
 
 /**
@@ -49,7 +49,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#addPath(java.lang.String)
+         * @see Resource#addPath(java.lang.String)
          */
         @Override
         public Resource addPath(String path) throws IOException, MalformedURLException
@@ -58,7 +58,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#delete()
+         * @see Resource#delete()
          */
         @Override
         public boolean delete() throws SecurityException
@@ -67,7 +67,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#exists()
+         * @see Resource#exists()
          */
         @Override
         public boolean exists()
@@ -76,7 +76,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#getFile()
+         * @see Resource#getFile()
          */
         @Override
         public File getFile() throws IOException
@@ -85,7 +85,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#getInputStream()
+         * @see Resource#getInputStream()
          */
         @Override
         public InputStream getInputStream() throws IOException
@@ -100,7 +100,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#getName()
+         * @see Resource#getName()
          */
         @Override
         public String getName()
@@ -115,7 +115,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#isContainedIn(org.eclipse.jetty.util.resource.Resource)
+         * @see Resource#isContainedIn(Resource)
          */
         @Override
         public boolean isContainedIn(Resource r) throws MalformedURLException
@@ -124,7 +124,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#isDirectory()
+         * @see Resource#isDirectory()
          */
         @Override
         public boolean isDirectory()
@@ -133,7 +133,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#lastModified()
+         * @see Resource#lastModified()
          */
         @Override
         public long lastModified()
@@ -142,7 +142,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#length()
+         * @see Resource#length()
          */
         @Override
         public long length()
@@ -151,7 +151,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#list()
+         * @see Resource#list()
          */
         @Override
         public String[] list()
@@ -160,7 +160,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#close()
+         * @see Resource#close()
          */
         @Override
         public void close()
@@ -168,7 +168,7 @@ public class OrderingTest
         }
 
         /**
-         * @see org.eclipse.jetty.util.resource.Resource#renameTo(org.eclipse.jetty.util.resource.Resource)
+         * @see Resource#renameTo(Resource)
          */
         @Override
         public boolean renameTo(Resource dest) throws SecurityException

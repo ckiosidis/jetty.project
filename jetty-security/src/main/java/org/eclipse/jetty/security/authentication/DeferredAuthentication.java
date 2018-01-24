@@ -36,11 +36,11 @@ import org.eclipse.jetty.security.IdentityService;
 import org.eclipse.jetty.security.LoginService;
 import org.eclipse.jetty.security.ServerAuthException;
 import org.eclipse.jetty.security.UserAuthentication;
-import org.eclipse.jetty.server.Authentication;
-import org.eclipse.jetty.server.UserIdentity;
-import org.eclipse.jetty.util.IO;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.Authentication;
+import org.eclipse.betty.server.UserIdentity;
+import org.eclipse.betty.util.IO;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 
 public class DeferredAuthentication implements Authentication.Deferred
 {
@@ -58,7 +58,7 @@ public class DeferredAuthentication implements Authentication.Deferred
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.server.Authentication.Deferred#authenticate(ServletRequest)
+     * @see Authentication.Deferred#authenticate(ServletRequest)
      */
     @Override
     public Authentication authenticate(ServletRequest request)
@@ -88,7 +88,7 @@ public class DeferredAuthentication implements Authentication.Deferred
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.server.Authentication.Deferred#authenticate(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+     * @see Authentication.Deferred#authenticate(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
      */
     @Override
     public Authentication authenticate(ServletRequest request, ServletResponse response)
@@ -112,7 +112,7 @@ public class DeferredAuthentication implements Authentication.Deferred
 
     /* ------------------------------------------------------------ */
     /**
-     * @see org.eclipse.jetty.server.Authentication.Deferred#login(String, Object, ServletRequest)
+     * @see Authentication.Deferred#login(String, Object, ServletRequest)
      */
     @Override
     public Authentication login(String username, Object password, ServletRequest request)

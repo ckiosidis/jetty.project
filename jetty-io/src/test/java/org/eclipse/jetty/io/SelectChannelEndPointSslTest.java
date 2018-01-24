@@ -23,19 +23,22 @@ import java.io.IOException;
 import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectableChannel;
-import java.nio.channels.SocketChannel;
 
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLEngineResult;
 import javax.net.ssl.SSLEngineResult.HandshakeStatus;
 import javax.net.ssl.SSLSocket;
 
-import org.eclipse.jetty.io.ssl.SslConnection;
+import org.eclipse.betty.io.ByteBufferPool;
+import org.eclipse.betty.io.Connection;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.io.MappedByteBufferPool;
+import org.eclipse.betty.io.ssl.SslConnection;
 import org.eclipse.jetty.toolchain.test.JDK;
 import org.eclipse.jetty.toolchain.test.MavenTestingUtils;
 import org.eclipse.jetty.toolchain.test.annotation.Stress;
-import org.eclipse.jetty.util.BufferUtil;
-import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.ssl.SslContextFactory;
 import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.BeforeClass;

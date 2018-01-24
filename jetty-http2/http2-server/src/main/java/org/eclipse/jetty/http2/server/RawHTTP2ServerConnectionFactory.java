@@ -19,9 +19,9 @@
 package org.eclipse.jetty.http2.server;
 
 import org.eclipse.jetty.http2.api.server.ServerSessionListener;
-import org.eclipse.jetty.io.EndPoint;
-import org.eclipse.jetty.server.Connector;
-import org.eclipse.jetty.server.HttpConfiguration;
+import org.eclipse.betty.io.EndPoint;
+import org.eclipse.betty.server.Connector;
+import org.eclipse.betty.server.HttpConfiguration;
 
 public class RawHTTP2ServerConnectionFactory extends AbstractHTTP2ServerConnectionFactory
 {

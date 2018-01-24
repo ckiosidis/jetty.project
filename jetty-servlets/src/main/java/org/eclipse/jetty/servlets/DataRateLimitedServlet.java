@@ -36,7 +36,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.eclipse.jetty.server.HttpOutput;
+import org.eclipse.betty.server.HttpOutput;
 
 /**
  * A servlet that uses the Servlet 3.1 asynchronous IO API to server

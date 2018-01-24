@@ -23,6 +23,7 @@ import static org.junit.Assert.*;
 import java.net.InetAddress;
 import java.util.Iterator;
 
+import org.eclipse.betty.util.InetAddressSet;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;

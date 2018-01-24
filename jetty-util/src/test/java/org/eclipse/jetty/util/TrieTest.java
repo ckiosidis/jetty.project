@@ -23,6 +23,12 @@ import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.eclipse.betty.util.ArrayTernaryTrie;
+import org.eclipse.betty.util.ArrayTrie;
+import org.eclipse.betty.util.BufferUtil;
+import org.eclipse.betty.util.StringUtil;
+import org.eclipse.betty.util.TreeTrie;
+import org.eclipse.betty.util.Trie;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -22,7 +22,7 @@ import javax.naming.NamingException;
 import javax.naming.Reference;
 
 import org.eclipse.jetty.plus.jndi.Resource;
-import org.eclipse.jetty.server.handler.ContextHandler;
+import org.eclipse.betty.server.handler.ContextHandler;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 /**

@@ -19,6 +19,7 @@
 
 package org.eclipse.jetty.server.session;
 
+import org.eclipse.betty.server.session.SessionDataStoreFactory;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.junit.After;
 import org.junit.Before;

@@ -23,15 +23,15 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 
+import org.eclipse.betty.util.component.AbstractLifeCycle;
 import org.eclipse.jetty.deploy.App;
 import org.eclipse.jetty.deploy.AppProvider;
 import org.eclipse.jetty.deploy.DeploymentManager;
 import org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper;
 import org.eclipse.jetty.osgi.boot.utils.Util;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.util.StringUtil;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.server.handler.ContextHandler;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
@@ -260,7 +260,7 @@ public class ServiceWebAppProvider extends AbstractWebAppProvider implements Ser
     
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStart()
+     * @see AbstractLifeCycle#doStart()
      */
     protected void doStart() throws Exception
     {
@@ -282,7 +282,7 @@ public class ServiceWebAppProvider extends AbstractWebAppProvider implements Ser
 
     /* ------------------------------------------------------------ */
     /** 
-     * @see org.eclipse.jetty.util.component.AbstractLifeCycle#doStop()
+     * @see AbstractLifeCycle#doStop()
      */
     @Override
     protected void doStop() throws Exception

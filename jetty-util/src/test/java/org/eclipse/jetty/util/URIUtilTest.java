@@ -27,6 +27,7 @@ import static org.junit.Assert.assertTrue;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 
+import org.eclipse.betty.util.URIUtil;
 import org.junit.Test;
 
 

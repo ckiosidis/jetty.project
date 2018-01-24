@@ -22,8 +22,11 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.MultiMap;
+import org.eclipse.betty.util.UrlEncoded;
+import org.eclipse.betty.util.Utf8Appendable;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -38,7 +41,7 @@ public class UrlEncodedUtf8Test
     {
         byte[] bytes= { 97, 98, 61, 99, -50 };
         String test=new String(bytes,StandardCharsets.UTF_8);
-        String expected = "c"+Utf8Appendable.REPLACEMENT;
+        String expected = "c"+ Utf8Appendable.REPLACEMENT;
 
         fromString(test,test,"ab",expected,false);
         fromInputStream(test,bytes,"ab",expected,false);

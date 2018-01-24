@@ -25,8 +25,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import javax.websocket.Encoder;
 import javax.websocket.EndpointConfig;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
+import org.eclipse.betty.util.log.Log;
+import org.eclipse.betty.util.log.Logger;
 import org.eclipse.jetty.websocket.common.scopes.WebSocketContainerScope;
 import org.eclipse.jetty.websocket.common.scopes.WebSocketSessionScope;
 import org.eclipse.jetty.websocket.jsr356.metadata.EncoderMetadata;
