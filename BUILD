@@ -57,3 +57,17 @@ java_library(
         ":jetty_util",
     ],
 )
+
+
+java_library(
+    name = "jetty_alpn",
+    srcs = glob(["jetty-alpn/jetty-alpn-server/src/main/**/*.java"]),
+    visibility = ["//visibility:public"],
+    javacopts = ['-XepDisableAllChecks'],
+    deps = [
+        ":jetty_util",
+        ":jetty_server",
+        ":jetty_io",
+        "@apln_api//jar",
+    ],
+)
